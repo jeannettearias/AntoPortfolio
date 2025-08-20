@@ -1,8 +1,8 @@
 function Footer() {
     return (
         <>
-            <footer>
-                <p>© 2023 Anto's Portfolio. All rights reserved.</p>
+            <footer className="footer-container">
+                <span>© 2023 Anto's Portfolio. All rights reserved.</span>
             </footer>
         </>
     );
