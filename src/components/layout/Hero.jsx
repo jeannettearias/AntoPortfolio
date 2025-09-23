@@ -4,7 +4,7 @@ function Hero() {
     return (
         <>
             <section>
-                <h2>Welcome to Anto's Portfolio</h2>
+                <h2>Portafolio de Antonia Mendoza</h2>
 
             </section>
         </>

@@ -1,0 +1,28 @@
+.head {
+  display: flex;
+  width: 1090px;
+  padding: var(--base-px-04, 16px);
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: var(--base-px-06, 20px);
+  background: var(--Main-White, #fff);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--base-px-02, 8px);
+}
+
+.tab {
+  display: flex;
+  padding: 12px var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: var(--base-px-16, 64px);
+  background: var(--Green-02, #baf2db);
+}
