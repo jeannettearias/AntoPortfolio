@@ -3,11 +3,11 @@
   width: 1440px;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
+  gap: -56px;
 }
 
 .background {
-  height: 128px;
+  height: 8px;
   align-self: stretch;
 
   background: rgba(255, 255, 255, 0.01);
@@ -48,6 +48,12 @@
 
   border-radius: var(--base-px-16, 64px);
   background: var(--Green-02, #baf2db);
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .tab {
@@ -57,6 +63,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .btn-contact {
@@ -74,5 +87,5 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 19px; /* 150% */
 }

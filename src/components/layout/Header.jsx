@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/_header.scss';
+import '../../styles/core/_variables.scss'
 
 
 function Header() {
@@ -8,16 +9,17 @@ function Header() {
     return (
         <>
             <section className='section-head'>
+                <div className="background"></div>
                 <nav className="head">
-                    <div className="background"></div>
+                    <div className="logo"></div>
                     <ul className="nav">
-                        <div className="logo"></div>
-                        <li className='selected-tab'><a href="#services">Servicios</a></li>
-                        <li className='tab'><a href="#about">Acerca de mí</a></li>
-                        <li className='tab'><a href="#competencies">Competencias</a></li>
-                        <li className='tab'><a href="#knowledge">Estudios y Experiencia</a></li>
-                        <li className='tab'><a href="#projects">Proyectos</a></li>
-                        <li className='tab'><a href="#references">Referencias</a></li>
+
+                        <li className='selected-tab'>Servicios</li>
+                        <li className='tab'>Acerca de mí</li>
+                        <li className='tab'>Competencias</li>
+                        <li className='tab'>Estudios y Experiencia</li>
+                        <li className='tab'>Proyectos</li>
+                        <li className='tab'>Referencias</li>
                     </ul>
                     <button className='btn-contact'>Contacto</button>
                 </nav>

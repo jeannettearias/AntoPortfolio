@@ -64,16 +64,19 @@ body {
   /* Typography */
   --Family-Title: "Montserrat", sans-serif;
   --Family-Content: "Raleway", sans-serif;
-  --Size-Heading-1: 64;
-  --Size-Heading-2: 44;
-  --Size-Heading-3: 32;
-  --Size-Heading-4: 24;
-  --Size-Large: 18;
-  --Size-Medium: 16;
-  --Size-Small: 14;
-  --Size-XLarge: 20;
-  --Weight-Bold: 0;
-  --Weight-Medium: 0;
-  --Weight-Regular: 0;
-  --Weight-Semibold: 0;
+  --Size-Heading-1: 64px;
+  --Size-Heading-2: 44px;
+  --Size-Heading-3: 32px;
+  --Size-Heading-4: 24px;
+  --Size-Large: 18px;
+  --Size-Medium: 16px;
+  --Size-Small: 14px;
+  --Size-XLarge: 20px;
+  --Weight-Bold: 0px;
+  --Weight-Medium: 0px;
+  --Weight-Regular: 0px;
+  --Weight-Semibold: 0px;
+
+  /* inline typography */
+  line-height: var(--line-height-medium, 16px);
 }
