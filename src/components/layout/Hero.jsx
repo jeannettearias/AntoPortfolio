@@ -4,7 +4,7 @@ function Hero() {
     return (
         <>
             <section>
-                <h2>Welcome to Anto's Portfolio</h2>
+                <h1>Soy Antonia, product Designer</h1>
 
             </section>
         </>

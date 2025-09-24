@@ -2,6 +2,7 @@ function Landing() {
     return (
         <>
             <section>
+
             </section>
         </>
     );
