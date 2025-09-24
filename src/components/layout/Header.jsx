@@ -1,7 +1,10 @@
 import React from 'react';
 import '../../styles/_header.scss';
 
+
 function Header() {
+
+
     return (
         <>
             <section className='section-head'>

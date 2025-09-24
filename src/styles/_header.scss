@@ -3,7 +3,7 @@
   width: 1440px;
   flex-direction: column;
   align-items: center;
-  gap: -56px;
+  gap: 56px;
 }
 
 .background {
@@ -23,11 +23,10 @@
 }
 
 .head {
-  display: flex;
-  width: 1090px;
+  display: inline-flex;
   padding: var(--base-px-04, 16px);
-  justify-content: space-between;
   align-items: center;
+  gap: var(--base-px-11, 40px);
 
   border-radius: var(--base-px-06, 20px);
   background: var(--Main-White, #fff);

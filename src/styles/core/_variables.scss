@@ -1,1 +1,79 @@
+body {
+  /*GREEN */
+  --Green-01: #e2f2eb;
+  --Green-02: #baf2db;
+  --Green-03: #7ce5b9;
+  --Green-04: #25c381;
+  --Green-05: #0b935a;
+  --Green-06: #057f4c;
+  --Green-07: #025432;
+  --Green-08: #00341e;
 
+  /* ORANGE */
+  --Main-Background: #f5f5f5;
+  --Main-Background_Alt: #fcf5e4;
+  --Main-Black: #000000;
+  --Main-Primary: #057f4c;
+  --Main-Secondary: #ff8d02;
+  --Neutral-08: #272827;
+  --Neutral-01: #f5f5f5;
+  --Neutral-02: #dfe7e4;
+  --Neutral-03: #c3cfca;
+  --Neutral-04: #9da9a4;
+  --Neutral-05: #79817e;
+  --Neutral-06: #585d5b;
+  --Neutral-07: #424544;
+  --Neutral-08: #272827;
+  --Orange-01: #fcf5e4;
+  --Orange-02: #fff1d2;
+  --Orange-03: #ffde97;
+  --Orange-04: #fecd64;
+  --Orange-05: #e6ae37;
+  --Orange-06: #bb8513;
+  --Orange-07: #8f6203;
+  --Orange-08: #6c4a01;
+
+  /* NEUTRAL*/
+
+  --Main-White: #ffff;
+
+  /* SPACING */
+  --base-px-00: 0px;
+  --base-px-01: 4px;
+  --base-px-02: 8px;
+  --base-px-03: 12px;
+  --base-px-04: 16px;
+  --base-px-05: 18px;
+  --base-px-06: 20px;
+  --base-px-07: 24px;
+  --base-px-08: 28px;
+  --base-px-09: 32px;
+  --base-px-10: 36px;
+  --base-px-11: 40px;
+  --base-px-12: 44px;
+  --base-px-13: 48px;
+  --base-px-14: 52px;
+  --base-px-15: 56px;
+  --base-px-16: 64px;
+  --base-px-17: 72px;
+  --base-px-18: 80px;
+  --base-px-19: 88px;
+  --base-px-20: 96px;
+  --base-px-24: 104px;
+
+  /* Typography */
+  --Family-Title: "Montserrat", sans-serif;
+  --Family-Content: "Raleway", sans-serif;
+  --Size-Heading-1: 64;
+  --Size-Heading-2: 44;
+  --Size-Heading-3: 32;
+  --Size-Heading-4: 24;
+  --Size-Large: 18;
+  --Size-Medium: 16;
+  --Size-Small: 14;
+  --Size-XLarge: 20;
+  --Weight-Bold: 0;
+  --Weight-Medium: 0;
+  --Weight-Regular: 0;
+  --Weight-Semibold: 0;
+}
