@@ -17,3 +17,13 @@ body {
 main {
   flex: 1; /* pushes footer down */
 }
+
+.main {
+  background: var(--Main-White, #fff);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

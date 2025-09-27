@@ -10,13 +10,17 @@ function Hero() {
                     </div>
                     <div className="hero__content__content">
                         <h1 className="hero__title">Soy Antonia, product Designer</h1>
-                        <p className="hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p className="hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div className="group-buttons">
-                        <button>Contacto</button>
-                        <button>Descargar CV</button>
+                        <button className="contacto__btn">Contacto</button>
+                        <button className="descargar__btn">Descargar CV</button>
 
                     </div>
+                </div>
+                <div className="hero__info">
+                    <label htmlFor=""></label>
+
                 </div>
 
             </section>

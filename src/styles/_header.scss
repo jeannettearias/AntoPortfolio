@@ -14,14 +14,6 @@
   backdrop-filter: blur(2px);
 }
 
-.logo {
-  width: 88px;
-  height: 48px;
-  flex-shrink: 0;
-
-  background: var(--Main-Secondary, #ff8d02);
-}
-
 .head {
   display: inline-flex;
   padding: var(--base-px-04, 16px);
@@ -31,6 +23,14 @@
   border-radius: var(--base-px-06, 20px);
   background: var(--Main-White, #fff);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+.logo {
+  width: 88px;
+  height: 48px;
+  flex-shrink: 0;
+
+  background: var(--Main-Secondary, #ff8d02);
 }
 
 .nav {
