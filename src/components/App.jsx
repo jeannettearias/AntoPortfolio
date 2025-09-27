@@ -6,16 +6,16 @@ import Footer from './layout/Footer';
 
 function App() {
   return (
-    <main className='main'>
+
+    <main className="main">
       <Header />
 
-      <body className="body">
-        <Hero />
-        <Landing />
-      </body>
+      <Hero />
+      <Landing />
 
       <Footer />
     </main>
+
   )
 }
 
