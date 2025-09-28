@@ -137,30 +137,36 @@
 .Detail_1 {
   width: 304px;
   height: 462px;
-  transform: rotate(50.694deg);
 
   position: absolute;
-  left: -119px;
-  top: -10px;
-}
-.rectangle_3 {
-  width: 304px;
-  height: 462px;
-  transform: rotate(50.694deg);
-  flex-shrink: 0;
 
-  border-radius: 1000px;
-  border: 1px solid var(--Neutral-03, #c3cfca);
-}
+  .rectangle_3 {
+    position: absolute;
+    width: 304px;
+    height: 462px;
+    border-radius: 1000px;
+    border: 1px solid var(--Neutral-03, #c3cfca);
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 2;
 
-.rectangle_4 {
-  width: 272px;
-  height: 425px;
-  transform: rotate(50.694deg);
-  flex-shrink: 0;
+    transform: rotate(50.694deg);
+  }
 
-  border-radius: 1000px;
-  border: 1px solid var(--Neutral-03, #c3cfca);
+  .rectangle_4 {
+    position: absolute;
+    width: 272px;
+    height: 425px;
+    border-radius: 1000px;
+    border: 1px solid var(--Neutral-03, #c3cfca);
+    top: 19px; // Adjust for best look
+    left: 16px; // Adjust for best look
+    background: transparent;
+    z-index: 3;
+
+    transform: rotate(50.694deg);
+  }
 }
 
 .Detail_2 {
@@ -190,9 +196,7 @@
   align-self: stretch;
 
   border-radius: 1000px;
-  background: url("/public/images/Anto__hero.png") lightgray -84.265px -37.958px /
-      154.117% 107.579% no-repeat,
-    var(--Main-Secondary, #ff8d02);
+  background: var(--Main-Secondary, #ff8d02);
 }
 
 .data__section {

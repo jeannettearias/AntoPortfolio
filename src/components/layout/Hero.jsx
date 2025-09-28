@@ -19,7 +19,6 @@ function Hero() {
                     </div>
                 </div>
                 <div className="hero__info">
-
                     <div className="Detail_1">
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
