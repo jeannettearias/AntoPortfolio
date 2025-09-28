@@ -17,3 +17,10 @@ body {
 main {
   flex: 1; /* pushes footer down */
 }
+
+.main {
+  width: 1440px;
+  height: 7789px;
+
+  background: var(--Main-White, #fff);
+}
