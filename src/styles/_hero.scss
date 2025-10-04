@@ -169,16 +169,6 @@
   }
 }
 
-.Detail_2 {
-  width: 449.489px;
-  height: 521px;
-
-  position: absolute;
-  right: -87px;
-
-  background: var(--Green-01, #e2f2eb);
-}
-
 .figma__picture {
   display: flex;
   width: 304px;
@@ -216,34 +206,6 @@
   align-items: flex-end;
   gap: 8px;
   align-self: stretch;
-}
-
-.hero__title_1 {
-  align-self: stretch;
-
-  color: var(--Main-Primary, #057f4c);
-  text-align: right;
-
-  /* H3/Bold */
-  font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Heading-3, 32px);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.hero__description_1 {
-  align-self: stretch;
-
-  color: var(--Neutral-07, #424544);
-  text-align: right;
-
-  /* MediumText/Regular */
-  font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Medium, 16px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .hero__title_1 {
