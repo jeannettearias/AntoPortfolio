@@ -1,6 +1,7 @@
 import "../../styles/_hero.scss";
 
-function Hero() {
+function Hero({ heroData }) {
+
     return (
         <>
             <section className="hero">
@@ -29,25 +30,24 @@ function Hero() {
                             className="hero__img"
                             src="/images/Anto__hero.png" alt="" />
                     </div>
-                    <div className="data__section">
-                        <div className="data__content">
-                            <h4 className="hero__title_1">+4</h4>
-                            <p className="hero__description_1">Años de experiencia</p>
-                        </div>
-                        <div className="data__content">
-                            <h4 className="hero__title_2">+64</h4>
-                            <p className="hero__description_2">Clientes satisfechos</p>
-                        </div>
-                        <div className="data__content">
-                            <h4 className="hero__title_3">+30</h4>
-                            <p className="hero__description_3">Proyectos completados</p>
-                        </div>
+                    <div
+                        className="data__sections"
+                    >
+                        {heroData.map(item => (
+                            <div className="data__section" key={item.id}>
+                                <div className="data__content">
+                                    <h4 className="hero__title">{item.numbData}</h4>
+                                    <p className="hero__description">{item.description}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-
-            </section>
+            </section >
         </>
     );
+
 }
+
 
 export default Hero;
