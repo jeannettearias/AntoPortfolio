@@ -10,13 +10,13 @@ function Hero({ heroData }) {
                         <label className="tag__label">Hello there</label>
                     </div>
                     <div className="hero__content__content">
-                        <h1 className="hero__title">Soy Antonia, product Designer</h1>
-                        <p className="hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h1 className="hero__title_1">Soy Antonia, product Designer</h1>
+                        <p className="hero__description">Lorem Ipsum is simply dummy text
+                            of the printing and typesetting industry.</p>
                     </div>
                     <div className="group-buttons">
                         <button className="contacto__btn">Contacto</button>
                         <button className="descargar__btn">Descargar CV</button>
-
                     </div>
                 </div>
                 <div className="hero__info">
@@ -30,20 +30,18 @@ function Hero({ heroData }) {
                             className="hero__img"
                             src="/images/Anto__hero.png" alt="" />
                     </div>
-                    <div
-                        className="data__sections"
-                    >
-                        {heroData.map(item => (
-                            <div className="data__section" key={item.id}>
-                                <div className="data__content">
+                    <div className="data__sections">
+                        <div className="data__content">
+                            {heroData.map(item => (
+                                <div key={item.id} >
                                     <h4 className="hero__title">{item.numbData}</h4>
                                     <p className="hero__description">{item.description}</p>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     );
 
