@@ -1,8 +1,7 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
-import Hero from './layout/hero';
+import Hero from './layout/Hero';
 import Landing from './landing/Landing';
-import Footer from './layout/Footer';
 import heroData from '../data/heroData.json';
 import React from 'react';
 import { useState } from 'react';
@@ -11,16 +10,17 @@ function App() {
   const [data, setData] = useState(heroData);
 
   return (
-
-    <main className="main">
+    <section className="Home">
       <Header />
 
-      <Hero heroData={data} />
-      <Landing />
+      <main className="body">
 
-      <Footer />
-    </main>
+        <Hero heroData={data} />
+        <Landing />
 
+      </main>
+
+    </section>
   )
 }
 

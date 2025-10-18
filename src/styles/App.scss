@@ -18,9 +18,16 @@ main {
   flex: 1; /* pushes footer down */
 }
 
-.main {
+.Home {
   width: 1440px;
   height: 7789px;
 
   background: var(--Main-White, #fff);
+}
+
+.body {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: flex-start;
 }
