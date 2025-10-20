@@ -2,6 +2,7 @@ import '../styles/App.scss';
 import Header from './layout/Header';
 import Hero from './layout/Hero';
 import Landing from './landing/Landing';
+import Bar from './layout/Bar';
 import heroData from '../data/heroData.json';
 import React from 'react';
 import { useState } from 'react';
@@ -17,8 +18,10 @@ function App() {
 
         <Hero heroData={data} />
         <Landing />
+        <Bar />
 
       </main>
+
 
     </section>
   )
