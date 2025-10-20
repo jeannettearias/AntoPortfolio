@@ -19,21 +19,21 @@ function Hero({ heroData }) {
                         <button className="descargar__btn">Descargar CV</button>
                     </div>
                 </div>
-                <div className="hero__info Detail_2">
-                    <div className="Detail_2">
+                <div className="hero__info">
+                    <div className="Detail_1">
+                        <div className="rectangle_3"></div>
+                        <div className="rectangle_4"></div>
+                        <div className="Detail_2">
 
-                        <div className="Detail_1">
+                            <div className="figma__picture">
+                                <img
+                                    className="hero__img"
+                                    src="/images/Anto__hero.png"
+                                    alt=""
+                                />
+                            </div>
                         </div>
-                        <div className="figma__picture">
-                            <div className="rectangle_3"></div>
-                            <div className="rectangle_4"></div>
-                            <img
-                                className="hero__img"
-                                src="/images/Anto__hero.png"
-                                alt=""
-                            />
 
-                        </div>
                     </div>
 
                     <div className="data__sections Detail_2">

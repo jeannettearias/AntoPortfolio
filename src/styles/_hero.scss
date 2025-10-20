@@ -125,11 +125,13 @@
   align-self: stretch;
 
   .Detail_2 {
+    display: flex;
     height: 521px;
 
     background: var(--Green-01, #e2f2eb);
 
     .Detail_1 {
+      display: flex;
       width: 304px;
       height: 462px;
       transform: rotate(50.694deg);
@@ -178,15 +180,16 @@
   align-self: stretch;
 
   border-radius: 10000px;
+}
 
-  .hero__img {
-    height: 521px;
-    align-self: stretch;
+.hero__img {
+  height: 521px;
+  align-self: stretch;
 
-    border-radius: 1000px;
-    background: -84.265px -37.958px / 154.117% 107.579% no-repeat,
-      var(--Main-Secondary, #ff8d02);
-  }
+  border-radius: 1000px;
+  background: url(<path-to-image>) -84.265px -37.958px / 154.117% 107.579%
+      no-repeat,
+    var(--Main-Secondary, #e6ae37);
 }
 
 .data__sections {
