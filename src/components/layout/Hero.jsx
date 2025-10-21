@@ -1,4 +1,7 @@
 import "../../styles/_hero.scss";
+import ContactBtn from "../landing/buttons/ContactBtn";
+import DownloadBtn from "../landing/buttons/DownloadBtn";
+import React from "react";
 
 function Hero({ heroData }) {
 
@@ -33,7 +36,6 @@ function Hero({ heroData }) {
                                 />
                             </div>
                         </div>
-
                     </div>
 
                     <div className="data__sections Detail_2">
@@ -47,6 +49,10 @@ function Hero({ heroData }) {
                         </div>
                     </div>
                 </div>
+                <section className="buttons__hero">
+                    <ContactBtn />
+                    <DownloadBtn />
+                </section>
             </section>
         </>
     );

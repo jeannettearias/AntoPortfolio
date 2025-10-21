@@ -1,11 +1,9 @@
 .bar {
   width: 1440px;
   height: 88px;
-  top: 26px;
 
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   padding: var(--top-bottom, 24px) var(--left-right, 88px);
   background: var(--Main-Primary, #057f4c);
