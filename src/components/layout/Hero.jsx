@@ -18,8 +18,9 @@ function Hero({ heroData }) {
                             of the printing and typesetting industry.</p>
                     </div>
                     <div className="group-buttons">
-                        <button className="contacto__btn">Contacto</button>
-                        <button className="descargar__btn">Descargar CV</button>
+                        <ContactBtn
+                            contactBtn={<ContactBtn />} />
+                        <DownloadBtn />
                     </div>
                 </div>
                 <div className="hero__info">
@@ -49,10 +50,6 @@ function Hero({ heroData }) {
                         </div>
                     </div>
                 </div>
-                <section className="buttons__hero">
-                    <ContactBtn />
-                    <DownloadBtn />
-                </section>
             </section>
         </>
     );

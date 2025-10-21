@@ -1,0 +1,48 @@
+.ContactBtn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  background: var(--Main-Primary, #057f4c);
+}
+
+.contact__btn {
+  color: var(--Main-White, #fff);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.DownloadBtn {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  border: 1px solid var(--Orange-05, #e6ae37);
+  background: var(--Main-Background_Alt, #fcf5e4);
+
+  color: var(--Orange-06, #bb8513);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttons__hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
