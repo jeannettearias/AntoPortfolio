@@ -6,7 +6,7 @@ function ProjectBtn({ Buttons }) {
     return (
         <>
             <button className="project__btn">
-                <a
+                <a className='button__link'
                     href="https://www.linkedin.com/in/antoniamendoza/"
                     target="_blank" rel="noopener noreferrer">
                     Proyectos

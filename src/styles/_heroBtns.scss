@@ -7,7 +7,8 @@
 
   border-radius: 12px;
   background: var(--Main-Primary, #057f4c);
-
+}
+.button__link {
   color: var(--Main-White, #fff);
 
   /* MediumText/Regular */
@@ -16,6 +17,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration: none;
 }
 
 .contact__btn {
@@ -37,10 +39,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.buttons__hero {
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
