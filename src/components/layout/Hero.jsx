@@ -1,6 +1,6 @@
 import "../../styles/_hero.scss";
+import ProjectBtn from "../landing/buttons/ProjectBtn";
 import ContactBtn from "../landing/buttons/ContactBtn";
-import DownloadBtn from "../landing/buttons/DownloadBtn";
 import React from "react";
 
 function Hero({ heroData }) {
@@ -18,9 +18,10 @@ function Hero({ heroData }) {
                             of the printing and typesetting industry.</p>
                     </div>
                     <div className="group-buttons">
+                        <ProjectBtn
+                            Buttons={<ProjectBtn />} />
                         <ContactBtn
-                            contactBtn={<ContactBtn />} />
-                        <DownloadBtn />
+                            Buttons={<ContactBtn />} />
                     </div>
                 </div>
                 <div className="hero__info">

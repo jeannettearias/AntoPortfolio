@@ -1,4 +1,4 @@
-.ContactBtn {
+.project__btn {
   display: flex;
   padding: 12px 16px;
   justify-content: center;
@@ -7,9 +7,7 @@
 
   border-radius: 12px;
   background: var(--Main-Primary, #057f4c);
-}
 
-.contact__btn {
   color: var(--Main-White, #fff);
 
   /* MediumText/Regular */
@@ -20,7 +18,7 @@
   line-height: normal;
 }
 
-.DownloadBtn {
+.contact__btn {
   display: flex;
   padding: 12px 16px;
   justify-content: center;
