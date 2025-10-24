@@ -1,9 +1,9 @@
 import "../../styles/_hero.scss";
-import ProjectBtn from "../landing/buttons/ProjectBtn";
+import ProjectBtn from '../landing/buttons/ProjectBtn';
 import ContactBtn from "../landing/buttons/ContactBtn";
 import React from "react";
 
-function Hero({ heroData }) {
+function Hero({ heroData, Buttons }) {
 
     return (
         <>
@@ -19,9 +19,9 @@ function Hero({ heroData }) {
                     </div>
                     <div className="group-buttons">
                         <ProjectBtn
-                            Buttons={<ProjectBtn />} />
+                            Buttons={Buttons} />
                         <ContactBtn
-                            Buttons={<ContactBtn />} />
+                            Buttons={Buttons} />
                     </div>
                 </div>
                 <div className="hero__info">

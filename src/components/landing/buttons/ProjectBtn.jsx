@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '../../../styles/_heroBtns.scss';
 
 function ProjectBtn({ Buttons }) {
@@ -5,13 +7,11 @@ function ProjectBtn({ Buttons }) {
 
     return (
         <>
-            <button className="project__btn">
-                <a className='button__link'
-                    href="https://www.linkedin.com/in/antoniamendoza/"
-                    target="_blank" rel="noopener noreferrer">
+            <div className="project__btn">
+                <Link to="/Projects" className='button__link'>
                     Proyectos
-                </a>
-            </button>
+                </Link>
+            </div>
         </>
     );
 }
