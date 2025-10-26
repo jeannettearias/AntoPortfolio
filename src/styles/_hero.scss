@@ -1,6 +1,5 @@
 .hero {
   display: flex;
-  height: 840px;
   padding: 200px 88px 116px 88px;
   align-items: center;
   gap: var(--base-px-09, 32px);
@@ -94,53 +93,54 @@
   align-items: center;
   gap: 94px;
   align-self: stretch;
+}
 
-  .Detail_2 {
+.Detail_2 {
+  display: flex;
+  height: 521px;
+
+  background: var(--Green-01, #e2f2eb);
+
+  .Detail_1 {
     display: flex;
-    height: 521px;
+    width: 304px;
+    height: 462px;
+    transform: rotate(50.694deg);
 
-    background: var(--Green-01, #e2f2eb);
+    position: absolute;
+    left: -119px;
+    top: -10px;
+  }
 
-    .Detail_1 {
-      display: flex;
-      width: 304px;
-      height: 462px;
-      transform: rotate(50.694deg);
+  .rectangle_3 {
+    position: absolute;
+    width: 304px;
+    height: 462px;
+    border-radius: 1000px;
+    border: 1px solid var(--Neutral-03, #c3cfca);
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 2;
 
-      position: absolute;
-      left: -119px;
-      top: -10px;
+    transform: rotate(50.694deg);
+  }
 
-      .rectangle_3 {
-        position: absolute;
-        width: 304px;
-        height: 462px;
-        border-radius: 1000px;
-        border: 1px solid var(--Neutral-03, #c3cfca);
-        top: 0;
-        left: 0;
-        background: transparent;
-        z-index: 2;
+  .rectangle_4 {
+    position: absolute;
+    width: 272px;
+    height: 425px;
+    border-radius: 1000px;
+    border: 1px solid var(--Neutral-03, #c3cfca);
+    top: 19px; // Adjust for best look
+    left: 16px; // Adjust for best look
+    background: transparent;
+    z-index: 3;
 
-        transform: rotate(50.694deg);
-      }
-
-      .rectangle_4 {
-        position: absolute;
-        width: 272px;
-        height: 425px;
-        border-radius: 1000px;
-        border: 1px solid var(--Neutral-03, #c3cfca);
-        top: 19px; // Adjust for best look
-        left: 16px; // Adjust for best look
-        background: transparent;
-        z-index: 3;
-
-        transform: rotate(50.694deg);
-      }
-    }
+    transform: rotate(50.694deg);
   }
 }
+
 .figma__picture {
   display: flex;
   width: 304px;
