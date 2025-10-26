@@ -42,3 +42,15 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.menu__link {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  line-height: 1.25rem;
+
+  @media (max-width: 680px) {
+    font: var(--font-normal);
+    font-size: 0.8rem;
+  }
+}
