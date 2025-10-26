@@ -27,7 +27,6 @@ function Landing() {
                 <Projects />
                 <References />
                 <ContactMe />
-
             </section>
 
         </>

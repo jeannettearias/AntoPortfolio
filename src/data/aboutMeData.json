@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Product designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "",
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "title": "UX/UI Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "",
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "title": "Design System",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "",
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "title": "Visual Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "title": "Web Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "",
+        "status": "inactive"
+    }
+]

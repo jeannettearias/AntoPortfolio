@@ -1,5 +1,11 @@
+import '../../styles/_aboutMe.scss';
+import { useState } from 'react';
+import aboutMeJson from '../../data/aboutMeData.json';
 
 function AboutMe() {
+    const [aboutMeData, setAboutMeData] = useState(aboutMeJson);
+    const [activeCards, setActiveCards] = useState(aboutMeJson.filter(card => card.status === 'active'));
+
     return (
         <>
             <section id="AboutMe" className="about-me-section">
@@ -15,13 +21,20 @@ function AboutMe() {
 
                 </section>
 
-
                 <section className="area-box">
-
+                    {activeCards.map(card => (
+                        <div key={card.id} className="cards_aboutMe">
+                            <img className="card_icon" alt="" />
+                            <label className="card_label" htmlFor="">{card.title}</label>
+                            <p className="card_description">{card.description}</p>
+                        </div>
+                    ))}
                 </section>
             </section>
         </>
     );
 }
+
+
 
 export default AboutMe;

@@ -7,7 +7,7 @@ function Hero({ heroData, Buttons }) {
 
     return (
         <>
-            <section className="hero">
+            <section id="Hero" className="hero">
                 <div className="hero__content">
                     <div className="Tag">
                         <label className="tag__label">Hello there</label>
