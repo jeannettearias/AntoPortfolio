@@ -1,4 +1,4 @@
-.about-me-section {
+.Section-skills {
   display: flex;
   padding: 156px 88px;
   align-items: center;
@@ -71,6 +71,7 @@
   border-radius: 12px;
   background: var(--Main-Primary, #057f4c);
 }
+
 .btn-me {
   color: #fff;
 
@@ -83,10 +84,12 @@
 }
 
 .area-box {
-  display: flex;
-  width: 664px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
   align-items: flex-end;
   align-content: flex-end;
+
   gap: 16px;
   flex-wrap: wrap;
 }

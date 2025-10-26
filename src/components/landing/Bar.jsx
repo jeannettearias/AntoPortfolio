@@ -4,9 +4,7 @@ function Bar() {
     return (
         <>
             <div className="bar">
-                <div className="bar__detail"></div>
                 <div className="bar-info">
-
                     <ul className='group-cards'>
                         <li className='label'>Product Designer</li>
                         <li className='label'>UI/UX Designer</li>

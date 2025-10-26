@@ -1,14 +1,13 @@
 import '../../styles/_aboutMe.scss';
 import { useState } from 'react';
-import aboutMeJson from '../../data/aboutMeData.json';
 
-function AboutMe() {
-    const [aboutMeData, setAboutMeData] = useState(aboutMeJson);
-    const [activeCards, setActiveCards] = useState(aboutMeJson.filter(card => card.status === 'active'));
+
+function AboutMe({ aboutMeData }) {
+    const [activeCards, setActiveCards] = useState(aboutMeData.filter(card => card.status === 'active'));
 
     return (
         <>
-            <section id="AboutMe" className="about-me-section">
+            <section id="AboutMe" className="Section-skills">
                 <section className='area-content'>
                     <div className="content-me">
                         <div className="Badge">Sobre mí</div>

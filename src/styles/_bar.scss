@@ -1,27 +1,24 @@
 .bar {
+  display: flex;
   width: 1440px;
-  height: 88px;
-
-  justify-content: center;
+  padding: 24px;
   align-items: center;
+  gap: 16px;
 
-  padding: var(--top-bottom, 24px) var(--left-right, 88px);
   background: var(--Main-Primary, #057f4c);
   color: var(--Neutral-01, #f5f5f5);
 }
 
 .bar-info {
+  display: flex;
   flex-flow: horizontal;
-  width: 1440px;
-  height: 88px;
-
+  align-items: center;
   gap: 16px;
 }
 
 .group-cards {
   display: flex;
   flex-direction: row;
-
   gap: 16px;
 }
 

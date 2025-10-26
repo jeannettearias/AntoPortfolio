@@ -3,7 +3,7 @@ import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 import heroData from '../../data/heroData.json';
-import { useState } from 'react';
+import aboutMeData from '../../data/aboutMeData.json';
 import AboutMe from './AboutMe';
 import Skills from '../landing/Skills';
 import Experience from '../landing/Experience';
@@ -11,24 +11,22 @@ import Projects from '../landing/Projects';
 import References from '../landing/References';
 import ContactMe from '../landing/ContactMe';
 
-function Landing() {
-    const [data, setData] = useState(heroData);
 
+function Landing() {
 
     return (
         <>
-            <Hero heroData={heroData} />
-            <Bar />
-
             <section className='landing'>
-                <AboutMe />
+                <Hero heroData={heroData} />
+                <Bar />
+
+                <AboutMe aboutMeData={aboutMeData} />
                 <Skills />
                 <Experience />
                 <Projects />
                 <References />
                 <ContactMe />
             </section>
-
         </>
     );
 }
