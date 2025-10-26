@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link"
 import '../../styles/_header.scss';
 import '../../styles/core/_variables.scss'
 
@@ -13,23 +14,23 @@ function Header() {
                 <nav className="head">
                     <div className="logo"></div>
                     <ul className="nav">
-                        <li className='selected-tab'>
-                            <Link className='menu__link' to="/Services" >Servicios</Link>
+                        <li className='tab selected-tab'>
+                            <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
                         </li>
                         <li className='tab'>
-                            <Link className='menu__link' to="/AboutMe" >Acerca de mí</Link>
+                            <HashLink smooth to="#AboutMe" className='menu__link'>Acerca de mí</HashLink>
                         </li>
                         <li className='tab'>
-                            <Link className='menu__link' to="/Skills" >Competencias</Link>
+                            <HashLink smooth to="#Skills" className='menu__link'>Competencias</HashLink>
                         </li>
                         <li className='tab'>
-                            <Link className='menu__link' to="/Experience" >Estudios y Experiencia</Link>
+                            <HashLink smooth to="#Experience" className='menu__link'>Estudios y Experiencia</HashLink>
                         </li>
                         <li className='tab'>
-                            <Link className='menu__link' to="/Projects" >Proyectos</Link>
+                            <HashLink smooth to="#Projects" className='menu__link'>Proyectos</HashLink>
                         </li>
                         <li className='tab'>
-                            <Link className='menu__link' to="/References" >Referencias</Link>
+                            <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
                         </li>
                     </ul>
                     <button className='btn-contact'>Contacto</button>

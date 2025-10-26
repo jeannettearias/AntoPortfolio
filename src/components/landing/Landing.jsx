@@ -4,6 +4,12 @@ import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 import heroData from '../../data/heroData.json';
 import { useState } from 'react';
+import AboutMe from './AboutMe';
+import Skills from '../landing/Skills';
+import Experience from '../landing/Experience';
+import Projects from '../landing/Projects';
+import References from '../landing/References';
+import ContactMe from '../landing/ContactMe';
 
 function Landing() {
     const [data, setData] = useState(heroData);
@@ -15,22 +21,13 @@ function Landing() {
             <Bar />
 
             <section className='landing'>
-                <section className='area-content'>
-                    <div className="content-me">
-                        <div className="Badge">Sobre mí</div>
-                        <p className="content-text">¿Por qué <span className="green-text">elegirme</span> para tu próximo proyecto?</p>
-                    </div>
+                <AboutMe />
+                <Skills />
+                <Experience />
+                <Projects />
+                <References />
+                <ContactMe />
 
-                    <div className="button-me">
-                        <div className='btn-me'>Háblame</div>
-                    </div>
-
-                </section>
-
-
-                <section className="area-box">
-
-                </section>
             </section>
 
         </>

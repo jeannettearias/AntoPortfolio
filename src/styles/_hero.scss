@@ -100,45 +100,44 @@
   height: 521px;
 
   background: var(--Green-01, #e2f2eb);
+}
 
-  .Detail_1 {
-    display: flex;
-    width: 304px;
-    height: 462px;
-    transform: rotate(50.694deg);
+.Detail_1 {
+  display: flex;
+  width: 304px;
+  height: 462px;
+  transform: rotate(50.694deg);
 
-    position: absolute;
-    left: -119px;
-    top: -10px;
-  }
+  position: absolute;
+  left: -119px;
+  top: -10px;
+}
+.rectangle_3 {
+  position: absolute;
+  width: 304px;
+  height: 462px;
+  border-radius: 1000px;
+  border: 1px solid var(--Neutral-03, #c3cfca);
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 2;
 
-  .rectangle_3 {
-    position: absolute;
-    width: 304px;
-    height: 462px;
-    border-radius: 1000px;
-    border: 1px solid var(--Neutral-03, #c3cfca);
-    top: 0;
-    left: 0;
-    background: transparent;
-    z-index: 2;
+  transform: rotate(50.694deg);
+}
 
-    transform: rotate(50.694deg);
-  }
+.rectangle_4 {
+  position: absolute;
+  width: 272px;
+  height: 425px;
+  border-radius: 1000px;
+  border: 1px solid var(--Neutral-03, #c3cfca);
+  top: 19px; // Adjust for best look
+  left: 16px; // Adjust for best look
+  background: transparent;
+  z-index: 3;
 
-  .rectangle_4 {
-    position: absolute;
-    width: 272px;
-    height: 425px;
-    border-radius: 1000px;
-    border: 1px solid var(--Neutral-03, #c3cfca);
-    top: 19px; // Adjust for best look
-    left: 16px; // Adjust for best look
-    background: transparent;
-    z-index: 3;
-
-    transform: rotate(50.694deg);
-  }
+  transform: rotate(50.694deg);
 }
 
 .figma__picture {

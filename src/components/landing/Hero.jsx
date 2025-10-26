@@ -26,22 +26,20 @@ function Hero({ heroData, Buttons }) {
                     </div>
                 </div>
                 <div className="hero__info">
+                    <div className="figma__picture">
+                        <img
+                            className="hero__img"
+                            src="/images/Anto__hero.png"
+                            alt=""
+                        />
+                    </div>
                     <div className="Detail_1">
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
-                        <div className="Detail_2">
-
-                            <div className="figma__picture">
-                                <img
-                                    className="hero__img"
-                                    src="/images/Anto__hero.png"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
                     </div>
+                    <div className="Detail_2"></div>
 
-                    <div className="data__sections Detail_2">
+                    <div className="data__sections">
                         <div className="data__content">
                             {heroData.map(item => (
                                 <div key={item.id} >
