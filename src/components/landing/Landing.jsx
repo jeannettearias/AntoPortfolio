@@ -13,15 +13,18 @@ function Landing() {
         <>
             <Hero heroData={heroData} />
             <Bar />
+
             <section className='landing'>
                 <section className='area-content'>
                     <div className="content-me">
                         <div className="Badge">Sobre mí</div>
-                        <p className="content-text">¿Porque elegirme para tu próximo proyecto?</p>
+                        <p className="content-text">¿Por qué <span className="green-text">elegirme</span> para tu próximo proyecto?</p>
                     </div>
+
                     <div className="button-me">
-                        <button className='btn-me'>Háblame</button>
+                        <div className='btn-me'>Háblame</div>
                     </div>
+
                 </section>
 
 
@@ -29,7 +32,6 @@ function Landing() {
 
                 </section>
             </section>
-
 
         </>
     );

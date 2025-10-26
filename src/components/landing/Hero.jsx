@@ -13,7 +13,8 @@ function Hero({ heroData, Buttons }) {
                         <label className="tag__label">Hello there</label>
                     </div>
                     <div className="hero__content__content">
-                        <h1 className="hero__title">Soy Antonia, product Designer</h1>
+                        <h1 className="hero-text">Soy <span className="hero-green-text">Antonia</span>, product Designer</h1>
+
                         <p className="hero__description">Lorem Ipsum is simply dummy text
                             of the printing and typesetting industry.</p>
                     </div>

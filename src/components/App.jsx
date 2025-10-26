@@ -12,10 +12,7 @@ function App() {
 
       <main className="body">
         <Landing />
-
-
       </main>
-
 
     </section>
   )

@@ -44,11 +44,22 @@
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
+}
 
-  .hero__title {
-    align-self: stretch;
+.hero-text {
+  align-self: stretch;
 
-    color: var(--Neutral-07, #424544);
+  color: var(--Neutral-07, #424544);
+
+  /* H1/Semibold */
+  font-family: var(--Family-Title, Montserrat);
+  font-size: var(--Size-Heading-1, 64px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  .hero-green-text {
+    color: var(--Main-Primary, #057f4c);
 
     /* H1/Semibold */
     font-family: var(--Family-Title, Montserrat);
@@ -57,19 +68,19 @@
     font-weight: 600;
     line-height: normal;
   }
+}
 
-  .hero__description {
-    align-self: stretch;
+.hero__description {
+  align-self: stretch;
 
-    color: var(--Neutral-07, #424544);
+  color: var(--Neutral-07, #424544);
 
-    /* H4/Regular */
-    font-family: var(--Family-Content, Raleway);
-    font-size: var(--Size-Heading-4, 24px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  /* H4/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Heading-4, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .group-buttons {
@@ -172,6 +183,7 @@
 
   .hero__title {
     align-self: stretch;
+
     color: var(--Main-Primary, #057f4c);
     text-align: right;
 
