@@ -4,6 +4,7 @@ import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 import heroData from '../../data/heroData.json';
 import aboutMeData from '../../data/aboutMeData.json';
+import skillsData from '../../data/skillsData.json';
 import AboutMe from './AboutMe';
 import Skills from '../landing/Skills';
 import Experience from '../landing/Experience';
@@ -21,7 +22,7 @@ function Landing() {
                 <Bar />
 
                 <AboutMe aboutMeData={aboutMeData} />
-                <Skills />
+                <Skills skillsData={skillsData} />
                 <Experience />
                 <Projects />
                 <References />
