@@ -13,35 +13,44 @@ function Skills({ skillsData }) {
                     <div className='Detail1_hero'></div>
                     <div className='Detail2_hero'></div>
                     <div className="info__hero">
+                        <div className='Data__hero'>
+                            <div className='Content1__data'>
+                                <h3 className='content1__title'>Barcelona</h3>
+                                <label className='content1__label'>España</label>
+                            </div>
+                            <div className='Content2__data'>
+                                <h3 className='content2__title'></h3>
+                                <label className='content2__label'></label>
+                            </div>
+                            <div className='Content3__data'>
+                                <h3 className='content3__title'></h3>
+                                <label className='content3__label'></label>
+                            </div>
+
+                        </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>
                             <div className="rectangle_4_info"></div>
+
+
                         </div>
                         <div className='Detail2__info'>
-                            <div className='Data__hero'>
-                                <div className='Content1__data'>
-                                    <h3 className='content1__title'>Barcelona</h3>
-                                    <label className='content1__label'>España</label>
-                                </div>
-                                <div className='Content2__data'>
-                                    <h3 className='content2__title'></h3>
-                                    <label className='content2__label'></label>
-                                </div>
-                                <div className='Content3__data'>
-                                    <h3 className='content3__title'></h3>
-                                    <label className='content3__label'></label>
-                                </div>
-                            </div>
                         </div>
+
+
                     </div>
                     <div className='Content_tag'>
                         <div className='text__tag'>
                             <div className='bag__skills'>
                                 <img className='bag__img' alt="" />
-                                <label className='bag__label'>Mis Habilidades</label>
+                                <label className='bag__label'>Sobre mí</label>
                             </div>
-
+                            <div className='Content__skills'>
+                                <h3 className='title__content'>¿Quién es <span className='title__antoniamendoza'>Antonia Mendoza?</span></h3>
+                                <p className='label__content'>Diseñadora Industrial especializada en UX/UI y metodologías ágiles, con más de 4 años de experiencia en investigación, diseño y gestión de sistemas. Combino accesibilidad, diseño atómico y métricas para crear soluciones que equilibran usuario y negocio. Manejo Figma, After Effects y modelado 3D, aplicando enfoques como Scrum, Kanban y Design Thinking.</p>
+                            </div>
                         </div>
+
                         <div className="Group-tags">
                             <ul className='group-items'>
                                 {activeSkills.map(skill => (
