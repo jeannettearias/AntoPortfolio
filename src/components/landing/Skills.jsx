@@ -26,18 +26,13 @@ function Skills({ skillsData }) {
                                 <h3 className='content3__title'></h3>
                                 <label className='content3__label'></label>
                             </div>
-
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>
                             <div className="rectangle_4_info"></div>
-
-
                         </div>
                         <div className='Detail2__info'>
                         </div>
-
-
                     </div>
                     <div className='Content_tag'>
                         <div className='text__tag'>
@@ -54,8 +49,8 @@ function Skills({ skillsData }) {
                         <div className="Group-tags">
                             <ul className='group-items'>
                                 {activeSkills.map(skill => (
-                                    <li key={skill.id} className={`group-item ${skill.status}`}>
-                                        <h3>{skill.title}</h3>
+                                    <li key={skill.id} className='item-skill'>
+                                        <h3 className='label__tag'>{skill.title}</h3>
                                     </li>
                                 ))}
                             </ul>
