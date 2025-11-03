@@ -97,8 +97,11 @@
 }
 
 .Detail_2 {
-  display: flex;
+  width: 449.489px;
   height: 521px;
+
+  position: absolute;
+  right: -87.677px;
 
   background: var(--Green-01, #e2f2eb);
 }
@@ -144,6 +147,7 @@
 .figma__picture {
   display: flex;
   width: 304px;
+
   padding-bottom: 3px;
   flex-direction: column;
   justify-content: center;
@@ -175,6 +179,7 @@
 
 .data__content {
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;

@@ -9,30 +9,30 @@ function Skills({ skillsData }) {
         <>
             <section id="Skills" className="skills-section">
                 <section className="skills__hero">
+                    <div className='Detail2__info'></div>
                     <div className='vector'></div>
                     <div className='Detail1_hero'></div>
                     <div className='Detail2_hero'></div>
                     <div className="info__hero">
                         <div className='Data__hero'>
-                            <div className='Content1__data'>
-                                <h3 className='content1__title'>Barcelona</h3>
-                                <label className='content1__label'>España</label>
+                            <div className='Content__data'>
+                                <h3 className='content__title'>Barcelona</h3>
+                                <label className='content__label'>España</label>
                             </div>
-                            <div className='Content2__data'>
-                                <h3 className='content2__title'></h3>
-                                <label className='content2__label'></label>
+                            <div className='Content__data'>
+                                <h3 className='content__title'>+64</h3>
+                                <label className='content__label'>Clientes satisfechos</label>
                             </div>
-                            <div className='Content3__data'>
-                                <h3 className='content3__title'></h3>
-                                <label className='content3__label'></label>
+                            <div className='Content__data'>
+                                <h3 className='content__title'>+30</h3>
+                                <label className='content__label'>Proyectos completados</label>
                             </div>
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>
                             <div className="rectangle_4_info"></div>
                         </div>
-                        <div className='Detail2__info'>
-                        </div>
+
                     </div>
                     <div className='Content_tag'>
                         <div className='text__tag'>
@@ -55,10 +55,11 @@ function Skills({ skillsData }) {
                                 ))}
                             </ul>
                         </div>
+                        {/* <div className='Vector1_skills'>
+                            <img src="/images/Vector 1.png" alt="" />
+                        </div> */}
                     </div>
-                    <div className='Vector1_skills'>
-                        <img src="/images/Vector 1.png" alt="" />
-                    </div>
+
                 </section>
 
             </section>

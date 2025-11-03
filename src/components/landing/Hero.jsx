@@ -56,5 +56,4 @@ function Hero({ heroData, Buttons }) {
 
 }
 
-
 export default Hero;
