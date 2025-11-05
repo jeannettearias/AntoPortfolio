@@ -1,9 +1,11 @@
 import '../../styles/_skills.scss';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 
-function Skills({ skillsData }) {
-    const [activeSkills, setActiveSkills] = useState(skillsData.filter(skill => skill.status === 'active'));
+function Skills({ skillsData, skillsChips }) {
+    const [activeSkills, setActiveSkills] = useState(skillsData.filter(skill => skill.active === true));
+    const [chipsSkills, setChipsSkills] = useState(skillsChips.filter(chip => chip.active === true));
 
     return (
         <>
@@ -15,18 +17,14 @@ function Skills({ skillsData }) {
                     <div className='Detail2_hero'></div>
                     <div className="info__hero">
                         <div className='Data__hero'>
-                            <div className='Content__data'>
-                                <h3 className='content__title'>Barcelona</h3>
-                                <label className='content__label'>España</label>
-                            </div>
-                            <div className='Content__data'>
-                                <h3 className='content__title'>+64</h3>
-                                <label className='content__label'>Clientes satisfechos</label>
-                            </div>
-                            <div className='Content__data'>
-                                <h3 className='content__title'>+30</h3>
-                                <label className='content__label'>Proyectos completados</label>
-                            </div>
+                            <ul className='Content__data'>
+                                {activeSkills.map(skill => (
+                                    <li key={skill.id}>
+                                        <p className='content__title'>{skill.title}</p>
+                                        <p className='content__description'>{skill.description}</p>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>
@@ -48,9 +46,9 @@ function Skills({ skillsData }) {
 
                         <div className="Group-tags">
                             <ul className='group-items'>
-                                {activeSkills.map(skill => (
-                                    <li key={skill.id} className='item-skill'>
-                                        <h3 className='label__tag'>{skill.title}</h3>
+                                {chipsSkills.map(chips => (
+                                    <li key={chips.id} className='item-skill'>
+                                        <h3 className='label__tag'>{chips.title}</h3>
                                     </li>
                                 ))}
                             </ul>
@@ -62,26 +60,14 @@ function Skills({ skillsData }) {
 
                 </section>
 
-            </section>
+            </section >
         </>
     );
 }
 
 export default Skills;
 
-// --- IGNORE ---
-// hero
-/// -- vector
-/// -- detail 1
-/// -- detail 2
-/// -- info
-//// ---- detail 1
-//// ---- detail 2
-//// ---- data sections
-////// -------- title
-////// -------- label
-/// -- Content+tag
-// Vector 1
-
-
-// --- IGNORE ---
+Skills.propTypes = {
+    skillsData: PropTypes.array.isRequired,
+    skillsChips: PropTypes.array.isRequired
+};

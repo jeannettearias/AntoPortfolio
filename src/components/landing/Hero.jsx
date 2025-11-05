@@ -2,6 +2,7 @@ import "../../styles/_hero.scss";
 import ProjectBtn from '../landing/buttons/ProjectBtn';
 import ContactBtn from "../landing/buttons/ContactBtn";
 import React from "react";
+import PropTypes from 'prop-types';
 
 function Hero({ heroData, Buttons }) {
 
@@ -26,18 +27,17 @@ function Hero({ heroData, Buttons }) {
                     </div>
                 </div>
                 <div className="hero__info">
-                    <div className="figma__picture">
-                        <img
-                            className="hero__img"
-                            src="/images/Anto__hero.png"
-                            alt=""
-                        />
-                    </div>
+                    <div className="Detail_2"></div>
                     <div className="Detail_1">
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
                     </div>
-                    <div className="Detail_2"></div>
+                    <div className="figma__picture">
+                        <img
+                            className="hero__img"
+                            alt=""
+                        />
+                    </div>
 
                     <div className="data__sections">
                         <div className="data__content">
@@ -57,3 +57,7 @@ function Hero({ heroData, Buttons }) {
 }
 
 export default Hero;
+
+Hero.propTypes = {
+    heroData: PropTypes.array.isRequired,
+};

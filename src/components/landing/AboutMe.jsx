@@ -1,5 +1,6 @@
 import '../../styles/_aboutMe.scss';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 
 function AboutMe({ aboutMeData }) {
@@ -34,6 +35,8 @@ function AboutMe({ aboutMeData }) {
     );
 }
 
-
-
 export default AboutMe;
+
+AboutMe.propTypes = {
+    aboutMeData: PropTypes.array.isRequired
+};  

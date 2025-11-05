@@ -107,47 +107,37 @@
 }
 
 .Detail_1 {
-  display: flex;
   width: 304px;
   height: 462px;
-  transform: rotate(50.694deg);
+  transform: rotate(50deg);
 
   position: absolute;
   left: -119px;
   top: -10px;
 }
 .rectangle_3 {
-  position: absolute;
   width: 304px;
   height: 462px;
+  transform: rotate(50.694deg);
+  flex-shrink: 0;
+
   border-radius: 1000px;
   border: 1px solid var(--Neutral-03, #c3cfca);
-  top: 0;
-  left: 0;
-  background: transparent;
-  z-index: 2;
-
-  transform: rotate(50.694deg);
 }
 
 .rectangle_4 {
-  position: absolute;
   width: 272px;
-  height: 425px;
+  height: 425.04px;
+  transform: rotate(50.694deg);
+  flex-shrink: 0;
+
   border-radius: 1000px;
   border: 1px solid var(--Neutral-03, #c3cfca);
-  top: 19px; // Adjust for best look
-  left: 16px; // Adjust for best look
-  background: transparent;
-  z-index: 3;
-
-  transform: rotate(50.694deg);
 }
 
 .figma__picture {
   display: flex;
   width: 304px;
-
   padding-bottom: 3px;
   flex-direction: column;
   justify-content: center;
@@ -162,8 +152,8 @@
   align-self: stretch;
 
   border-radius: 1000px;
-  background: url(<path-to-image>) -84.265px -37.958px / 154.117% 107.579%
-      no-repeat,
+  background: url("/images/Anto__hero.png") -84.265px -37.958px / 154.117%
+      107.579% no-repeat,
     var(--Main-Secondary, #e6ae37);
 }
 
@@ -179,38 +169,38 @@
 
 .data__content {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+
   align-items: flex-end;
   gap: 8px;
   align-self: stretch;
+}
+.hero__title {
+  align-self: stretch;
 
-  .hero__title {
-    align-self: stretch;
+  color: var(--Main-Primary, #057f4c);
+  text-align: right;
 
-    color: var(--Main-Primary, #057f4c);
-    text-align: right;
+  /* H3/Bold */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Heading-3, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
-    /* H3/Bold */
-    font-family: var(--Family-Content, Raleway);
-    font-size: var(--Size-Heading-3, 32px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+.hero__description {
+  align-self: stretch;
 
-  .hero__description {
-    align-self: stretch;
+  color: var(--Neutral-07, #424544);
+  text-align: right;
 
-    color: var(--Neutral-07, #424544);
-    text-align: right;
-
-    /* MediumText/Regular */
-    font-family: var(--Family-Content, Raleway);
-    font-size: var(--Size-Medium, 16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
