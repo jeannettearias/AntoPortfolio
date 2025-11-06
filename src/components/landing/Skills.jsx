@@ -17,14 +17,14 @@ function Skills({ skillsData, skillsChips }) {
                     <div className='Detail2_hero'></div>
                     <div className="info__hero">
                         <div className='Data__hero'>
-                            <ul className='Content__data'>
+                            <div className='Content__data'>
                                 {activeSkills.map(skill => (
-                                    <li key={skill.id} >
+                                    <div key={skill.id} >
                                         <p className='content__title'>{skill.title}</p>
                                         <p className='content__label'>{skill.description}</p>
-                                    </li>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>

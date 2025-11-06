@@ -37,7 +37,6 @@ function Hero({ heroData, Buttons }) {
                             alt=""
                         />
                     </div>
-
                     <div className="data__sections">
                         <div className="data__content">
                             {heroData.map(item => (

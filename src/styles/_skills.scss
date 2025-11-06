@@ -20,9 +20,10 @@
   display: flex;
   height: 521px;
   align-items: center;
-  position: absolute;
   gap: 94px;
   flex: 1 0 0;
+
+  position: absolute;
 }
 
 .Detail1__info {
@@ -78,22 +79,18 @@
 
 .Data__hero {
   display: flex;
-  width: 197px;
-  height: 521px;
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
-
-  color: var(--Main-Primary, #057f4c);
 }
 
 .Content__data {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-
+  align-items: center;
   gap: 8px;
   align-self: stretch;
 }
@@ -101,7 +98,7 @@
 .content__title {
   align-self: stretch;
 
-  color: var(--Main-Primary, --Main-Black);
+  color: var(--Main-Primary, #057f4c);
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
