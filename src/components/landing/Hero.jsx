@@ -26,14 +26,13 @@ function Hero({ heroData, Buttons }) {
                     </div>
                 </div>
                 <div className="hero__info">
-                    <div className="Detail_2"></div>
+
                     <div className="Detail_1">
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
                     </div>
                     <div className="figma__picture">
-                        <img
-                            className="hero__img"
+                        <img className="hero__img"
                             alt=""
                         />
                     </div>
