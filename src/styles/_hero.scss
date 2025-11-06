@@ -65,7 +65,7 @@
     font-family: var(--Family-Title, Montserrat);
     font-size: var(--Size-Heading-1, 64px);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
   }
 }
@@ -172,9 +172,10 @@
   flex-direction: column;
   justify-content: center;
   position: absolute;
-
-  align-items: flex-end;
+  width: 112px;
+  height: 84px;
   gap: 8px;
+  align-items: flex-end;
   align-self: stretch;
 }
 .hero__title {
@@ -188,19 +189,5 @@
   font-size: var(--Size-Heading-3, 32px);
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-
-.hero__description {
-  align-self: stretch;
-
-  color: var(--Neutral-07, #424544);
-  text-align: right;
-
-  /* MediumText/Regular */
-  font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Medium, 16px);
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }

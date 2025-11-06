@@ -93,6 +93,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+
   gap: 8px;
   align-self: stretch;
 }
@@ -100,7 +101,7 @@
 .content__title {
   align-self: stretch;
 
-  color: var(--Main-Primary, #057f4c);
+  color: var(--Main-Primary, --Main-Black);
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;

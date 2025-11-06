@@ -1,27 +1,26 @@
 [
     {
         "id": 1,
-        "numberData": "",
-        "textData": "Barcelona",
-        "additionalData": "España",
+        "title": "Barcelona",
+        "description": "España",
         "active": true
     },
     {
         "id": 2,
-        "numberData": "+64",
-        "textData": "Proyectos completados",
+        "title": "+64",
+        "description": "Proyectos completados",
         "active": true
     },
     {
         "id": 3,
-        "numberData": "+30",
-        "textData": "Clientes satisfechos",
+        "title": "+30",
+        "description": "Clientes satisfechos",
         "active": true
     },
     {
         "id": 4,
-        "numberData": "5",
-        "textData": "Años de experiencia",
+        "title": "5",
+        "description": "Años de experiencia",
         "active": false
     }
 ]

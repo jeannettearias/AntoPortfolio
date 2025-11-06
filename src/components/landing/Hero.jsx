@@ -43,7 +43,7 @@ function Hero({ heroData, Buttons }) {
                         <div className="data__content">
                             {heroData.map(item => (
                                 <div key={item.id} >
-                                    <h4 className="hero__title">{item.numbData}</h4>
+                                    <p className="hero__title">{item.numbData}</p>
                                     <p className="hero__description">{item.description}</p>
                                 </div>
                             ))}

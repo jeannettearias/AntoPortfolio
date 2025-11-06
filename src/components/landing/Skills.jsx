@@ -19,9 +19,9 @@ function Skills({ skillsData, skillsChips }) {
                         <div className='Data__hero'>
                             <ul className='Content__data'>
                                 {activeSkills.map(skill => (
-                                    <li key={skill.id}>
+                                    <li key={skill.id} >
                                         <p className='content__title'>{skill.title}</p>
-                                        <p className='content__description'>{skill.description}</p>
+                                        <p className='content__label'>{skill.description}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -53,13 +53,8 @@ function Skills({ skillsData, skillsChips }) {
                                 ))}
                             </ul>
                         </div>
-                        {/* <div className='Vector1_skills'>
-                            <img src="/images/Vector 1.png" alt="" />
-                        </div> */}
                     </div>
-
                 </section>
-
             </section >
         </>
     );
