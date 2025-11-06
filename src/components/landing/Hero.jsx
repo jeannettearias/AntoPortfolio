@@ -15,7 +15,6 @@ function Hero({ heroData, Buttons }) {
                     </div>
                     <div className="hero__content__content">
                         <h1 className="hero-text">Soy <span className="hero-green-text">Antonia</span>, product Designer</h1>
-
                         <p className="hero__description">Lorem Ipsum is simply dummy text
                             of the printing and typesetting industry.</p>
                     </div>
@@ -44,7 +43,7 @@ function Hero({ heroData, Buttons }) {
                             {heroData.map(item => (
                                 <div key={item.id} >
                                     <p className="hero__title">{item.numbData}</p>
-                                    <p className="hero__description">{item.description}</p>
+                                    <p className="hero__info__description">{item.description}</p>
                                 </div>
                             ))}
                         </div>
