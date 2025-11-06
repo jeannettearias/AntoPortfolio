@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Figma",
+        "description": "Description for Skill 1",
+        "active": true
+    },
+    {
+        "id": 2,
+        "title": "Autonomía",
+        "description": "Description for Skill 2",
+        "active": true
+    },
+    {
+        "id": 3,
+        "title": "Trabajo en equipo",
+        "description": "Description for Skill 3",
+        "active": false
+    },
+    {
+        "id": 4,
+        "title": "Metodologías ágiles",
+        "description": "Description for Skill 4",
+        "active": true
+    },
+    {
+        "id": 5,
+        "title": "Liderazgo",
+        "description": "Description for Skill 5",
+        "active": false
+    },
+    {
+        "id": 6,
+        "title": "Diseño UX/UI",
+        "description": "Description for Skill 6",
+        "active": false
+    },
+    {
+        "id": 7,
+        "title": "Adobe XD",
+        "description": "Description for Skill 7",
+        "active": false
+    }
+]
