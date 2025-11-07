@@ -44,13 +44,13 @@ function Skills({ skillsData, skillsChips }) {
                         </div>
 
                         <div className="Group-tags">
-                            <ul className='group-items'>
+                            <div className='group-items'>
                                 {chipsSkills.map(chips => (
-                                    <li key={chips.id} className='Tag'>
+                                    <div key={chips.id} className='Tag'>
                                         <label className='label__tag'>{chips.title}</label>
-                                    </li>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
