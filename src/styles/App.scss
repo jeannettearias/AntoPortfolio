@@ -19,15 +19,11 @@ main {
 }
 
 .Home {
-  width: 1440px;
-  height: 7789px;
-
   background: var(--Main-White, #fff);
 }
 
 .body {
   display: flex;
-  width: 1440px;
   flex-direction: column;
   position: absolute;
   align-items: flex-start;

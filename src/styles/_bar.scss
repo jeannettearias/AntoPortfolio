@@ -1,6 +1,5 @@
 .bar {
   display: flex;
-  width: 1440px;
   padding: 24px;
   align-items: center;
   gap: 16px;
@@ -11,7 +10,7 @@
 
 .bar-info {
   display: flex;
-  flex-flow: horizontal;
+  padding: 24px 88px;
   align-items: center;
   gap: 16px;
 }
