@@ -29,7 +29,9 @@ function Skills({ skillsData, skillsChips }) {
                             <div className="rectangle_3_info"></div>
                             <div className="rectangle_4_info"></div>
                         </div>
-
+                        <div className='Vector_1'>
+                            <img src="/images/Vector_1.png" alt="" />
+                        </div>
                     </div>
                     <div className='Content_tag'>
                         <div className='text__tag'>
@@ -53,6 +55,7 @@ function Skills({ skillsData, skillsChips }) {
                             </div>
                         </div>
                     </div>
+
                 </section>
             </section >
         </>
