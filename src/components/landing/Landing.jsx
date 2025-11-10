@@ -19,7 +19,7 @@ function Landing() {
         <>
             <section className='landing'>
                 <Hero heroData={heroData} />
-                <Bar />
+                <Bar aboutMeData={aboutMeData} />
 
                 <AboutMe aboutMeData={aboutMeData} />
                 <Skills skillsData={skillsData} skillsChips={skillsChips} />
