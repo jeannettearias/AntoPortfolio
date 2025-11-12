@@ -7,15 +7,16 @@ function App() {
 
 
   return (
-    <section className="Home">
-      <Header />
+    <>
+      <section className="Home">
+        <Header />
 
-      <main className="body">
+      </section>
+      <section className="body">
         <Landing />
 
-      </main>
-
-    </section>
+      </section>
+    </>
   )
 }
 
