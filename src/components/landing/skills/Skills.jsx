@@ -1,6 +1,10 @@
-import '../../styles/_skills.scss';
+import '../../../styles/_skills.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import SkillsTools from './SkillsTools';
+import SkillsStudyExperience from './SkillsStudyExperience';
+import SkillsProjectsContactUs from './SkillsProjectsContactUs';
+import SkillsTestimony from './SkillsTestimony';
 
 
 function Skills({ skillsData, skillsChips }) {
@@ -56,6 +60,10 @@ function Skills({ skillsData, skillsChips }) {
                     </div>
 
                 </section>
+                <SkillsTools />
+                <SkillsStudyExperience />
+                <SkillsProjectsContactUs />
+                <SkillsTestimony />
             </section >
         </>
     );

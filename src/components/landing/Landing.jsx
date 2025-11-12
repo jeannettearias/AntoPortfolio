@@ -7,7 +7,7 @@ import aboutMeData from '../../data/aboutMeData.json';
 import skillsData from '../../data/skillsData.json';
 import skillsChips from '../../data/skillsChips.json';
 import AboutMe from './AboutMe';
-import Skills from '../landing/Skills';
+import Skills from './skills/Skills';
 import Experience from '../landing/Experience';
 import Projects from '../landing/Projects';
 import References from '../landing/References';
@@ -22,7 +22,9 @@ function Landing() {
                 <Bar aboutMeData={aboutMeData} />
 
                 <AboutMe aboutMeData={aboutMeData} />
-                <Skills skillsData={skillsData} skillsChips={skillsChips} />
+                <Skills skillsData={skillsData}
+                    skillsChips={skillsChips} />
+
                 <Experience />
                 <Projects />
                 <References />

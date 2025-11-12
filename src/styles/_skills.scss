@@ -262,3 +262,12 @@
   font-weight: 500;
   line-height: normal;
 }
+
+.Section-tools {
+  display: flex;
+  padding: var(--base-px-24, 104px) var(--base-px-19, 88px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--base-px-11, 40px);
+  align-self: stretch;
+}
