@@ -23,7 +23,6 @@ function Skills({ skillsData, skillsChips }) {
                                     <label className='content__label'>{skill.description}</label>
                                 </div>
                             ))}
-
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>

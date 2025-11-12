@@ -9,11 +9,33 @@
 .skills__hero {
   display: flex;
   padding: 88px;
+  height: 510px;
+  width: 1440px;
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
 
   background: var(--Main-Primary, #057f4c);
+}
+
+.Detail1_hero {
+  width: 304px;
+  height: 462px;
+  transform: rotate(50.694deg);
+
+  position: absolute;
+  left: 7.426px;
+  bottom: -58.888px;
+}
+
+.Detail2_hero {
+  width: 304px;
+  height: 462px;
+  transform: rotate(30.174deg);
+
+  position: absolute;
+  left: -169.492px;
+  top: -215.1px;
 }
 
 .info__hero {
@@ -79,7 +101,8 @@
 
 .Data__hero {
   display: flex;
-
+  width: 197px;
+  height: 521px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -127,11 +150,10 @@
 }
 
 .Vector_1 {
-  width: 452.274px;
+  width: 452px;
   height: 677px;
 
-  position: absolute;
-  left: 282.454px;
+  left: 282px;
   bottom: 0;
 }
 
