@@ -1,9 +1,9 @@
-import '../../styles/_aboutMe.scss';
+import '../../styles/_skills.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 
-function AboutMe({ aboutMeData }) {
+function Skills({ aboutMeData }) {
     const [activeCards, setActiveCards] = useState(aboutMeData.filter(card => card.status === 'active'));
 
     return (
@@ -35,8 +35,8 @@ function AboutMe({ aboutMeData }) {
     );
 }
 
-export default AboutMe;
+export default Skills;
 
-AboutMe.propTypes = {
+Skills.propTypes = {
     aboutMeData: PropTypes.array.isRequired
 };  

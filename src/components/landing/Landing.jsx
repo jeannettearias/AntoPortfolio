@@ -6,12 +6,13 @@ import heroData from '../../data/heroData.json';
 import aboutMeData from '../../data/aboutMeData.json';
 import skillsData from '../../data/skillsData.json';
 import skillsChips from '../../data/skillsChips.json';
-import AboutMe from './AboutMe';
-import Skills from './skills/Skills';
-import Experience from '../landing/Experience';
-import Projects from '../landing/Projects';
-import References from '../landing/References';
-import ContactMe from '../landing/ContactMe';
+import Skills from './Skills';
+import GroupHero from './Group-sections/GroupHero';
+import GroupTools from './Group-sections/GroupTools';
+import GroupExperience from './Group-sections/GroupExperience';
+import GroupContactUs from './Group-sections/GroupContactUs';
+import GroupTestimony from './Group-sections/GroupTestimony';
+
 
 function Landing() {
 
@@ -21,14 +22,14 @@ function Landing() {
                 <Hero heroData={heroData} />
                 <Bar aboutMeData={aboutMeData} />
 
-                <AboutMe aboutMeData={aboutMeData} />
-                <Skills skillsData={skillsData}
+                <Skills aboutMeData={aboutMeData} />
+                <GroupHero skillsData={skillsData}
                     skillsChips={skillsChips} />
 
-                <Experience />
-                <Projects />
-                <References />
-                <ContactMe />
+                <GroupTools />
+                <GroupExperience />
+                <GroupContactUs />
+                <GroupTestimony />
             </section>
         </>
     );

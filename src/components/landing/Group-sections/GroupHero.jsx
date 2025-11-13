@@ -1,13 +1,10 @@
-import '../../../styles/_skills.scss';
+import '../../../styles/_groupSections.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import SkillsTools from './SkillsTools';
-import SkillsStudyExperience from './SkillsStudyExperience';
-import SkillsProjectsContactUs from './SkillsProjectsContactUs';
-import SkillsTestimony from './SkillsTestimony';
 
 
-function Skills({ skillsData, skillsChips }) {
+
+function GroupHero({ skillsData, skillsChips }) {
     const [activeSkills, setActiveSkills] = useState(skillsData.filter(skill => skill.active === true));
     const [chipsSkills, setChipsSkills] = useState(skillsChips.filter(chip => chip.active === true));
 
@@ -60,18 +57,15 @@ function Skills({ skillsData, skillsChips }) {
                     </div>
 
                 </section>
-                <SkillsTools />
-                <SkillsStudyExperience />
-                <SkillsProjectsContactUs />
-                <SkillsTestimony />
+
             </section >
         </>
     );
 }
 
-export default Skills;
+export default GroupHero;
 
-Skills.propTypes = {
+GroupHero.propTypes = {
     skillsData: PropTypes.array.isRequired,
     skillsChips: PropTypes.array.isRequired
 };
