@@ -1,4 +1,8 @@
-function SkillsTools() {
+import '../../../styles/_groupSections.scss';
+import React from 'react';
+
+
+function GroupTools() {
     return (
         <>
             <section className='Section-tools'>
@@ -47,4 +51,4 @@ function SkillsTools() {
     );
 }
 
-export default SkillsTools;
+export default GroupTools;

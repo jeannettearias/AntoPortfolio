@@ -1,4 +1,7 @@
-function ContactMe() {
+import '../../../styles/_groupSections.scss';
+
+
+function GroupContactUs() {
     return (
         <>
             <section id="ContactMe" className="contact-me-section">
@@ -9,4 +12,4 @@ function ContactMe() {
     );
 }
 
-export default ContactMe;
+export default GroupContactUs;

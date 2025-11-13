@@ -1,4 +1,6 @@
-function Experience() {
+import '../../../styles/_groupSections.scss';
+
+function GroupExperience() {
     return (
         <>
             <section id="Experience" className="experience-section">
@@ -8,4 +10,4 @@ function Experience() {
     );
 }
 
-export default Experience;
+export default GroupExperience;

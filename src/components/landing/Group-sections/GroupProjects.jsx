@@ -1,4 +1,6 @@
-function Projects() {
+import '../../../styles/_groupSections.scss';
+
+function GroupProjects() {
     return (
         <>
             <section id="Projects" className="projects-section">
@@ -8,4 +10,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default GroupProjects;
