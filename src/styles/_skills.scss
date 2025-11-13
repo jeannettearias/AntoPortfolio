@@ -320,7 +320,7 @@
   gap: var(--base-px-11, 40px);
 }
 
-.item-group-info {
+.item-label {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,4 +335,14 @@
   background: url("images/icons/figma-Icon.svg") lightgray 50% / contain
       no-repeat,
     var(--Main-Background_Alt, #fcf5e4);
+}
+
+.label-item {
+  color: var(--Main-Text, #272827);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
