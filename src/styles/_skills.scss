@@ -304,6 +304,35 @@
   line-height: normal;
 }
 
+.Content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-01, 4px);
+  align-self: stretch;
+}
+
+.title-text {
+  align-self: stretch;
+
+  color: var(--Main-Text, #272827);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.span_title_text {
+  color: var(--Main-Secondary, #e6ae37);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .Group-tag {
   display: flex;
   align-items: flex-start;

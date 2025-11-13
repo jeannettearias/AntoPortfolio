@@ -8,7 +8,7 @@ function SkillsTools() {
                         <label className="label-badge">Sobre mi</label>
                     </div>
                     <div className="Content-text">
-                        <title className="title-text">Las herramientas detrás de mis diseños</title>
+                        <h1 className="title-text">Las herramientas detrás de mis  <span className="span_title_text">diseños</span></h1>
                     </div>
                     <div className="Group-tag"></div>
                 </div>
