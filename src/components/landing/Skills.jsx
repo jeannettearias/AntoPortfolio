@@ -3,8 +3,8 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 
-function Skills({ aboutMeData }) {
-    const [activeCards, setActiveCards] = useState(aboutMeData.filter(card => card.status === 'active'));
+function Skills({ SkillsData }) {
+    const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.status === 'active'));
 
     return (
         <>
@@ -38,5 +38,5 @@ function Skills({ aboutMeData }) {
 export default Skills;
 
 Skills.propTypes = {
-    aboutMeData: PropTypes.array.isRequired
+    SkillsData: PropTypes.array.isRequired
 };  
