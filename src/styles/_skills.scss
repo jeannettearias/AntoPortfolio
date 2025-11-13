@@ -262,6 +262,9 @@
   font-weight: 500;
   line-height: normal;
 }
+////////////////////////////////////////////////////////
+/// Skills Tools Section Styles
+/// //////////////////////////////////////
 
 .Section-tools {
   display: flex;
@@ -270,4 +273,66 @@
   align-items: center;
   gap: var(--base-px-11, 40px);
   align-self: stretch;
+}
+
+.text-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.Badge-text {
+  display: flex;
+  padding: var(--base-px-02, 8px);
+  align-items: center;
+  gap: var(--base-px-01, 4px);
+
+  border-radius: 10000px;
+  background: var(--Orange-01, #fcf5e4);
+}
+
+.label-badge {
+  color: var(--Orange-06, #bb8513);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Group-tag {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.Group-info-tools {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--base-px-11, 40px);
+}
+
+.item-group-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--base-px-04, 16px);
+}
+
+.img-item {
+  width: 128px;
+  height: 128px;
+
+  border-radius: 128px;
+  background: url("images/icons/figma-Icon.svg") lightgray 50% / contain
+      no-repeat,
+    var(--Main-Background_Alt, #fcf5e4);
 }
