@@ -9,8 +9,8 @@ function Header() {
 
     return (
         <>
+            <section className="background"></section>
             <section className='section-head'>
-                <div className="background"></div>
                 <nav className="head">
                     <div className="logo"></div>
                     <ul className="nav">
@@ -36,6 +36,7 @@ function Header() {
                     <button className='btn-contact'>Contacto</button>
                 </nav>
             </section>
+
         </>
     );
 }

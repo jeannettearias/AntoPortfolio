@@ -1,6 +1,10 @@
-import '../../styles/_skills.scss';
+import '../../../styles/_skills.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import SkillsTools from './SkillsTools';
+import SkillsStudyExperience from './SkillsStudyExperience';
+import SkillsProjectsContactUs from './SkillsProjectsContactUs';
+import SkillsTestimony from './SkillsTestimony';
 
 
 function Skills({ skillsData, skillsChips }) {
@@ -17,20 +21,20 @@ function Skills({ skillsData, skillsChips }) {
                     <div className='Detail2_hero'></div>
                     <div className="info__hero">
                         <div className='Data__hero'>
-                            <div className='Content__data'>
-                                {activeSkills.map(skill => (
-                                    <div key={skill.id} >
-                                        <p className='content__title'>{skill.title}</p>
-                                        <p className='content__label'>{skill.description}</p>
-                                    </div>
-                                ))}
-                            </div>
+                            {activeSkills.map(skill => (
+                                <div key={skill.id} className='Content__data'>
+                                    <h3 className='content__title'>{skill.title}</h3>
+                                    <label className='content__label'>{skill.description}</label>
+                                </div>
+                            ))}
                         </div>
                         <div className='Detail1__info'>
                             <div className="rectangle_3_info"></div>
                             <div className="rectangle_4_info"></div>
                         </div>
-
+                        <div className='Vector_1'>
+                            <img src="/images/Vector_1.png" alt="" />
+                        </div>
                     </div>
                     <div className='Content_tag'>
                         <div className='text__tag'>
@@ -45,16 +49,21 @@ function Skills({ skillsData, skillsChips }) {
                         </div>
 
                         <div className="Group-tags">
-                            <ul className='group-items'>
+                            <div className='group-items'>
                                 {chipsSkills.map(chips => (
-                                    <li key={chips.id} className='item-skill'>
-                                        <h3 className='label__tag'>{chips.title}</h3>
-                                    </li>
+                                    <div key={chips.id} className='Tag'>
+                                        <label className='label__tag'>{chips.title}</label>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                     </div>
+
                 </section>
+                <SkillsTools />
+                <SkillsStudyExperience />
+                <SkillsProjectsContactUs />
+                <SkillsTestimony />
             </section >
         </>
     );
