@@ -17,9 +17,22 @@ function GroupExperience() {
                         <label className='label__exp'>Educación</label>
                     </div>
                     <div className='divider'></div>
+                    <div className='item__exp'>
+                        <label className='label__item'>Octubre 2024 — Presente</label>
+                    </div>
+                    <div className='item__exp'></div>
+                    <div className='item__exp'></div>
                 </div>
                 <div className='card__2'>
-                    <div className='head-exp'></div>
+                    <div className='head-exp'>
+                        <img className="icon__exp" alt="" />
+                        <label className='label__exp'>Experiencia laboral</label>
+                    </div>
+                    <div className='divider'></div>
+                    <div className='item__exp'></div>
+                    <div className='Frame__15'></div>
+                    <div className='item__exp'></div>
+                    <div className='item__exp'></div>
                 </div>
             </div>
         </section>
