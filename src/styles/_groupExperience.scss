@@ -14,26 +14,27 @@
   align-items: center;
   gap: 8px;
   align-self: stretch;
-}
 
-.Badge {
-  display: flex;
-  padding: var(--base-px-02, 8px);
-  align-items: center;
-  gap: var(--base-px-01, 4px);
+  .Badge {
+    display: flex;
+    padding: var(--base-px-02, 8px);
+    align-items: center;
+    gap: var(--base-px-01, 4px);
 
-  border-radius: 10000px;
-  background: var(--Orange-01, #fcf5e4);
-}
-.Badge-text {
-  color: var(--Orange-06, #bb8513);
+    border-radius: 10000px;
+    background: var(--Orange-01, #fcf5e4);
+  }
 
-  /* MediumText/Regular */
-  font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Medium, 16px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  .badge__label {
+    color: var(--Orange-06, #bb8513);
+
+    /* MediumText/Regular */
+    font-family: var(--Family-Content, Raleway);
+    font-size: var(--Size-Medium, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
 .content-text {
@@ -99,4 +100,21 @@
 
   border-radius: 3076.923px;
   background: var(--Main-Secondary, #e6ae37);
+}
+
+.label__exp {
+  color: var(--Neutral-07, #424544);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.divider {
+  height: 0;
+  align-self: stretch;
+
+  stroke-width: 1px;
+  stroke: var(--Neutral-03, #c3cfca);
 }
