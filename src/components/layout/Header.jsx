@@ -18,13 +18,13 @@ function Header() {
                             <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
                         </li>
                         <li className='tab'>
-                            <HashLink smooth to="#AboutMe" className='menu__link'>Acerca de mí</HashLink>
+                            <HashLink smooth to="#Skills" className='menu__link'>Acerca de mí</HashLink>
                         </li>
                         <li className='tab'>
-                            <HashLink smooth to="#Skills" className='menu__link'>Competencias</HashLink>
+                            <HashLink smooth to="#GroupHero" className='menu__link'>Competencias</HashLink>
                         </li>
                         <li className='tab'>
-                            <HashLink smooth to="#Experience" className='menu__link'>Estudios y Experiencia</HashLink>
+                            <HashLink smooth to="#GroupExperience" className='menu__link'>Estudios y Experiencia</HashLink>
                         </li>
                         <li className='tab'>
                             <HashLink smooth to="#Projects" className='menu__link'>Proyectos</HashLink>

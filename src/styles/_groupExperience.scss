@@ -1,0 +1,102 @@
+.experience-section {
+  display: flex;
+  height: 964px;
+  padding: var(--base-px-24, 104px) 88px var(--base-px-00, 0) 88px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.Content-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.Badge {
+  display: flex;
+  padding: var(--base-px-02, 8px);
+  align-items: center;
+  gap: var(--base-px-01, 4px);
+
+  border-radius: 10000px;
+  background: var(--Orange-01, #fcf5e4);
+}
+.Badge-text {
+  color: var(--Orange-06, #bb8513);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-text {
+  color: var(--Neutral-07, #424544);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 68px; /* 154.545% */
+}
+.green-text {
+  color: var(--Main-Primary, #057f4c);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.group-exp-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--base-px-08, 28px);
+  align-self: stretch;
+}
+
+.card__1 {
+  display: flex;
+  padding: var(--base-px-11, 40px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-07, 24px);
+  flex: 1 0 0;
+
+  border-radius: var(--base-px-06, 20px);
+  background: var(--Main-Background_Alt, #f5f5f5);
+}
+
+.card__2 {
+  display: flex;
+  height: 562px;
+  padding: var(--base-px-11, 40px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-07, 24px);
+  flex: 1 0 0;
+
+  border-radius: var(--base-px-06, 20px);
+  background: var(--Main-Background_Alt, #f5f5f5);
+}
+
+.head-exp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.icon__exp {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+
+  border-radius: 3076.923px;
+  background: var(--Main-Secondary, #e6ae37);
+}

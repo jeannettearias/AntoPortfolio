@@ -10,7 +10,7 @@ function GroupHero({ GroupHeroData, GroupHeroChips }) {
 
     return (
         <>
-            <section id="Skills" className="skills-section">
+            <section id="GroupHero" className="skills-section">
                 <section className="skills__hero">
                     <div className='Detail2__info'></div>
                     <div className='vector'></div>

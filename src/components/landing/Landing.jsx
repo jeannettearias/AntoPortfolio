@@ -23,13 +23,17 @@ function Landing() {
                 <Bar SkillsData={SkillsData} />
 
                 <Skills SkillsData={SkillsData} />
-                <GroupHero GroupHeroData={GroupHeroData}
-                    GroupHeroChips={GroupHeroChips} />
 
-                <GroupTools />
-                <GroupExperience />
-                <GroupContactUs />
-                <GroupTestimony />
+                <section className='group-sections'>
+                    <GroupHero GroupHeroData={GroupHeroData}
+                        GroupHeroChips={GroupHeroChips} />
+
+                    <GroupTools />
+                    <GroupExperience />
+                    <GroupContactUs />
+                    <GroupTestimony />
+
+                </section>
             </section>
         </>
     );
