@@ -1,26 +1,37 @@
 [
     {
         "id": 1,
-        "title": "Barcelona",
-        "description": "España",
-        "active": true
+        "title": "Product designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/icons/Bullet.svg",
+        "status": "active"
     },
     {
         "id": 2,
-        "title": "+64",
-        "description": "Proyectos completados",
-        "active": true
+        "title": "UX/UI Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/icons/Bullet.svg",
+        "status": "active"
     },
     {
         "id": 3,
-        "title": "+30",
-        "description": "Clientes satisfechos",
-        "active": true
+        "title": "Visual Designer",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/icons/Bullet.svg",
+        "status": "active"
     },
     {
         "id": 4,
-        "title": "5",
-        "description": "Años de experiencia",
-        "active": false
+        "title": "Design System",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/icons/Bullet.svg",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "title": "UX Research",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/icons/Bullet.svg",
+        "status": "inactive"
     }
 ]

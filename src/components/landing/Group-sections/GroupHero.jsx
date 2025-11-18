@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 
 
-function GroupHero({ skillsData, skillsChips }) {
-    const [activeSkills, setActiveSkills] = useState(skillsData.filter(skill => skill.active === true));
-    const [chipsSkills, setChipsSkills] = useState(skillsChips.filter(chip => chip.active === true));
+function GroupHero({ GroupHeroData, GroupHeroChips }) {
+    const [activeSkills, setActiveSkills] = useState(GroupHeroData.filter(skill => skill.active === true));
+    const [chipsSkills, setChipsSkills] = useState(GroupHeroChips.filter(chip => chip.active === true));
 
     return (
         <>
-            <section id="Skills" className="skills-section">
+            <section id="GroupHero" className="skills-section">
                 <section className="skills__hero">
                     <div className='Detail2__info'></div>
                     <div className='vector'></div>
@@ -66,6 +66,6 @@ function GroupHero({ skillsData, skillsChips }) {
 export default GroupHero;
 
 GroupHero.propTypes = {
-    skillsData: PropTypes.array.isRequired,
-    skillsChips: PropTypes.array.isRequired
+    GroupHeroData: PropTypes.array.isRequired,
+    GroupHeroChips: PropTypes.array.isRequired
 };

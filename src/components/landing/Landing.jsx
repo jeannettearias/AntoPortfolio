@@ -3,9 +3,9 @@ import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 import heroData from '../../data/heroData.json';
-import aboutMeData from '../../data/aboutMeData.json';
-import skillsData from '../../data/skillsData.json';
-import skillsChips from '../../data/skillsChips.json';
+import SkillsData from '../../data/SkillsData.json';
+import GroupHeroData from '../../data/GroupHeroData.json';
+import GroupHeroChips from '../../data/GroupHeroChips.json';
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
 import GroupTools from './Group-sections/GroupTools';
@@ -20,16 +20,20 @@ function Landing() {
         <>
             <section className='landing'>
                 <Hero heroData={heroData} />
-                <Bar aboutMeData={aboutMeData} />
+                <Bar SkillsData={SkillsData} />
 
-                <Skills aboutMeData={aboutMeData} />
-                <GroupHero skillsData={skillsData}
-                    skillsChips={skillsChips} />
+                <Skills SkillsData={SkillsData} />
 
-                <GroupTools />
-                <GroupExperience />
-                <GroupContactUs />
-                <GroupTestimony />
+                <section className='group-sections'>
+                    <GroupHero GroupHeroData={GroupHeroData}
+                        GroupHeroChips={GroupHeroChips} />
+
+                    <GroupTools />
+                    <GroupExperience />
+                    <GroupContactUs />
+                    <GroupTestimony />
+
+                </section>
             </section>
         </>
     );
