@@ -2,8 +2,6 @@ import '../../../styles/_groupSections.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-
-
 function GroupHero({ GroupHeroData, GroupHeroChips }) {
     const [activeSkills, setActiveSkills] = useState(GroupHeroData.filter(skill => skill.active === true));
     const [chipsSkills, setChipsSkills] = useState(GroupHeroChips.filter(chip => chip.active === true));

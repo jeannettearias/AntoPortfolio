@@ -1,6 +1,12 @@
+import { use, useState } from 'react';
 import '../../../styles/_groupExperience.scss';
 
-function GroupExperience() {
+function GroupExperience({ ExpData, StudyData }) {
+
+    const [exp, setExp] = useState(ExpData.filter(experience => experience.active === true));
+    const [study, setStudy] = useState(StudyData.filter(education => education.active === true));
+
+
     return (
         <section id="GroupExperience" className="experience-section">
             <div className='Content-exp'>

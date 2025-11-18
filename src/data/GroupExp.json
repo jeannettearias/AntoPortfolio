@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "date": "Jun 2021 - Nov 2021",
+        "jobtitle": "UX/UI Designer",
+        "company": "GeoVictoria",
+        "modality": "Onsite",
+        "description": "En mi rol como UX/UI Designer, Rediseñe una plataforma web privada dedicada al soporte de Recursos Humanos con un enfoque en el control de asistencia. Me enfrenté a diversos desafíos relacionados con la experiencia del usuario y, a pesar de ello, logramos implementar principios accesibles para satisfacer las necesidades de una amplia base de usuarios. Además, identificamos y aprovechamos diversas oportunidades de mejora en la plataforma para optimizar su funcionalidad y usabilidad.",
+        "active": false
+    },
+    {
+        "id": 2,
+        "date": "Mar 2021 — Sep 2021",
+        "jobtitle": "Frontend Developer",
+        "company": "Tech Solutions Inc.",
+        "description": "Developed and maintained web applications using React, ensuring responsive design and optimal user experience",
+        "active": false
+    },
+    {
+        "id": 3,
+        "date": "Nov 2021 - Sep 2022",
+        "jobtitle": "UI Designer at Banco BCI",
+        "company": "Leytonmedia",
+        "modality": "Hybrid",
+        "description": "Como UI Designer, rediseñe el sitio WEB privado del Banco Bci en Chile, centrándome especialmente en el flujo de Pago de Tarjeta de Crédito. Utilicé el sistema de diseño interno del banco para desarrollar una propuesta que fue sometida a pruebas, iteraciones y posteriormente se realizó el handoff al equipo de desarrollo para la maquetación e implementación. Colaboré estrechamente con un equipo multidisciplinario, aplicando metodologías ágiles para garantizar una ejecución eficiente del proyecto.",
+        "active": false
+    },
+    {
+        "id": 4,
+        "date": "Jul 2023 - Mar 2024",
+        "jobtitle": "UX/UI Designer",
+        "company": "2Brains",
+        "modality": "Remote",
+        "description": "Como consultora UX/UI, mi labor se centra en perfeccionar la experiencia del usuario y el diseño de interfaz en productos digitales. Investigo a fondo las necesidades y expectativas de los usuarios, diseñando interfaces visualmente atractivas y coherentes. Estructuro la información de manera lógica, desarrollando prototipos interactivos para pruebas y evaluaciones. Mi enfoque incluye garantizar la accesibilidad para todos los usuarios y llevar a cabo una optimización continua basada en retroalimentación y pruebas de usabilidad. Mi objetivo principal fue crear productos digitales que sean no solo visualmente atractivos, sino también altamente funcionales y centrados en las necesidades del usuario combinadas con negocio.",
+        "active": true
+    },
+    {
+        "id": 5,
+        "date": "Mar 2024 — Oct 2024",
+        "jobtitle": "Visual Designer Trainee en Nacar Design, Barcelona",
+        "company": "Nacar Design",
+        "modality": "Hybrid",
+        "description": "Sector Tecnología de la Información. Responsabilidades claves con el Cliente HP Rediseño del panel de control de impresoras IPS. Aseguramos el presupuesto para actualizar los paneles de impresoras con el nuevo sistema de diseño. Reorganización, categorización, limpieza y mantenimiento de la biblioteca de elementos gráficos.",
+        "active": true
+    },
+    {
+        "id": 6,
+        "date": "Oct 2024 — Presente",
+        "jobtitle": "Product Designer en Susta Pro, Barcelona",
+        "company": "SUSTA IN",
+        "modality": "Remote",
+        "description": "Consultoría. Encargada del diseño, gestión y organización de múltiples proyectos en distintas fases, con un enfoque centrado en la definición, desarrollo y optimización del producto.",
+        "active": true
+    }
+]
