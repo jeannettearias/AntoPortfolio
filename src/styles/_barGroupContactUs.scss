@@ -1,26 +1,17 @@
-.Bar_contactUs {
+.contact-us-section {
   display: flex;
-  height: 141px;
-  align-items: center;
-
-  position: absolute;
-  top: -44px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 }
-.contact-me-section {
+
+.Contact-Us {
   display: flex;
   width: 1440px;
   height: 900px;
   padding: 200px 175px;
   align-items: flex-end;
   gap: var(--base-px-15, 56px);
-
-  background: var(--Main-Primary, #057f4c);
-}
-
-.Detail_contactUs {
-  width: 1456.664px;
-  height: 89.018px;
-  transform: rotate(-2.035deg);
 
   background: var(--Main-Primary, #057f4c);
 }

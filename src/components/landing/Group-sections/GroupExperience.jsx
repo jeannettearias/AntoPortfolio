@@ -1,4 +1,5 @@
 import { use, useState } from 'react';
+import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
 
 function GroupExperience({ ExpData, StudyData }) {
@@ -7,7 +8,9 @@ function GroupExperience({ ExpData, StudyData }) {
     const [activeExp, setActiveExp] = useState(ExpData.filter(experience => experience.active === true));
 
     return (
+
         <section id="GroupExperience" className="experience-section">
+
             <div className='Content-exp'>
                 <div className='Badge'>
                     <img className="badge__tag" src="" alt="" />
@@ -51,8 +54,15 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                 </div>
             </div>
+
         </section>
+
     );
 }
 
 export default GroupExperience;
+
+GroupExperience.popTypes = {
+    ExpData: PropTypes.array.isRequired,
+    StudyData: PropTypes.array.isRequired,
+};

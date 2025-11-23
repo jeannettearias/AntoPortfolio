@@ -1,0 +1,23 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Bar_contactUs {
+  display: flex;
+  height: 141px;
+  align-items: center;
+
+  position: absolute;
+  top: -44px;
+}
+
+.Detail_contactUs {
+  width: 1456px;
+  height: 89px;
+  transform: rotate(-2.035deg);
+
+  background: var(--Main-Primary, #057f4c);
+}

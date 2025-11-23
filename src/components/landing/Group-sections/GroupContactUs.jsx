@@ -4,16 +4,17 @@ import GroupProjects from './GroupProjects';
 function GroupContactUs() {
     return (
         <>
-            <section className='Bar_contactUs'>
-                <div className='Detail_contactUs'></div>
+
+
+            <section id="GroupContactUs" className="contact-us-section">
+
+                <GroupProjects />
+
+                <section className='Contact-Us'>
+
+                </section>
+
             </section>
-
-            <GroupProjects />
-
-            <section id="ContactMe" className="contact-me-section">
-
-            </section>
-
         </>
     );
 }
