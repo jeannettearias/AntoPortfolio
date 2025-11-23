@@ -45,7 +45,6 @@ function GroupExperience({ ExpData, StudyData }) {
                                 <li className='position__label'>{experience.jobtitle} -
                                     {experience.modality} -
                                     {experience.company}</li>
-                                <li className=''></li   >
                                 <li className='company__label'>{experience.description}</li>
                             </ul>
                         ))}
