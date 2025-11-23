@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  align-self: stretch;
 
   .Badge {
     display: flex;
@@ -54,14 +53,14 @@
   line-height: 68px;
 }
 
-.group-exp-card {
+.group-card {
   display: flex;
   align-items: flex-start;
   gap: var(--base-px-08, 28px);
   align-self: stretch;
 }
 
-.card__1 {
+.educ__card {
   display: flex;
   padding: var(--base-px-11, 40px);
   flex-direction: column;
@@ -73,26 +72,14 @@
   background: var(--Main-Background_Alt, #f5f5f5);
 }
 
-.card__2 {
-  display: flex;
-  padding: var(--base-px-11, 40px);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--base-px-07, 24px);
-  flex: 1 0 0;
-
-  border-radius: var(--base-px-06, 20px);
-  background: var(--Main-Background_Alt, #f5f5f5);
-}
-
-.head-exp {
+.head-educ {
   display: flex;
   align-items: center;
   gap: 12px;
   align-self: stretch;
 }
 
-.icon__exp {
+.icon__educ {
   width: 48px;
   height: 48px;
   aspect-ratio: 1/1;
@@ -101,7 +88,9 @@
   background: var(--Main-Secondary, #e6ae37);
 }
 
-.label__exp {
+.label__educ {
+  flex: 1 0 0;
+
   color: var(--Neutral-07, #424544);
   font-family: Montserrat;
   font-size: 28px;
@@ -118,6 +107,74 @@
   stroke: var(--Neutral-03, #c3cfca);
 }
 
+.items__educ {
+  display: flex;
+  padding: 0 var(--base-px-06, 20px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-03, 12px);
+  align-self: stretch;
+
+  border-left: 1px solid var(--Neutral-04, #9da9a4);
+}
+
+.education__item {
+  list-style-type: none;
+}
+
+.date__label {
+  align-self: stretch;
+
+  color: var(--Neutral-07, #424544);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.degree__label {
+  align-self: stretch;
+
+  color: var(--Neutral-07, #424544);
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.institution__label {
+  align-self: stretch;
+
+  color: var(--Neutral-05, #6f7776);
+  color: var(--Neutral-07, #424544);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.exp__card {
+  display: flex;
+  height: 562px;
+  padding: var(--base-px-11, 40px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-07, 24px);
+  flex: 1 0 0;
+
+  border-radius: var(--base-px-06, 20px);
+  background: var(--Main-Background_Alt, #f5f5f5);
+}
+.head-exp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
 .item__exp {
   display: flex;
   padding: 0 var(--base-px-06, 20px);
@@ -129,6 +186,10 @@
   border-left: 1px solid var(--Neutral-04, #9da9a4);
 }
 
+.experience__item {
+  list-style-type: none;
+}
+
 .Frame__15 {
   display: flex;
   flex-direction: column;
@@ -138,8 +199,46 @@
 
   border-left: 1px solid var(--Neutral-04, #9da9a4);
 }
+.icon__exp {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
 
-.label__item {
+  border-radius: 3076.923px;
+  background: var(--Main-Secondary, #e6ae37);
+}
+
+.label__exp {
+  flex: 1 0 0;
+
+  color: var(--Neutral-07, #424544);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.divider {
+  height: 0;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  stroke-width: 1px;
+  stroke: var(--Neutral-03, #c3cfca);
+}
+
+.items__exp {
+  display: flex;
+  padding: 0 var(--base-px-06, 20px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-03, 12px);
+  align-self: stretch;
+
+  border-left: 1px solid var(--Neutral-04, #9da9a4);
+}
+.date__label {
   align-self: stretch;
 
   color: var(--Neutral-07, #424544);
@@ -148,4 +247,25 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+.position__label {
+  align-self: stretch;
+
+  color: var(--Neutral-07, #424544);
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.company__label {
+  align-self: stretch;
+
+  color: var(--Neutral-07, #424544);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
 }

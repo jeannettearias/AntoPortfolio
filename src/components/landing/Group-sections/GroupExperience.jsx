@@ -24,11 +24,11 @@ function GroupExperience({ ExpData, StudyData }) {
                     <div className='divider'></div>
                     <div className='items__educ'>
                         {activeStudy.map(education => (
-                            <div key={education.id} className='education__item'>
-                                <label className='date__label'>{education.Date}</label>
-                                <label className='degree__label'>{education.Degree}</label>
-                                <label className='institution__label'>{education.Institution}</label>
-                            </div>
+                            <ul key={education.id} className='education__item'>
+                                <li className='date__label'>{education.Date}</li>
+                                <li className='degree__label'>{education.Degree}</li>
+                                <li className='institution__label'>{education.Institution}</li>
+                            </ul>
                         ))}
                     </div>
                 </div>
@@ -40,14 +40,14 @@ function GroupExperience({ ExpData, StudyData }) {
                     <div className='divider'></div>
                     <div className='items__exp'>
                         {activeExp.map(experience => (
-                            <div key={experience.id} className='experience__item'>
-                                <label className='date__label'>{experience.date}</label>
-                                <label className='position__label'>{experience.jobtitle}
-                                    {experience.modality}
-                                    {experience.company}</label>
-                                <label className=''></label>
-                                <label className='company__label'>{experience.description}</label>
-                            </div>
+                            <ul key={experience.id} className='experience__item'>
+                                <li className='date__label'>{experience.date}</li>
+                                <li className='position__label'>{experience.jobtitle} -
+                                    {experience.modality} -
+                                    {experience.company}</li>
+                                <li className=''></li   >
+                                <li className='company__label'>{experience.description}</li>
+                            </ul>
                         ))}
                     </div>
                 </div>
