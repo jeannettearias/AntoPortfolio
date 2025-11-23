@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "Date": "Marzo 2016 — Enero 2021",
+        "Degree": "Licenciatura en Artes y Ciencias del Diseño Industrial - Diseño industrial y de productos",
+        "Institution": "Universidad Tecnológica Metropolitana, Chile",
+        "active": true
+    },
+    {
+        "id": 2,
+        "Date": "Marzo 2021 — Septiembre 2021",
+        "Degree": "Diplomado UX/UI Agile",
+        "Institution": "Universidad de Santiago de Chile",
+        "active": true
+    },
+    {
+        "id": 3,
+        "Date": "Feb 2023 - Apr 2023",
+        "Degree": "Diseño UX/UI Avanzado",
+        "Institution": "Coderhouse",
+        "active": false
+    },
+    {
+        "id": 4,
+        "Date": "Oct 2023 - Sep 2024",
+        "Degree": "Máster Experiencia de Usuario y Diseño de Interfaces (UX/UI Design), Diseño",
+        "Institution": "Escola Superior de Disseny ESDI",
+        "active": true
+    }
+]

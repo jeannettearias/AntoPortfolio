@@ -6,6 +6,8 @@ import heroData from '../../data/heroData.json';
 import SkillsData from '../../data/SkillsData.json';
 import GroupHeroData from '../../data/GroupHeroData.json';
 import GroupHeroChips from '../../data/GroupHeroChips.json';
+import ExpData from '../../data/GroupExp.json';
+import StudyData from '../../data/GroupStudy.json';
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
 import GroupTools from './Group-sections/GroupTools';
@@ -29,7 +31,9 @@ function Landing() {
                         GroupHeroChips={GroupHeroChips} />
 
                     <GroupTools />
-                    <GroupExperience />
+                    <GroupExperience ExpData={ExpData}
+                        StudyData={StudyData} />
+
                     <GroupContactUs />
                     <GroupTestimony />
 
