@@ -26,7 +26,7 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <div className='divider'></div>
                     <div className='items__educ'>
-                        {activeStudy.map(education => (
+                        {[...activeStudy].sort((a, b) => b.id - a.id).map(education => (
                             <ul key={education.id} className='education__item'>
                                 <li className='date__label'>{education.Date}</li>
                                 <li className='degree__label'>{education.Degree}</li>
@@ -42,7 +42,7 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <div className='divider'></div>
                     <div className='items__exp'>
-                        {activeExp.map(experience => (
+                        {[...activeExp].sort((a, b) => b.id - a.id).map(experience => (
                             <ul key={experience.id} className='experience__item'>
                                 <li className='date__label'>{experience.date}</li>
                                 <li className='position__label'>{experience.jobtitle} -

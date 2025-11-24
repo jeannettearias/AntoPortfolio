@@ -1,6 +1,7 @@
 import '../../../styles/_groupSections.scss';
 
-function GroupProjects() {
+
+function GroupProjects({ }) {
     return (
         <>
             <section id="GroupProjects" className="projects-section">
@@ -15,3 +16,6 @@ function GroupProjects() {
 }
 
 export default GroupProjects;
+GroupProjects.propTypes = {
+
+};
