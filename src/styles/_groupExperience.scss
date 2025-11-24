@@ -151,7 +151,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 100% */
+  line-height: 30px; /* 100% */
 }
 
 .institution__label {
@@ -162,7 +162,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 28px; /* 133.333% */
 }
 
 .exp__card {
@@ -265,10 +265,10 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 100% */
+  line-height: 30px; /* 100% */
 }
 
-.company__label {
+.description__label {
   align-self: stretch;
 
   color: var(--Neutral-07, #424544);
@@ -276,5 +276,5 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 28px; /* 133.333% */
 }

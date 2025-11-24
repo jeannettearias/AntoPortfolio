@@ -48,7 +48,7 @@ function GroupExperience({ ExpData, StudyData }) {
                                 <li className='position__label'>{experience.jobtitle} &nbsp;-&nbsp;
                                     {experience.modality} &nbsp;-&nbsp;
                                     {experience.company}</li>
-                                <li className='company__label'>{experience.description}</li>
+                                <li className='description__label'>{experience.description}</li>
                             </ul>
                         ))}
                     </div>
