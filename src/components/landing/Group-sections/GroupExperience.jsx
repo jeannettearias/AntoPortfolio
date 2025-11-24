@@ -45,8 +45,8 @@ function GroupExperience({ ExpData, StudyData }) {
                         {[...activeExp].sort((a, b) => b.id - a.id).map(experience => (
                             <ul key={experience.id} className='experience__item'>
                                 <li className='date__label'>{experience.date}</li>
-                                <li className='position__label'>{experience.jobtitle} -
-                                    {experience.modality} -
+                                <li className='position__label'>{experience.jobtitle} &nbsp;-&nbsp;
+                                    {experience.modality} &nbsp;-&nbsp;
                                     {experience.company}</li>
                                 <li className='company__label'>{experience.description}</li>
                             </ul>
