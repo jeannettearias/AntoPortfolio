@@ -27,7 +27,7 @@ function Header() {
                             <HashLink smooth to="#GroupExperience" className='menu__link'>Estudios y Experiencia</HashLink>
                         </li>
                         <li className='tab'>
-                            <HashLink smooth to="#Projects" className='menu__link'>Proyectos</HashLink>
+                            <HashLink smooth to="#GroupProjects" className='menu__link'>Proyectos</HashLink>
                         </li>
                         <li className='tab'>
                             <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
