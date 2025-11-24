@@ -1,4 +1,5 @@
 import { use, useState } from 'react';
+import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
 
 function GroupExperience({ ExpData, StudyData }) {
@@ -7,7 +8,9 @@ function GroupExperience({ ExpData, StudyData }) {
     const [activeExp, setActiveExp] = useState(ExpData.filter(experience => experience.active === true));
 
     return (
+
         <section id="GroupExperience" className="experience-section">
+
             <div className='Content-exp'>
                 <div className='Badge'>
                     <img className="badge__tag" src="" alt="" />
@@ -23,7 +26,7 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <div className='divider'></div>
                     <div className='items__educ'>
-                        {activeStudy.map(education => (
+                        {[...activeStudy].sort((a, b) => b.id - a.id).map(education => (
                             <ul key={education.id} className='education__item'>
                                 <li className='date__label'>{education.Date}</li>
                                 <li className='degree__label'>{education.Degree}</li>
@@ -39,20 +42,27 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <div className='divider'></div>
                     <div className='items__exp'>
-                        {activeExp.map(experience => (
+                        {[...activeExp].sort((a, b) => b.id - a.id).map(experience => (
                             <ul key={experience.id} className='experience__item'>
                                 <li className='date__label'>{experience.date}</li>
-                                <li className='position__label'>{experience.jobtitle} -
-                                    {experience.modality} -
+                                <li className='position__label'>{experience.jobtitle} &nbsp;-&nbsp;
+                                    {experience.modality} &nbsp;-&nbsp;
                                     {experience.company}</li>
-                                <li className='company__label'>{experience.description}</li>
+                                <li className='description__label'>{experience.description}</li>
                             </ul>
                         ))}
                     </div>
                 </div>
             </div>
+
         </section>
+
     );
 }
 
 export default GroupExperience;
+
+GroupExperience.popTypes = {
+    ExpData: PropTypes.array.isRequired,
+    StudyData: PropTypes.array.isRequired,
+};
