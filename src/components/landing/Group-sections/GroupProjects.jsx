@@ -17,11 +17,13 @@ function GroupProjects({ }) {
                             <label className='label__badge'>Sobre mí</label>
                         </div>
                         <div className='content__text'>
-                            <label className='title__tag'>Algunos de mis <span className='title__span' >proyectos</span></label>
+                            <label className='title__tag'>Algunos de mis<span className='title__span' >proyectos</span></label>
                             <div className='group__tag'></div>
                         </div>
                     </div>
-                    <div className='btn__text'></div>
+                    <div className='btn__text'>
+                        <div className='button__text'>Ver todos los proyectos</div>
+                    </div>
                 </section>
 
                 <section className='group-project-cards'>
