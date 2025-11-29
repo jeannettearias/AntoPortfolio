@@ -32,9 +32,9 @@
             "Express",
             "MongoDB"
         ],
-        "title": "API de Gestión de Usuarios",
+        "title": "Portfolio Personal design",
         "description": "Creé una API RESTful para la gestión de usuarios, permitiendo operaciones CRUD y autenticación.",
-        "image": "/images/projects",
+        "image": "/images/projects/Project_1.png",
         "active": true
     },
     {
