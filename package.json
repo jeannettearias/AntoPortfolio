@@ -1,15 +1,15 @@
 {
-  "name": "modulo-3-leccion-01-primera-web",
+  "name": "anto-portfolio",
+  "homepage": "https://jeannettearias.github.io/AntoPortfolio/",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build &&  gh-pages -d docs  && git add docs && git commit -m 'Deployed new version of the page to production' && git push"
   },
   "dependencies": {
     "react": "18.3.1",
