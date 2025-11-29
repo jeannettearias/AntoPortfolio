@@ -103,3 +103,26 @@
   align-self: stretch;
   flex-wrap: wrap;
 }
+
+.btn__text {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  border: 1px solid var(--Orange-05, #e6ae37);
+  background: var(--Main-Background_cream, #fcf5e4);
+}
+
+.button__text {
+  color: var(--Orange-06, #bb8513);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

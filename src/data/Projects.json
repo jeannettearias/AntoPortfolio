@@ -1,0 +1,52 @@
+[
+    {
+        "Cardid": 1,
+        "pills": [
+            "Figma",
+            "Adobe XD",
+            "Prototipado",
+            "Investigación de usuarios"
+        ],
+        "title": "Diseño web de Vaib",
+        "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib",
+        "image": "/images/projects/vaib.png",
+        "active": true
+    },
+    {
+        "Cardid": 2,
+        "pills": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "title": "Aplicación de Tareas",
+        "description": "Desarrollé una aplicación de tareas utilizando React para gestionar y organizar actividades diarias.",
+        "image": "/images/projects",
+        "active": true
+    },
+    {
+        "Cardid": 3,
+        "pills": [
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "title": "API de Gestión de Usuarios",
+        "description": "Creé una API RESTful para la gestión de usuarios, permitiendo operaciones CRUD y autenticación.",
+        "image": "/images/projects",
+        "active": true
+    },
+    {
+        "Cardid": 4,
+        "pills": [
+            "Python",
+            "Django",
+            "PostgreSQL"
+        ],
+        "title": "Plataforma de Blog",
+        "description": "Desarrollé una plataforma de blog completa con funcionalidades de publicación, comentarios y administración.",
+        "image": "/images/projects",
+        "active": true
+    }
+]
