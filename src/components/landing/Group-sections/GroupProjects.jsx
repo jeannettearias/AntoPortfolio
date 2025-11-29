@@ -1,7 +1,10 @@
 import '../../../styles/_groupProjects.scss';
+import { useState } from 'react';
 
 
-function GroupProjects({ }) {
+function GroupProjects({ projectsData }) {
+    const [activeProjects, setActiveProjects] = useState(projectsData.filter(project => project.active === true));
+
     return (
         <>
             <section className='Bar_contactUs'>
@@ -26,8 +29,25 @@ function GroupProjects({ }) {
                     </div>
                 </section>
 
-                <section className='group-project-cards'>
-
+                <section className='Group-cards'>
+                    {activeProjects.map(project => (
+                        <div key={project.Cardid} className='Card-project'>
+                            <div className='Image-cards'>
+                                <img src={project.image} className="image-card" alt="" />
+                                <div className='Group-pills'>
+                                    <ul className='pill'>
+                                        {project.pills.map((pill, index) => (
+                                            <li key={index} className='pill-label'>{pill}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='Content-card'>
+                                <h3 className='card-title'>{project.title}</h3>
+                                <p className='card-description'>{project.description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </section>
 
             </section>

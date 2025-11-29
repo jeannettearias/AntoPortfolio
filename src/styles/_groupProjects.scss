@@ -126,3 +126,103 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.Group-cards {
+  display: flex;
+  align-items: center;
+  gap: 28px var(--base-px-08, 28px);
+  flex: 1 0 0;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.Card-project {
+  display: flex;
+  min-width: 400px;
+  padding: var(--base-px-07, 24px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-06, 20px);
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: var(--base-px-06, 20px);
+  background: var(--Main-White, #fff);
+}
+
+.Image-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.image-card {
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: var(--base-px-04, 16px);
+  background: lightgray 50% / cover no-repeat;
+}
+
+.Group-pills {
+  display: flex;
+  align-items: center;
+  gap: var(--base-px-03, 12px);
+
+  position: absolute;
+  left: 12px;
+  bottom: 11.991px;
+}
+
+.pill {
+  display: flex;
+  padding: var(--base-px-01, 4px) var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 10000px;
+  background: var(--Orange-04, #fecd64);
+}
+
+.pill-label {
+  color: var(--Main-Black, #000);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.Content-card {
+  display: flex;
+  padding: 0 var(--base-px-00, 0);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-03, 12px);
+  align-self: stretch;
+}
+
+.card-title {
+  align-self: stretch;
+
+  color: var(--Neutral-06, #585d5b);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+}
+.card-description {
+  align-self: stretch;
+
+  color: var(--Neutral-06, #585d5b);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

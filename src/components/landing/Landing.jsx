@@ -14,6 +14,7 @@ import GroupTools from './Group-sections/GroupTools';
 import GroupExperience from './Group-sections/GroupExperience';
 import GroupContactUs from './Group-sections/GroupContactUs';
 import GroupTestimony from './Group-sections/GroupTestimony';
+import ProjecsData from '../../data/Projects.json';
 
 
 function Landing() {
@@ -34,7 +35,9 @@ function Landing() {
                     <GroupExperience ExpData={ExpData}
                         StudyData={StudyData} />
 
-                    <GroupContactUs />
+                    <GroupContactUs
+                        projectsData={ProjecsData} />
+
                     <GroupTestimony />
 
                 </section>
