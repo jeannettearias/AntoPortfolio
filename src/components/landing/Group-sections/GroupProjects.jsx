@@ -1,5 +1,6 @@
 import '../../../styles/_groupProjects.scss';
 import { useState } from 'react';
+import propTypes from 'prop-types';
 
 
 function GroupProjects({ projectsData }) {
@@ -55,7 +56,10 @@ function GroupProjects({ projectsData }) {
     );
 }
 
-export default GroupProjects;
 GroupProjects.propTypes = {
+    projectsData: propTypes.array.isRequired,
 
 };
+
+export default GroupProjects;
+
