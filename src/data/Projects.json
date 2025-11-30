@@ -9,7 +9,7 @@
         ],
         "title": "Diseño web de Vaib",
         "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib",
-        "image": "/images/projects/vaib.png",
+        "image": "/images/projects",
         "active": true
     },
     {
@@ -34,7 +34,7 @@
         ],
         "title": "Portfolio Personal design",
         "description": "Creé una API RESTful para la gestión de usuarios, permitiendo operaciones CRUD y autenticación.",
-        "image": "/images/projects/Project_1.png",
+        "image": "/images/projects",
         "active": true
     },
     {

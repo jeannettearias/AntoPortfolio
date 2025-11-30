@@ -172,7 +172,6 @@
   align-items: center;
   gap: var(--base-px-03, 12px);
 
-  position: absolute;
   left: 12px;
   bottom: 11.991px;
 }
@@ -186,9 +185,8 @@
 
   border-radius: 10000px;
   background: var(--Orange-04, #fecd64);
-}
+  list-style-type: none;
 
-.pill-label {
   color: var(--Main-Black, #000);
   font-family: Raleway;
   font-size: 16px;

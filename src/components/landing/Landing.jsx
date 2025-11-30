@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
-import propTypes from 'prop-types';
 
 import heroData from '../../data/heroData.json';
 import SkillsData from '../../data/SkillsData.json';
@@ -48,17 +47,6 @@ function Landing() {
         </>
     );
 }
-
-Landing.propTypes = {
-    heroData: propTypes.array.isRequired,
-    SkillsData: propTypes.array.isRequired,
-    GroupHeroData: propTypes.array.isRequired,
-    GroupHeroChips: propTypes.array.isRequired,
-    ExpData: propTypes.array.isRequired,
-    StudyData: propTypes.array.isRequired,
-    projectsData: propTypes.array.isRequired,
-
-};
 
 export default Landing;
 
