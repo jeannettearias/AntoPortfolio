@@ -1,5 +1,6 @@
 import '../../../styles/_barGroupContactUs.scss';
 import GroupProjects from './GroupProjects';
+import propTypes from 'prop-types';
 
 function GroupContactUs({ projectsData }) {
     return (
@@ -18,5 +19,10 @@ function GroupContactUs({ projectsData }) {
         </>
     );
 }
+
+GroupContactUs.propTypes = {
+    projectsData: propTypes.array.isRequired,
+
+};
 
 export default GroupContactUs;
