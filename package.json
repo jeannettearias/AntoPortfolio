@@ -1,32 +1,38 @@
 {
-  "name": "modulo-3-leccion-01-primera-web",
+  "name": "anto-portfolio",
+  "homepage": "https://jeannettearias.github.io/AntoPortfolio/",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build &&  gh-pages -d docs  && git add docs && git commit -m 'Deployed new version of the page to production' && git push"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-router-dom": "7.9.4",
-    "react-router-hash-link": "^2.4.3"
+    "ag-charts-react": "11.1.1",
+    "chart.js": "4.4.8",
+    "dotenv": "16.4.5",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-feature-flags": "1.0.0",
+    "react-router-dom": "6.26.0",
+    "router": "2.0.0",
+    "routes": "2.1.0"
   },
   "devDependencies": {
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-react": "4.3.4",
     "eslint": "8.57.0",
     "eslint-plugin-react": "7.34.3",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-react-refresh": "0.4.7",
-    "gh-pages": "^6.3.0",
-    "sass": "1.77.8",
-    "vite": "^6.4.1"
+    "gh-pages": "6.3.0",
+    "parcel": "2.6.2",
+    "sass": "1.83.0",
+    "vite": "6.0.6"
   }
 }
