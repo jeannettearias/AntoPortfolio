@@ -5,11 +5,11 @@ import propTypes from 'prop-types';
 function GroupContactUs({ projectsData }) {
     return (
         <>
-
+            <GroupProjects projectsData={projectsData} />
 
             <section id="GroupContactUs" className="contact-us-section">
 
-                <GroupProjects projectsData={projectsData} />
+
 
                 <section className='Contact-Us'>
 

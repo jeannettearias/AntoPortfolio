@@ -9,7 +9,7 @@
         ],
         "title": "Diseño web de Vaib",
         "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib",
-        "image": "/images/projects",
+        "image": "/images/projects/project-img.png",
         "active": true
     },
     {
@@ -22,7 +22,7 @@
         ],
         "title": "Portafolio profesional",
         "description": "Diseño proyecto de portafolio profesional para mostrar mis habilidades y proyectos.",
-        "image": "/images/projects",
+        "image": "/images/projects/project-img.png",
         "active": true
     },
     {
@@ -34,7 +34,7 @@
         ],
         "title": "Portfolio Personal design",
         "description": "Creé una API RESTful para la gestión de usuarios, permitiendo operaciones CRUD y autenticación.",
-        "image": "/images/projects",
+        "image": "/images/projects/project-img.png",
         "active": true
     },
     {
@@ -46,7 +46,7 @@
         ],
         "title": "Plataforma de Blog",
         "description": "Desarrollé una plataforma de blog completa con funcionalidades de publicación, comentarios y administración.",
-        "image": "/images/projects",
+        "image": "/images/projects/project-img.png",
         "active": true
     }
 ]

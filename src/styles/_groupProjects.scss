@@ -169,11 +169,12 @@
 
 .Group-pills {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: var(--base-px-03, 12px);
+  gap: 8px;
 
   left: 12px;
-  bottom: 11.991px;
+  bottom: 12px;
 }
 
 .pill {

@@ -18,31 +18,31 @@ function GroupTools() {
                 </div>
                 <div className="Group-info-tools">
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="Figma" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="figma-icon">Figma</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="After Effects" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="after-effects-icon">After Effects</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="Visual Studio Code" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="visual-studio-code-icon">Visual Studio Code</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="Adobe Photoshop" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="adobe-photoshop-icon">Adobe Photoshop</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="Adobe Illustrator" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="adobe-illustrator-icon">Adobe Illustrator</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="3DS Max" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="3ds-max-icon">3DS Max</label>
                     </div>
                     <div className="item-label">
-                        <img className="img-item" src="images/icons/figma-Icon.svg" alt="Spline" />
+                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
                         <label className="label-item" htmlFor="spline-icon">Spline</label>
                     </div>
                 </div>

@@ -4,14 +4,3 @@
   align-items: flex-start;
   align-self: stretch;
 }
-
-.Contact-Us {
-  display: flex;
-  width: 1440px;
-  height: 900px;
-  padding: 200px 175px;
-  align-items: flex-end;
-  gap: var(--base-px-15, 56px);
-
-  background: var(--Main-Primary, #057f4c);
-}
