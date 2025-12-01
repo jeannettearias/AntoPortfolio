@@ -12,7 +12,7 @@ function Bar({ SkillsData }) {
                     {labels.map(label => (
                         <li key={label.id}>
                             <label className='label' >{label.title}  </label>
-                            <img className='icon' src={label.icon} alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/icons/Bullet.svg`} alt="" />
                         </li>
                     ))}
                 </ul>

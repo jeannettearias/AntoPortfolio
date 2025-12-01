@@ -28,7 +28,7 @@ function GroupHero({ GroupHeroData, GroupHeroChips }) {
                             <div className="rectangle_4_info"></div>
                         </div>
                         <div className='Vector_1'>
-                            <img src="/images/Vector_1.png" alt="" />
+                            <img src={`${import.meta.env.BASE_URL}images/Vector_1.png`} alt="" />
                         </div>
                     </div>
                     <div className='Content_tag'>

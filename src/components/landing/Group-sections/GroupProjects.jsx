@@ -34,14 +34,14 @@ function GroupProjects({ projectsData }) {
                     {activeProjects.map(project => (
                         <div key={project.Cardid} className='Card-project'>
                             <div className='Image-cards'>
-                                <img src={project.image} className="image-card" alt="" />
-                                <div className='Group-pills'>
-                                    <ul className='pill'>
-                                        {project.pills.map((pill, index) => (
-                                            <li key={index} className='pill-label'>{pill}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                <img src={`${import.meta.env.BASE_URL}${project.image}`} className="image-card" alt="" />
+
+                                <ul className=' Group-pills'>
+                                    {project.pills.map((pill, index) => (
+                                        <li key={index} className='pill'>{pill}</li>
+                                    ))}
+                                </ul>
+
                             </div>
                             <div className='Content-card'>
                                 <h3 className='card-title'>{project.title}</h3>
