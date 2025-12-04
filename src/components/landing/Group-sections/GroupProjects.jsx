@@ -8,10 +8,6 @@ function GroupProjects({ projectsData }) {
 
     return (
         <>
-            <section className='Bar_contactUs'>
-                <div className='Detail_contactUs'></div>
-
-            </section>
             <section id="GroupProjects" className="projects-section">
 
                 <section className='text-projects'>

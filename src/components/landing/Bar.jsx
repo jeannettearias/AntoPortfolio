@@ -6,8 +6,10 @@ function Bar({ SkillsData }) {
     const [labels, setLabels] = useState(SkillsData.filter(label => label.status === 'active'));
 
     return (
-        <div className="bar">
-            <div className="bar-info">
+
+        <section className="bar">
+            <div className="detail_bar" aria-hidden="true"></div>
+            <div className="bar-info" role="group" aria-label="Skills">
                 <ul className='Group-card'>
                     {labels.map(label => (
                         <li key={label.id}>
@@ -17,7 +19,7 @@ function Bar({ SkillsData }) {
                     ))}
                 </ul>
             </div>
-        </div >
+        </section>
     );
 }
 

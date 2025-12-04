@@ -1,11 +1,22 @@
 .bar {
-  height: 141px;
-  align-self: stretch;
+  position: relative; /* container for absolute positioned children */
+  width: 100%;
+  /* optional layout sizing */
+  display: block;
+  margin: 1rem 0;
+}
+
+.detail_bar {
+  width: 1609px;
+  height: 89.018px;
+  transform: rotate(-2.035deg);
+
+  background: var(--Main-Secondary, #e6ae37);
 }
 
 .bar-info {
-  display: flex;
-  width: 1440px;
+  height: 118px; /* adjust as needed */
+  width: 100%;
   padding: 24px 88px;
   align-items: center;
   gap: 16px;
