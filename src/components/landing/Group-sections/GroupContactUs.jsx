@@ -5,17 +5,16 @@ import propTypes from 'prop-types';
 function GroupContactUs({ projectsData }) {
     return (
         <>
+
+            <section className='Bar_contactUs'>
+                <div className='Detail_contactUs'></div>
+            </section>
             <GroupProjects projectsData={projectsData} />
 
             <section id="GroupContactUs" className="contact-us-section">
 
-
-
-                <section className='Contact-Us'>
-
-                </section>
-
             </section>
+
         </>
     );
 }

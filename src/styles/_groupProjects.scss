@@ -1,28 +1,5 @@
-//////////// BAR CONTACT US ///////////////////////
-///
-.Bar_contactUs {
-  display: flex;
-  height: 141px;
-  align-items: center;
-
-  position: absolute;
-  top: -44px;
-}
-
-.Detail_contactUs {
-  width: 1456px;
-  height: 89px;
-  transform: rotate(-2.035deg);
-
-  background: var(--Main-Primary, #057f4c);
-}
-
-///
-/// /////////////////////// end BAR CONTACT US ///////////////////////
-
 .projects-section {
   display: flex;
-  height: 1434px;
   padding: var(--base-px-24, 104px);
   flex-direction: column;
   align-items: center;
