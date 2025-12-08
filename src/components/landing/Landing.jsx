@@ -10,6 +10,7 @@ import GroupHeroChips from '../../data/GroupHeroChips.json';
 import ExpData from '../../data/GroupExp.json';
 import StudyData from '../../data/GroupStudy.json';
 import ProjecsData from '../../data/Projects.json';
+import ContactData from '../../data/contactData.json';
 
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
@@ -39,7 +40,8 @@ function Landing() {
                         StudyData={StudyData} />
 
                     <GroupContactUs
-                        projectsData={ProjecsData} />
+                        projectsData={ProjecsData}
+                        contactData={ContactData} />
 
                     <GroupTestimony />
                 </section>
