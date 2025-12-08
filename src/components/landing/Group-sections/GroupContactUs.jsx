@@ -12,7 +12,15 @@ function GroupContactUs({ projectsData }) {
             <GroupProjects projectsData={projectsData} />
 
             <section id="GroupContactUs" className="contact-us-section">
+                <div className='item-contacUs'>
 
+                </div>
+                <div className='Group-interactions'>
+
+                </div>
+                <div className='frame-17'>
+
+                </div>
             </section>
 
         </>

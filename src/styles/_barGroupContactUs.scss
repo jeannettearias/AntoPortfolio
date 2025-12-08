@@ -18,3 +18,39 @@
 
 ///
 /// /////////////////////// end BAR CONTACT US ///////////////////////
+
+.contact-us-section {
+  display: flex;
+  width: 1440px;
+  height: 900px;
+  padding: 200px 175px;
+  align-items: flex-end;
+  gap: var(--base-px-15, 56px);
+
+  background: var(--Main-Primary, #057f4c);
+}
+
+.item-contacUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.Group-interactions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.frame-17 {
+  width: 1441px;
+  height: 63px;
+
+  position: absolute;
+  left: -1px;
+  bottom: 62px;
+}

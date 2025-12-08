@@ -119,7 +119,7 @@
   padding: var(--base-px-07, 24px);
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--base-px-06, 20px);
+
   flex: 1 0 0;
   align-self: stretch;
 
@@ -137,7 +137,7 @@
 }
 
 .image-card {
-  flex: 1 0 0;
+  flex: 0 0 0;
   align-self: stretch;
 
   border-radius: var(--base-px-04, 16px);
@@ -151,17 +151,17 @@
   gap: 8px;
 
   left: 12px;
-  bottom: 12px;
+  bottom: 11.991px;
 }
 
 .pill {
   display: flex;
-  padding: var(--base-px-01, 4px) var(--base-px-03, 12px);
+  padding: var(--base-px-01, 40px) var(--base-px-03, 12px);
   justify-content: center;
   align-items: center;
   gap: 10px;
 
-  border-radius: 10000px;
+  border-radius: 1000px;
   background: var(--Orange-04, #fecd64);
   list-style-type: none;
 
