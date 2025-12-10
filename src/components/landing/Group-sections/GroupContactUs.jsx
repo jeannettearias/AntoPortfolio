@@ -12,22 +12,31 @@ function GroupContactUs({ projectsData, contactData }) {
             <GroupProjects projectsData={projectsData} />
 
             <section id="GroupContactUs" className="contact-us-section">
-                <section className='item-contacUs'>
-                    {contactData.map((info) => (
-                        <div className='info__item'>
-                            <img className='Detail__item' />
-                            <ul className='data__item'>
-                                <li >Phone: {info.phone}</li>
-                                <li>Email: {info.email}</li>
-                                <li>LinkedIn: <a href={info.linkedin} target="_blank" rel="noopener noreferrer">{info.linkedin}</a></li>
-                            </ul>
-                            <img className='image__item' />
-                        </div>
-                    ))}
-                </section>
+                <div className='item-contacUs'>
+                    <img className='Detail__item' />
+
+                    <div className='info__item'>
+                        <ul className='data__info'>
+                            {contactData.map((info, index) => {
+                                const key = info.phone ?? info.email ?? info.linkedin ?? `contact-${index}`;
+                                return (
+                                    <li key={key} className='content__item'>
+                                        <div>Phone: {info.phone}</div>
+                                        <div>Email: <a href={`mailto:${info.email}`}>{info.email}</a></div>
+                                        <div>LinkedIn:{' '}
+                                            <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
+                                                {info.linkedin}
+                                            </a></div>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                        <img className='image__item' />
+                    </div>
+
+                </div>
             </section>
             <section className='Group-interactions'>
-
             </section>
             <section className='frame-17'>
             </section>
