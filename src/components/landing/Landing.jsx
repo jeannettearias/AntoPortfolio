@@ -16,7 +16,7 @@ import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
 import GroupTools from './Group-sections/GroupTools';
 import GroupExperience from './Group-sections/GroupExperience';
-import GroupContactUs from './Group-sections/GroupContactUs';
+import GroupContactUs from './Group-sections/GroupProjectsContactUs';
 import GroupTestimony from './Group-sections/GroupTestimony';
 
 

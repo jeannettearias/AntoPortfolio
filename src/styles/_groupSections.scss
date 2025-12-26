@@ -8,14 +8,14 @@
 
 .skills__hero {
   display: flex;
-  padding: 88px;
-  height: 510px;
-  width: 1440px;
-  justify-content: space-between;
+  height: 663px;
+  padding: var(--base-px-16, 64px) 88px 0 88px;
   align-items: flex-start;
+  gap: 63px;
   align-self: stretch;
 
-  background: var(--Main-Primary, #057f4c);
+  border-radius: var(--base-px-07, 24px);
+  background: var(--Green-06, #3f1390);
 }
 
 .Detail1_hero {

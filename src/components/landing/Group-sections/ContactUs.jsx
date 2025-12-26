@@ -1,16 +1,11 @@
-import '../../../styles/_barGroupContactUs.scss';
-import GroupProjects from './GroupProjects';
-import propTypes from 'prop-types';
 
-function GroupContactUs({ projectsData, contactData }) {
+import "../../../styles/_groupContactUs.scss";
+import propTypes from "prop-types";
+
+function ContactUs({ contactData }) {
 
     return (
         <>
-            <section className='Bar_contactUs'>
-                <div className='Detail_contactUs'></div>
-            </section>
-            <GroupProjects projectsData={projectsData} />
-
             <section id="GroupContactUs" className="contact-us-section">
                 <div className='item-contacUs'>
                     <img className='Detail__item' />
@@ -21,9 +16,9 @@ function GroupContactUs({ projectsData, contactData }) {
                                 const key = info.phone ?? info.email ?? info.linkedin ?? `contact-${index}`;
                                 return (
                                     <li key={key} className='content__item'>
-                                        <div>Phone: {info.phone}</div>
-                                        <div>Email: <a href={`mailto:${info.email}`}>{info.email}</a></div>
-                                        <div>LinkedIn:{' '}
+                                        <div className='text__item'>{info.phone}</div>
+                                        <div className='text__item'><a href={`mailto:${info.email}`}>{info.email}</a></div>
+                                        <div className='text__item'>{' '}
                                             <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
                                                 {info.linkedin}
                                             </a></div>
@@ -37,17 +32,16 @@ function GroupContactUs({ projectsData, contactData }) {
                 </div>
             </section>
             <section className='Group-interactions'>
+
             </section>
-            <section className='frame-17'>
-            </section>
+            <div className='frame-17'></div>
         </>
+
     );
 }
 
-GroupContactUs.propTypes = {
-    projectsData: propTypes.array.isRequired,
+ContactUs.propTypes = {
     contactData: propTypes.array.isRequired,
-
 };
 
-export default GroupContactUs;
+export default ContactUs;
