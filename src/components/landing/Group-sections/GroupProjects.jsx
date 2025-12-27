@@ -9,6 +9,7 @@ function GroupProjects({ projectsData }) {
     return (
         <>
             <section id="GroupProjects" className="projects-section">
+
                 <section className='text-projects'>
                     <div className='info__text'>
                         <div className='badge'>
@@ -44,11 +45,14 @@ function GroupProjects({ projectsData }) {
                         </div>
                     ))}
                 </section>
+
+                <div className="Details-projects">
+                    <img alt="" className="Detail__projects_1" />
+                    <img alt="" className="Detail__projects_2" />
+                </div>
+
             </section>
-            <div className='Details-projects'>
-                <img alt="" className='Detail__projects_1' />
-                <img alt="" className='Detail__projects_2' />
-            </div>
+
         </>
     );
 }
