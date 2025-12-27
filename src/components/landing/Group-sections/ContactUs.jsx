@@ -8,33 +8,36 @@ function ContactUs({ contactData }) {
         <>
             <section id="GroupContactUs" className="contact-us-section">
                 <div className='item-contacUs'>
-                    <img className='Detail__item' />
 
                     <div className='info__item'>
+                        <img className='Detail__info' />
                         <ul className='data__info'>
                             {contactData.map((info, index) => {
                                 const key = info.phone ?? info.email ?? info.linkedin ?? `contact-${index}`;
                                 return (
-                                    <li key={key} className='content__item'>
-                                        <div className='text__item'>{info.phone}</div>
-                                        <div className='text__item'><a href={`mailto:${info.email}`}>{info.email}</a></div>
-                                        <div className='text__item'>{' '}
+                                    <li key={key} className='content__data'>
+                                        <div className='text__data'>{info.phone}</div>
+                                        <div className='text__data'><a href={`mailto:${info.email}`}>{info.email}</a></div>
+                                        <div className='text__data'>{' '}
                                             <a href={info.linkedin} target="_blank" rel="noopener noreferrer">
                                                 {info.linkedin}
-                                            </a></div>
+                                            </a>
+                                        </div>
                                     </li>
                                 );
                             })}
                         </ul>
-                        <img className='image__item' />
+                        <img className='image__info' />
                     </div>
 
                 </div>
-            </section>
-            <section className='Group-interactions'>
+
+                <section className='Group-interactions'>
+
+                </section>
+                <div className='frame-17'></div>
 
             </section>
-            <div className='frame-17'></div>
         </>
 
     );

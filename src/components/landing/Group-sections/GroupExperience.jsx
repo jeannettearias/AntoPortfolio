@@ -1,4 +1,4 @@
-import { use, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
 
@@ -13,7 +13,7 @@ function GroupExperience({ ExpData, StudyData }) {
 
             <div className='Content-exp'>
                 <div className='Badge'>
-                    <img className="badge__tag" src="" alt="" />
+                    <img className="badge__tag" alt="" />
                     <label className='badge__label'>Sobre mí</label>
                 </div>
                 <p className="content-text">Mis <span className="green-text">Estudios y Experiencia</span></p>
