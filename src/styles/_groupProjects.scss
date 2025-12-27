@@ -9,31 +9,7 @@
   background: var(--Main-Background_Alt, #f5f5f5);
 }
 
-////////////////// detail projects /////////////////
-.Detail__projects_1 {
-  width: 1440px;
-  height: 556px;
 
-  right: -4.101px;
-  bottom: 0;
-
-  fill: var(--Orange-04, #a9fcff);
-
-  background: url("/images/projects/Detail_1.png") no-repeat;
-}
-
-.Detail__projects_2 {
-  width: 1440px;
-  height: 556px;
-
-  bottom: 0;
-
-  fill: #644cce;
-
-  background: url("/images/projects/Detail_2.png") no-repeat;
-}
-
-//////////////////// text projects /////////////////
 
 .text-projects {
   display: flex;
@@ -230,3 +206,30 @@
 }
 
 
+////////////////// detail projects /////////////////
+.Detail__projects_1 {
+  width: 1440px;
+  height: 556px;
+
+  right: -4.101px;
+  bottom: 0;
+
+  fill: var(--Orange-04, #a9fcff);
+
+  background: url("/images/projects/Detail_1.png") no-repeat;
+}
+
+.Detail__projects_2 {
+  width: 1440px;
+  height: 556px;
+
+  bottom: 0;
+
+  fill: #644cce;
+
+  background: url("/images/projects/Detail_2.png") no-repeat;
+}
+
+//////////////////// text projects /////////////////
+/// 
+/// 
