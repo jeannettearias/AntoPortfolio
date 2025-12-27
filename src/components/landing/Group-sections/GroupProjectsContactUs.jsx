@@ -7,10 +7,12 @@ function GroupContactUs({ projectsData, contactData }) {
 
     return (
         < section className='Section-projects-contactus'>
+
             <GroupProjects projectsData={projectsData} />
             <ContactUs contactData={contactData} />
 
         </section >
+
     );
 }
 
