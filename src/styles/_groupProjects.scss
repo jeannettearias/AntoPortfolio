@@ -120,7 +120,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  flex: 1 0 0;
+  flex: 1 1 calc(25% - 1rem); /* Adjust based on how many cards per row */
   align-self: stretch;
 
   border-radius: var(--base-px-06, 20px);
@@ -180,6 +180,8 @@
   align-items: flex-start;
   gap: var(--base-px-03, 12px);
   align-self: stretch;
+
+  z-index: 1;
 }
 
 .card-title {
@@ -217,7 +219,7 @@
   position: absolute;
 
   object-fit: cover; /* Ensures the image scales */
-  z-index: 1; /* Base layer (behind other elements) */
+  z-index: 2; /* Base layer (behind other elements) */
 
   fill: var(--Light-04, #a9fcff);
   background-image: url("/images/projects/Detail_1.png");
@@ -227,7 +229,7 @@
   width: 1440px;
   height: 556px;
 
-  z-index: 2; /* Higher z-index ensures it displays above the first image */
+  z-index: 3; /* Higher z-index ensures it displays above the first image */
   object-fit: contain; /* Keeps aspect ratio */
 
   position: absolute;
