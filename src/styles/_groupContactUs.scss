@@ -5,7 +5,7 @@
   align-self: stretch;
 }
 
-.contact-us-section {
+.contactUs-section {
   display: flex;
   width: 1440px;
   height: 900px;
@@ -58,13 +58,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 8px;
+  gap: 20px;
   align-self: stretch;
+
+  z-index: 1;
 }
 
 .text__data {
-  align-self: stretch;
-
   color: var(--Neutral-07, #424544);
   text-align: right;
   font-family: Raleway;
@@ -92,10 +92,23 @@
 }
 
 .frame-17 {
+  display: flex;
   width: 1441px;
   height: 63px;
 
-  position: absolute;
   left: -1px;
   bottom: 62px;
+
+  .frame-detail {
+    width: 1524.329px;
+    height: 63.095px;
+
+    right: -42.165px;
+    top: -0.5px;
+
+    stroke-width: 2.155px;
+    stroke: var(--Purple-05, #6e38d9);
+
+    background-image: url("/images/contactUs/frame-detail.svg");
+  }
 }
