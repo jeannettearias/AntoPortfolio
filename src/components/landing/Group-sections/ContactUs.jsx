@@ -13,14 +13,18 @@ function ContactUs({ contactData }) {
                     <img className='Detail__info' />
                     <ul className='data__info'>
                         {contactData.map((info, index) => {
-                            const key = info.phone ?? info.email ?? info.linkedin ?? `contact-${index}`;
+                            const key = info.icon ?? info.phone ?? info.behance ?? info.linkedin ?? `contact-${index}`;
                             return (
                                 <li key={key} className='content__data'>
+                                    <img src={`${import.meta.env.BASE_URL}${info.icon}`} alt="" className="icon_contactUs" />
                                     <div className='text__data'>{info.phone}</div>
+                                    <img src={`${import.meta.env.BASE_URL}${info.icon}`} alt="" className="icon_contactUs" />
                                     <div className='text__data'><a href={info.behance}>Mi Behance</a></div>
+                                    <img src={`${import.meta.env.BASE_URL}${info.icon}`} alt="" className="icon_contactUs" />
                                     <div className='text__data'>{' '}
                                         <a href={info.linkedin} target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
                                     </div>
+
                                 </li>
                             );
                         })}
