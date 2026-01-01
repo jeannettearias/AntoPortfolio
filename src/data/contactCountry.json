@@ -1,0 +1,54 @@
+[
+    {
+        "countryId": 1,
+        "countryName": "España"
+    },
+    {
+        "countryId": 2,
+        "countryName": "México"
+    },
+    {
+        "countryId": 3,
+        "countryName": "Argentina"
+    },
+    {
+        "countryId": 4,
+        "countryName": "Colombia"
+    },
+    {
+        "countryId": 5,
+        "countryName": "Chile"
+    },
+    {
+        "countryId": 6,
+        "countryName": "Perú"
+    },
+    {
+        "countryId": 7,
+        "countryName": "Venezuela"
+    },
+    {
+        "countryId": 8,
+        "countryName": "Uruguay"
+    },
+    {
+        "countryId": 9,
+        "countryName": "Ecuador"
+    },
+    {
+        "countryId": 10,
+        "countryName": "Bolivia"
+    },
+    {
+        "countryId": 11,
+        "countryName": "Paraguay"
+    },
+    {
+        "countryId": 12,
+        "countryName": "Costa Rica"
+    },
+    {
+        "countryId": 13,
+        "countryName": "Panamá"
+    }
+]

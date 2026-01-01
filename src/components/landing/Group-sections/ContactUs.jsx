@@ -2,12 +2,13 @@
 import "../../../styles/_groupContactUs.scss";
 import propTypes from "prop-types";
 
-function ContactUs({ contactData }) {
+function ContactUs({ contactData, contactCountryData, contactForm }) {
+
 
     return (
 
         <section id="GroupContactUs" className="contactUs-section">
-            <div className='item-contacUs'>
+            <section className='item-contacUs'>
 
                 <div className='info__item'>
                     <img className='Detail__info' />
@@ -24,19 +25,27 @@ function ContactUs({ contactData }) {
                                     <div className='text__data'>{' '}
                                         <a href={info.linkedin} target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
                                     </div>
-
                                 </li>
                             );
                         })}
                     </ul>
                     <img className='image__info' />
                 </div>
-            </div>
+            </section>
 
-            <div className='Group-interactions'>
-
-            </div>
-
+            <section className='Group-interactions'>
+                <div className="text_interactions">
+                    <div className="info_text">
+                        <div className="badge_info">
+                            <label className="label_badge">Sobre mi</label>
+                        </div>
+                        <div className="content_info"></div>
+                    </div>
+                    <p className="label_text">Recuerda que también me encuentro en los siguientes portales</p>
+                </div>
+                <div className="Textfield_interactions"></div>
+                <div className="Select_interactions"></div>
+            </section>
             <div className='frame-17'>
                 <img alt="" className="frame-detail" />
             </div>

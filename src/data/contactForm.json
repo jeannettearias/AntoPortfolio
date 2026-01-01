@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "fullName": "Name Surname",
+        "address": "1234 Street Name, City, Country",
+        "email": "email@example.com",
+        "country": "Country Name",
+        "subject": "lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    }
+]
