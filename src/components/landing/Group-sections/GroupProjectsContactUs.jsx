@@ -9,7 +9,9 @@ function GroupContactUs({ projectsData, contactData }) {
         < section className='Section-projects-contactus'>
 
             <GroupProjects projectsData={projectsData} />
-            <ContactUs contactData={contactData} />
+            <ContactUs contactData={contactData}
+                contactCountryData={contactCountryData}
+                contactForm={contactForm} />
 
         </section >
 

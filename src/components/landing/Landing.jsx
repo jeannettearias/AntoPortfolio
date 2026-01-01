@@ -11,6 +11,8 @@ import ExpData from '../../data/GroupExp.json';
 import StudyData from '../../data/GroupStudy.json';
 import ProjecsData from '../../data/Projects.json';
 import ContactData from '../../data/contactData.json';
+import ContactForm from '../../data/contactForm.json';
+import contactCountryData from '../../data/contactCountryData.json';
 
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
@@ -41,7 +43,11 @@ function Landing() {
 
                     <GroupProjectsContactUs
                         projectsData={ProjecsData}
-                        contactData={ContactData} />
+                        contactData={ContactData}
+
+                        contactCountryData={contactCountryData}
+                        contactForm={ContactForm}
+                    />
 
                     <GroupTestimony />
                 </section>
