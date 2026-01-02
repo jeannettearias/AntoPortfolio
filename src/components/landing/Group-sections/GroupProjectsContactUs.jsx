@@ -3,7 +3,7 @@ import ContactUs from './ContactUs';
 import GroupProjects from './GroupProjects';
 import propTypes from 'prop-types';
 
-function GroupContactUs({ projectsData, contactData }) {
+function GroupContactUs({ projectsData, contactData, contactCountryData, contactForm }) {
 
     return (
         < section className='Section-projects-contactus'>
@@ -21,6 +21,8 @@ function GroupContactUs({ projectsData, contactData }) {
 GroupContactUs.propTypes = {
     projectsData: propTypes.array.isRequired,
     contactData: propTypes.array.isRequired,
+    contactCountryData: propTypes.array,
+    contactForm: propTypes.array,
 
 };
 

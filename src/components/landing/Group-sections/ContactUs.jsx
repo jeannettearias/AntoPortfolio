@@ -43,8 +43,24 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                     </div>
                     <p className="label_text">Recuerda que también me encuentro en los siguientes portales</p>
                 </div>
-                <div className="Textfield_interactions"></div>
-                <div className="Select_interactions"></div>
+                {contactForm.map((form) => (
+                    <div key={form.id} className="form_interactions">
+                        <input type="text" className="Input_interactions" placeholder={form.fullName} />
+                        <input type="text" className="Input_interactions" placeholder={form.address} />
+                        <input type="email" className="Input_interactions" placeholder={form.email} />
+                        <select className="Select_interactions">
+                            {contactCountryData.map((country, index) => (
+                                <option key={index} value={country.name}>{country.name}</option>
+                            ))}
+                        </select>
+                        <input type="text" className="Input_interactions" placeholder={form.subject} />
+                        <button className="Button_interactions">Enviar mensaje</button>
+                    </div>
+                ))}
+                <div >
+                    <fieldset className="Textfield_interactions"></fieldset>
+                    <select className="Select_interactions"></select>
+                </div>
             </section>
             <div className='frame-17'>
                 <img alt="" className="frame-detail" />
@@ -56,6 +72,8 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
 
 ContactUs.propTypes = {
     contactData: propTypes.array.isRequired,
+    contactCountryData: propTypes.array,
+    contactForm: propTypes.array,
 };
 
 export default ContactUs;
