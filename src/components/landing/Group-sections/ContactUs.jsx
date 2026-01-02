@@ -39,20 +39,33 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                         <div className="badge_info">
                             <label className="label_badge">Sobre mi</label>
                         </div>
-                        <div className="content_info"></div>
+                        <div className="content_info">
+                            <h3 className="title_content">Hablemos para el siguiente <span className="bold_title">proyecto</span></h3>
+                        </div>
                     </div>
-                    <p className="label_text">Recuerda que también me encuentro en los siguientes portales</p>
+                    <label className="label_description">Recuerda que también me encuentro en los siguientes portales</label>
+
                 </div>
                 {contactForm.map((form) => (
                     <div key={form.id} className="form_interactions">
-                        <input type="text" className="Input_interactions" id={form.fullName} placeholder="Escribe aquí." />
-                        <input type="email" className="Input_interactions" id={form.email} placeholder="Escribe aquí." />
-                        <select className="Select_interactions">
-                            {contactCountryData.map((country, index) => (
-                                <option key={index} value={country.name}>País de Contacto</option>
-                            ))}
-                        </select>
-                        <input type="text" className="Input_interactions" id={form.subject} placeholder="Escribe aquí." />
+                        <fieldset className="Textfield_interactions" >
+                            <h3 className="textfield_subtitle">Nombre y Appelido</h3>
+                            <input type="text" className="Textfield_Default" id={form.fullName} placeholder="Escribe aquí." />
+                        </fieldset>
+                        <fieldset className="Textfield_interactions" >
+                            <h3 className="textfield_subtitle">Correo Electrónico</h3>
+                            <input type="email" className="Textfield_Default" id={form.email} placeholder="Escribe aquí." />
+                        </fieldset  >
+                        <div className="Textfield_interactions">
+                            <h3 className="textfield_subtitle">País de Contacto</h3>
+                            <select className="Select_interactions">
+                                {contactCountryData.map((country, index) => (
+                                    <option key={index} value={country.name}>País de Contacto</option>
+                                ))}
+                            </select>
+                        </div>
+
+                        <input type="text" className="TextArea_Default" id={form.subject} placeholder="Escribe aquí." />
                         <button className="Button_interactions">Enviar mensaje</button>
                     </div>
                 ))}
