@@ -12,7 +12,7 @@ import StudyData from '../../data/GroupStudy.json';
 import ProjecsData from '../../data/Projects.json';
 import ContactData from '../../data/contactData.json';
 import ContactForm from '../../data/contactForm.json';
-import contactCountryData from '../../data/contactCountryData.json';
+import contactCountryData from '../../data/contactCountry.json';
 
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
