@@ -45,22 +45,17 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                 </div>
                 {contactForm.map((form) => (
                     <div key={form.id} className="form_interactions">
-                        <input type="text" className="Input_interactions" placeholder={form.fullName} />
-                        <input type="text" className="Input_interactions" placeholder={form.address} />
-                        <input type="email" className="Input_interactions" placeholder={form.email} />
+                        <input type="text" className="Input_interactions" id={form.fullName} placeholder="Escribe aquí." />
+                        <input type="email" className="Input_interactions" id={form.email} placeholder="Escribe aquí." />
                         <select className="Select_interactions">
                             {contactCountryData.map((country, index) => (
-                                <option key={index} value={country.name}>{country.name}</option>
+                                <option key={index} value={country.name}>País de Contacto</option>
                             ))}
                         </select>
-                        <input type="text" className="Input_interactions" placeholder={form.subject} />
+                        <input type="text" className="Input_interactions" id={form.subject} placeholder="Escribe aquí." />
                         <button className="Button_interactions">Enviar mensaje</button>
                     </div>
                 ))}
-                <div >
-                    <fieldset className="Textfield_interactions"></fieldset>
-                    <select className="Select_interactions"></select>
-                </div>
             </section>
             <div className='frame-17'>
                 <img alt="" className="frame-detail" />
