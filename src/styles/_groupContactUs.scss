@@ -144,16 +144,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
-  .bold_title {
-    color: var(--Light-03, #d5feff);
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: normal;
-  }
 }
+
+.bold_title {
+  color: var(--Light-03, #d5feff);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .label_description {
   align-self: stretch;
   color: var(--Main-White, #fff);
@@ -166,6 +167,7 @@
 
 .form_interactions {
   display: flex;
+  width: 535px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -190,12 +192,12 @@
 
   border-radius: var(--base-px-03, 12px);
   border: 1px solid var(--Purple-01, #f2efff);
+  background-color: #6e38d9;
 }
 
 .textfield_subtitle {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 
   overflow: hidden;
   color: var(--Main-White, #fff);
@@ -217,6 +219,22 @@
 
   border-radius: var(--base-px-03, 12px);
   border: 1px solid var(--Purple-01, #f2efff);
+  background-color: #6e38d9;
+}
+
+.subtitle_select {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  flex: 1 0 0;
+
+  overflow: hidden;
+  color: var(--Neutral-01, #f5f5f5);
+  text-overflow: ellipsis;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 
 .TextArea_Default {
@@ -231,6 +249,21 @@
 
   border-radius: var(--base-px-03, 12px);
   border: 1px solid var(--Purple-03, #b69df0);
+  background-color: #6e38d9;
+}
+
+.textArea_subtitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  color: var(--Main-White, #fff);
+  text-overflow: ellipsis;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /////////////////////////// image info section ////////////////////////////

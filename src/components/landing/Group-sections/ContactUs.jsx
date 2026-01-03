@@ -48,25 +48,22 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                 </div>
                 {contactForm.map((form) => (
                     <div key={form.id} className="form_interactions">
-                        <fieldset className="Textfield_interactions" >
-                            <h3 className="textfield_subtitle">Nombre y Appelido</h3>
-                            <input type="text" className="Textfield_Default" id={form.fullName} placeholder="Escribe aquí." />
+                        <fieldset className="Textfield_Default">Nombre y Appelido
+                            <input type="text" className="textfield_subtitle" id={form.fullName} placeholder="Escribe aquí." />
                         </fieldset>
-                        <fieldset className="Textfield_interactions" >
-                            <h3 className="textfield_subtitle">Correo Electrónico</h3>
-                            <input type="email" className="Textfield_Default" id={form.email} placeholder="Escribe aquí." />
-                        </fieldset  >
-                        <div className="Textfield_interactions">
-                            <h3 className="textfield_subtitle">País de Contacto</h3>
-                            <select className="Select_interactions">
-                                {contactCountryData.map((country, index) => (
-                                    <option key={index} value={country.name}>País de Contacto</option>
-                                ))}
-                            </select>
-                        </div>
+                        <fieldset className="Textfield_Default">Correo Electrónico
+                            <input type="email" className="textfield_subtitle" id={form.email} placeholder="Escribe aquí." />
+                        </fieldset>
+                        <select className="Select_interactions">
+                            {contactCountryData.map((country, index) => (
+                                <option className="subtitle_select" key={index} value={country.countryName}>{country.countryName}</option>
 
-                        <input type="text" className="TextArea_Default" id={form.subject} placeholder="Escribe aquí." />
-                        <button className="Button_interactions">Enviar mensaje</button>
+                            ))}
+                        </select>
+                        <fieldset className="TextArea_Default">Tu mensaje
+                            <input type="text" className="textArea_subtitle" id={form.subject} placeholder="Escribe aquí." />
+                        </fieldset>
+
                     </div>
                 ))}
             </section>
