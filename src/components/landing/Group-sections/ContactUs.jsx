@@ -39,21 +39,31 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                         <div className="badge_info">
                             <label className="label_badge">Sobre mi</label>
                         </div>
-                        <div className="content_info"></div>
+                        <div className="content_info">
+                            <h3 className="title_content">Hablemos para el siguiente <span className="bold_title">proyecto</span></h3>
+                        </div>
                     </div>
-                    <p className="label_text">Recuerda que también me encuentro en los siguientes portales</p>
+                    <label className="label_description">Recuerda que también me encuentro en los siguientes portales</label>
+
                 </div>
                 {contactForm.map((form) => (
                     <div key={form.id} className="form_interactions">
-                        <input type="text" className="Input_interactions" id={form.fullName} placeholder="Escribe aquí." />
-                        <input type="email" className="Input_interactions" id={form.email} placeholder="Escribe aquí." />
+                        <fieldset className="Textfield_Default">Nombre y Appelido
+                            <input type="text" className="textfield_subtitle" id={form.fullName} placeholder="Escribe aquí." />
+                        </fieldset>
+                        <fieldset className="Textfield_Default">Correo Electrónico
+                            <input type="email" className="textfield_subtitle" id={form.email} placeholder="Escribe aquí." />
+                        </fieldset>
                         <select className="Select_interactions">
                             {contactCountryData.map((country, index) => (
-                                <option key={index} value={country.name}>País de Contacto</option>
+                                <option className="subtitle_select" key={index} value={country.countryName}>{country.countryName}</option>
+
                             ))}
                         </select>
-                        <input type="text" className="Input_interactions" id={form.subject} placeholder="Escribe aquí." />
-                        <button className="Button_interactions">Enviar mensaje</button>
+                        <fieldset className="TextArea_Default">Tu mensaje
+                            <input type="text" className="textArea_subtitle" id={form.subject} placeholder="Escribe aquí." />
+                        </fieldset>
+
                     </div>
                 ))}
             </section>
