@@ -48,12 +48,17 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                 </div>
                 {contactForm.map((form) => (
                     <div key={form.id} className="form_interactions">
-                        <fieldset className="Textfield_Default">Nombre y Appelido
+
+                        <fieldset className="Textfield_intetactions">
+                            <label className="label_interactions" htmlFor="Nombre y Appelido">Nombre y Appelido</label>
                             <input type="text" className="textfield_subtitle" id={form.fullName} placeholder="Escribe aquí." />
                         </fieldset>
-                        <fieldset className="Textfield_Default">Correo Electrónico
+
+                        <fieldset className="Textfield_intetactions">
+                            <label className="label_interactions" htmlFor="email">Correo Electrónico</label>
                             <input type="email" className="textfield_subtitle" id={form.email} placeholder="Escribe aquí." />
                         </fieldset>
+
                         <select className="Select_interactions">
                             {contactCountryData.map((country, index) => (
                                 <option className="subtitle_select" key={index} value={country.countryName}>{country.countryName}</option>
