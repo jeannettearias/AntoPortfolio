@@ -165,6 +165,9 @@
   line-height: 24px; /* 150% */
 }
 
+////////////////// FORM SECTION ////////////////////////
+///
+///
 .form_interactions {
   display: flex;
   width: 535px;
@@ -174,15 +177,7 @@
   flex: 1 0 0;
 }
 
-.Textfield_interactions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: -16px;
-  align-self: stretch;
-}
-
-.Textfield_Default {
+.Textfield_intetactions {
   display: flex;
   padding: var(--base-px-03, 12px);
   justify-content: center;
@@ -192,10 +187,19 @@
 
   border-radius: var(--base-px-03, 12px);
   border: 1px solid var(--Purple-01, #f2efff);
-  background-color: #6e38d9;
 }
 
-.textfield_subtitle {
+.label_interactions {
+  display: flex;
+  padding: var(--base-px-01, 4px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  position: absolute;
+  left: 10px;
+  top: -12px;
+
   display: -webkit-box;
   -webkit-box-orient: vertical;
 
@@ -209,62 +213,24 @@
   line-height: normal;
 }
 
-.Select_interactions {
-  display: flex;
-  padding: var(--base-px-03, 12px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-
-  border-radius: var(--base-px-03, 12px);
-  border: 1px solid var(--Purple-01, #f2efff);
-  background-color: #6e38d9;
-}
-
-.subtitle_select {
+.textfield_subtitle {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   flex: 1 0 0;
 
   overflow: hidden;
-  color: var(--Neutral-01, #f5f5f5);
+  color: var(--Main-White, #fff);
   text-overflow: ellipsis;
   font-family: Raleway;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: 24px; /* 150% */
-}
-
-.TextArea_Default {
-  display: flex;
-  height: 154px;
-  padding: var(--base-px-03, 12px);
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  align-self: stretch;
-
-  border-radius: var(--base-px-03, 12px);
-  border: 1px solid var(--Purple-03, #b69df0);
   background-color: #6e38d9;
 }
 
-.textArea_subtitle {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-
-  overflow: hidden;
-  color: var(--Main-White, #fff);
-  text-overflow: ellipsis;
-  font-family: Raleway;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+///////////////// END FORM SECTION /////////////////////
 
 /////////////////////////// image info section ////////////////////////////
 ///
