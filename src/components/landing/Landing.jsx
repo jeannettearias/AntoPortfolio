@@ -1,18 +1,7 @@
-import React from 'react';
+
 import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
-
-import heroData from '../../data/heroData.json';
-import SkillsData from '../../data/SkillsData.json';
-import GroupHeroData from '../../data/GroupHeroData.json';
-import GroupHeroChips from '../../data/GroupHeroChips.json';
-import ExpData from '../../data/GroupExp.json';
-import StudyData from '../../data/GroupStudy.json';
-import ProjecsData from '../../data/Projects.json';
-import ContactData from '../../data/contactData.json';
-import ContactForm from '../../data/contactForm.json';
-import contactCountryData from '../../data/contactCountry.json';
 
 import Skills from './Skills';
 import GroupHero from './Group-sections/GroupHero';
@@ -22,8 +11,7 @@ import GroupProjectsContactUs from './Group-sections/GroupProjectsContactUs';
 import GroupTestimony from './Group-sections/GroupTestimony';
 
 
-
-function Landing() {
+function Landing({ heroData, SkillsData, GroupHeroData, GroupHeroChips, ExpData, StudyData, activeProjects, ContactData, contactCountryData, contactForm }) {
 
     return (
         <>
@@ -42,11 +30,11 @@ function Landing() {
                         StudyData={StudyData} />
 
                     <GroupProjectsContactUs
-                        projectsData={ProjecsData}
+                        activeProjects={activeProjects}
                         contactData={ContactData}
 
                         contactCountryData={contactCountryData}
-                        contactForm={ContactForm}
+                        contactForm={contactForm}
                     />
 
                     <GroupTestimony />

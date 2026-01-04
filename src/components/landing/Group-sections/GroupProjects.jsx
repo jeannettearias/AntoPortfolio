@@ -4,7 +4,6 @@ import propTypes from 'prop-types';
 
 
 function GroupProjects({ projectsData }) {
-    const [activeProjects, setActiveProjects] = useState(projectsData.filter(project => project.active === true));
 
     return (
         <>
