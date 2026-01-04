@@ -1,9 +1,15 @@
 
 import "../../../styles/_groupContactUs.scss";
 import propTypes from "prop-types";
+import { useState } from "react";
 
 function ContactUs({ contactData, contactCountryData, contactForm }) {
 
+    const [selectedCountry, setSelectedCountry] = useState("");
+
+    const handleCountryChange = (ev) => {
+        setSelectedCountry(ev.target.value);
+    };
 
     return (
 
@@ -50,12 +56,21 @@ function ContactUs({ contactData, contactCountryData, contactForm }) {
                     <div key={form.id} className="form_interactions">
 
                         <fieldset className="Textfield_intetactions">
-                            <label className="label_interactions" htmlFor="Nombre y Appelido">Nombre y Appelido</label>
-                            <input type="text" className="textfield_subtitle" id={form.fullName} placeholder="Escribe aquí." />
+                            <legend className="label_interactions"
+                                htmlFor="text">Nombre y Appelido</legend>
+                            <input
+                                type="text"
+                                className="textfield_subtitle"
+                                id="text"
+                                value={form.fullName}
+                                onChange={handleCountryChange}
+                                maxLength={500}
+                                required
+                                placeholder="Escribe aquí." />
                         </fieldset>
 
                         <fieldset className="Textfield_intetactions">
-                            <label className="label_interactions" htmlFor="email">Correo Electrónico</label>
+                            <legend className="label_interactions" htmlFor="email">Correo Electrónico</legend>
                             <input type="email" className="textfield_subtitle" id={form.email} placeholder="Escribe aquí." />
                         </fieldset>
 

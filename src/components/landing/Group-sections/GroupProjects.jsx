@@ -1,10 +1,8 @@
 import '../../../styles/_groupProjects.scss';
-import { useState } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 function GroupProjects({ projectsData }) {
-    const [activeProjects, setActiveProjects] = useState(projectsData.filter(project => project.active === true));
 
     return (
         <>
@@ -17,7 +15,7 @@ function GroupProjects({ projectsData }) {
                             <label className='label__badge'>Sobre mí</label>
                         </div>
                         <div className='content__text'>
-                            <label className='title__tag'>Algunos de mis<span className='title__span' > proyectos</span></label>
+                            <label className='title__tag'>Algunos de mis<span className='title__span'>proyectos</span></label>
                             <div className='group__tag'></div>
                         </div>
                     </div>
@@ -27,7 +25,7 @@ function GroupProjects({ projectsData }) {
                 </section>
 
                 <section className='Group-cards'>
-                    {activeProjects.map(project => (
+                    {projectsData.map(project => (
                         <div key={project.Cardid} className='Card-project'>
                             <div className='Image-cards'>
                                 <img src={`${import.meta.env.BASE_URL}${project.image}`} className="image-card" alt="" />
@@ -56,7 +54,7 @@ function GroupProjects({ projectsData }) {
 }
 
 GroupProjects.propTypes = {
-    projectsData: propTypes.array.isRequired,
+    projectsData: PropTypes.array.isRequired,
 
 };
 
