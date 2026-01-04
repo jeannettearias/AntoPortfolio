@@ -20,7 +20,7 @@ import contactCountryData from '../data/contactCountry.json';
 function App() {
 
   // state to projects from JSON data
-  const [activeProjects, setActiveProjects] = useState([ProjecsData.filter(project => project.active === true)]);
+  const [activeProjects, setActiveProjects] = useState(ProjecsData.filter(project => project.active === true));
   // state to hero from JSON data
   const [heroSectionData, setHeroSectionData] = useState([heroData]);
   // state to skills from JSON data
@@ -36,6 +36,9 @@ function App() {
   const [contactCountryData, setContactCountryData] = useState([]);
   const [contactForm, setContactForm] = useState([ContactForm]);
   const [contactData, setContactData] = useState([ContactData]);
+
+
+  //CONNECT TO BACKEND 
 
 
 

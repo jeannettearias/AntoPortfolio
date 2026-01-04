@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
@@ -11,7 +11,7 @@ import GroupProjectsContactUs from './Group-sections/GroupProjectsContactUs';
 import GroupTestimony from './Group-sections/GroupTestimony';
 
 
-function Landing({ heroData, SkillsData, GroupHeroData, GroupHeroChips, ExpData, StudyData, activeProjects, ContactData, contactCountryData, contactForm }) {
+function Landing({ heroData, SkillsData, GroupHeroData, GroupHeroChips, ExpData, StudyData, activeProjects, contactData, contactCountryData, contactForm }) {
 
     return (
         <>
@@ -30,12 +30,11 @@ function Landing({ heroData, SkillsData, GroupHeroData, GroupHeroChips, ExpData,
                         StudyData={StudyData} />
 
                     <GroupProjectsContactUs
-                        activeProjects={activeProjects}
-                        contactData={ContactData}
+                        projectsData={activeProjects}  // Pass activeProjects as projectsData
 
+                        contactData={contactData}
                         contactCountryData={contactCountryData}
-                        contactForm={contactForm}
-                    />
+                        contactForm={contactForm} />
 
                     <GroupTestimony />
                 </section>
@@ -43,6 +42,19 @@ function Landing({ heroData, SkillsData, GroupHeroData, GroupHeroChips, ExpData,
         </>
     );
 }
+
+Landing.propTypes = {
+    heroData: PropTypes.array.isRequired,
+    SkillsData: PropTypes.array.isRequired,
+    GroupHeroData: PropTypes.array.isRequired,
+    GroupHeroChips: PropTypes.array.isRequired,
+    ExpData: PropTypes.array.isRequired,
+    StudyData: PropTypes.array.isRequired,
+    activeProjects: PropTypes.array.isRequired,
+    contactData: PropTypes.array.isRequired,
+    contactCountryData: PropTypes.array,
+    contactForm: PropTypes.array,
+};
 
 export default Landing;
 
