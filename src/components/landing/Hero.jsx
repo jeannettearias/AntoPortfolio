@@ -1,7 +1,6 @@
 import "../../styles/_hero.scss";
 import ProjectBtn from '../landing/buttons/ProjectBtn';
 import ContactBtn from "../landing/buttons/ContactBtn";
-import React from "react";
 import PropTypes from 'prop-types';
 
 function Hero({ heroData, Buttons }) {

@@ -57,8 +57,10 @@ function App() {
           GroupHeroChips={groupHeroChipsData}
           ExpData={expSectionData}
           StudyData={studySectionData}
+
           activeProjects={activeProjects}
-          ContactData={contactData}
+
+          contactData={contactData}
           contactCountryData={contactCountryData}
           contactForm={contactForm}
         />
