@@ -6,7 +6,7 @@ import React from 'react';
 import { useEffects, useState } from 'react';
 
 import heroData from '../data/heroData.json';
-import SkillsData from '../data/SkillsData.json';
+import SkillsData from '../data/skillsData.json';
 import GroupHeroData from '../data/GroupHeroData.json';
 import GroupHeroChips from '../data/GroupHeroChips.json';
 import ExpData from '../data/GroupExp.json';
@@ -24,7 +24,7 @@ function App() {
   // state to hero from JSON data
   const [heroSectionData, setHeroSectionData] = useState([heroData]);
   // state to skills from JSON data
-  const [skillsSectionData, setSkillsSectionData] = useState([SkillsData]);
+  const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.status === 'active'));
   // state to group hero from JSON data
   const [groupHeroSectionData, setGroupHeroSectionData] = useState([GroupHeroData]);
   const [groupHeroChipsData, setGroupHeroChipsData] = useState([GroupHeroChips]);
@@ -38,10 +38,6 @@ function App() {
   const [contactData, setContactData] = useState([ContactData]);
 
 
-  //CONNECT TO BACKEND 
-
-
-
   return (
     <>
       <section className="Home">
@@ -52,7 +48,7 @@ function App() {
         <Landing
           heroData={heroSectionData}
 
-          SkillsData={skillsSectionData}
+          SkillsData={activeCards}
           GroupHeroData={groupHeroSectionData}
           GroupHeroChips={groupHeroChipsData}
           ExpData={expSectionData}

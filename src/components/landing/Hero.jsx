@@ -9,8 +9,8 @@ function Hero({ heroData, Buttons }) {
         <>
             <section id="Hero" className="hero">
                 <div className="hero__content">
-                    <div className="Tag">
-                        <label className="tag__label">Hello there</label>
+                    <div className="tag">
+                        <h3 className="tag__label">Hello there</h3>
                     </div>
                     <div className="hero__content__content">
                         <h1 className="hero-text">Soy <span className="hero-green-text">Antonia</span>, product Designer</h1>
