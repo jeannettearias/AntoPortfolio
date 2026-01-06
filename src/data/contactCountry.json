@@ -1,58 +1,58 @@
 [
     {
-        "countryId": 0,
+        "id": 0,
         "countryName": "País de Contacto"
     },
     {
-        "countryId": 1,
+        "id": 1,
         "countryName": "España"
     },
     {
-        "countryId": 2,
+        "id": 2,
         "countryName": "México"
     },
     {
-        "countryId": 3,
+        "id": 3,
         "countryName": "Argentina"
     },
     {
-        "countryId": 4,
+        "id": 4,
         "countryName": "Colombia"
     },
     {
-        "countryId": 5,
+        "id": 5,
         "countryName": "Chile"
     },
     {
-        "countryId": 6,
+        "id": 6,
         "countryName": "Perú"
     },
     {
-        "countryId": 7,
+        "id": 7,
         "countryName": "Venezuela"
     },
     {
-        "countryId": 8,
+        "id": 8,
         "countryName": "Uruguay"
     },
     {
-        "countryId": 9,
+        "id": 9,
         "countryName": "Ecuador"
     },
     {
-        "countryId": 10,
+        "id": 10,
         "countryName": "Bolivia"
     },
     {
-        "countryId": 11,
+        "id": 11,
         "countryName": "Paraguay"
     },
     {
-        "countryId": 12,
+        "id": 12,
         "countryName": "Costa Rica"
     },
     {
-        "countryId": 13,
+        "id": 13,
         "countryName": "Panamá"
     }
 ]

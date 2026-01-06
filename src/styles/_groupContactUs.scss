@@ -27,11 +27,9 @@
 .info__item {
   display: flex;
   width: 444px;
-  height: 100%;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
-  gap: 20px;
 }
 
 .Detail__info {
@@ -157,6 +155,7 @@
 
 .label_description {
   align-self: stretch;
+
   color: var(--Main-White, #fff);
   font-family: Raleway;
   font-size: 16px;
@@ -166,8 +165,7 @@
 }
 
 ////////////////// FORM SECTION ////////////////////////
-///
-///
+
 .form_interactions {
   display: flex;
   width: 535px;
@@ -179,27 +177,19 @@
 
 .Textfield_intetactions {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+
   padding: var(--base-px-03, 12px);
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
 
   border-radius: var(--base-px-03, 12px);
   border: 1px solid var(--Purple-01, #f2efff);
 }
 
 .label_interactions {
-  display: flex;
-  padding: var(--base-px-01, 4px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  position: absolute;
-  left: 10px;
-  top: -12px;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
 
@@ -227,8 +217,96 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
   background-color: #6e38d9;
+
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: var(--base-px-03, 12px);
+  border: 1px solid var(#6e38d9);
 }
 
+.Select_interactions {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: var(--base-px-03, 12px);
+  border: 1px solid var(--Purple-01, #f2efff);
+  color: var(--Main-White, #fff);
+  background-color: #6e38d9;
+}
+
+.subtitle_select {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  flex: 1 0 0;
+
+  overflow: hidden;
+  color: var(--Main-White, #fff);
+  text-overflow: ellipsis;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.TextArea_Default {
+  display: flex;
+  height: 154px;
+  padding: var(--base-px-03, 12px);
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-radius: var(--base-px-03, 12px);
+  border: 1px solid var(--Purple-03, #b69df0);
+}
+
+.textArea_subtitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  flex: 1 0 0;
+
+  overflow: hidden;
+  color: var(--Main-White, #fff);
+  text-overflow: ellipsis;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  background-color: #6e38d9;
+}
+
+.submit-button {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  background-color: #6e38d9;
+  border-radius: var(--base-px-03, 12px);
+
+  color: var(--Main-White, #fff);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
 ///////////////// END FORM SECTION /////////////////////
 
 /////////////////////////// image info section ////////////////////////////
@@ -246,7 +324,6 @@
 }
 
 .frame-17 {
-  display: flex;
   width: 1441px;
   height: 63px;
 
