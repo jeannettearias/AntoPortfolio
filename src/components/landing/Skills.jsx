@@ -13,16 +13,15 @@ function Skills({ SkillsData }) {
                 <div className="content-area">
                     <div className="Badge">Sobre mí</div>
                     <p className="content-text"
-                    >¿Por qué<span className="green-text">elegirme</span> para tu próximo proyecto?</p>
+                    >¿Por qué <span className="purple-text">elegirme </span> para tu próximo proyecto?</p>
                 </div>
-
                 <div className="button-area">
                     <div className='btn-me'>Háblame</div>
                 </div>
 
             </section>
 
-            <section className="area-box">
+            <section className="area_box">
                 {activeCards.map(card => (
                     <div key={card.id} className="cards_aboutMe">
                         <div className="card_frame">
