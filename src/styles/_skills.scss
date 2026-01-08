@@ -1,7 +1,6 @@
 .Section-skills {
   display: flex;
-  width: 1440px;
-  height: 697px;
+  width: 100%;
   padding: 156px 88px;
   align-items: center;
   gap: 47px;
@@ -10,17 +9,18 @@
 
 .area-content {
   display: flex;
+  min-width: 553px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   flex: 1 0 0;
 }
 
-.content-me {
+.content-area {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
   align-self: stretch;
 }
 
@@ -51,17 +51,17 @@
   font-weight: 400;
   line-height: 68px; /* 154.545% */
 
-  .green-text {
-    color: var(--Main-Primary, #057f4c);
+  .purple-text {
+    color: var(--Main-Primary, #6e38d9);
     font-family: Montserrat;
     font-size: 44px;
     font-style: italic;
-    font-weight: 700;
+
     line-height: 68px;
   }
 }
 
-.button-me {
+.button-area {
   display: flex;
   padding: 12px 16px;
   justify-content: center;
@@ -69,7 +69,7 @@
   gap: 10px;
 
   border-radius: 12px;
-  background: var(--Main-Primary, #057f4c);
+  background: var(--Main-Primary, #6e38d9);
 }
 
 .btn-me {
@@ -83,13 +83,11 @@
   line-height: normal;
 }
 
-.area-box {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-
+.area_box {
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
   align-content: flex-end;
-
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -98,15 +96,21 @@
   display: flex;
   width: 324px;
   min-width: 324px;
-  padding: 24px;
+  height: 216px;
+  padding: var(--base-px-04, 16px);
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: var(--base-px-02, 8px);
   flex-shrink: 0;
 
   border-radius: 8px;
-  border: 1px solid var(--Main-Background, #f5f5f5);
+  border: 1px solid var(--Main-Background, #f2efff);
   background: var(--Main-Background_Alt, #f5f5f5);
+}
+
+.card_frame {
+  width: 48px;
+  height: 48px;
 }
 
 .card_icon {
@@ -115,7 +119,7 @@
   aspect-ratio: 1/1;
 
   border-radius: 3076.923px;
-  background: var(--Main-Secondary, #e6ae37);
+  background: var(--Main-Secondary, #2fc9ce);
 }
 
 .card_label {
@@ -138,4 +142,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+.margin {
+  display: flex;
+  padding: 0 var(--base-px-16, 64px) var(--base-px-16, 64px)
+    var(--base-px-16, 64px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
 }

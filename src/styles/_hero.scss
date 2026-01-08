@@ -13,16 +13,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: var(--base-px-06, 20px);
   flex: 1 0 0;
 }
 
-.Tag {
+.tag {
   display: flex;
   padding: 14px;
   justify-content: center;
   align-items: center;
-  gap: 13px;
+  gap: 13.659px;
 
   border: 1px solid var(--Neutral-06, #585d5b);
 }
@@ -35,7 +35,7 @@
   font-size: var(--Size-Heading-4, 24px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 30px; /* 125% */
 }
 
 .hero__content__content {

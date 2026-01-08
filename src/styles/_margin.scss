@@ -1,0 +1,128 @@
+.section-hero {
+  display: flex;
+  padding: var(--base-px-12, 44px);
+  gap: var(--base-px-08, 28px);
+  align-self: stretch;
+
+  border-radius: var(--base-px-07, 24px);
+  background: var(--Purple-06, #3f1390);
+}
+
+.image_margin {
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.library_clouds_cloud_2 {
+  display: flex;
+  width: 185.556px;
+  height: 126.671px;
+  justify-content: center;
+  align-items: center;
+}
+.library_clouds_cloud_4 {
+  display: flex;
+  width: 155.01px;
+  height: 110.202px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sally_4 {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+
+.content-tag {
+  display: flex;
+  min-width: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+
+  border-radius: 8px;
+}
+
+.Badge {
+  display: flex;
+  padding: var(--base-px-02, 8px);
+  align-items: center;
+  gap: var(--base-px-01, 4px);
+
+  border-radius: 10000px;
+  background: var(--Light-04, #a9fcff);
+
+  color: var(--Light-08, #014f51);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.text_content_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-03, 12px);
+  align-self: stretch;
+}
+
+.hero_title {
+  align-self: stretch;
+
+  color: var(--Main-White, #fff);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  .hero_bold_title {
+    color: var(--Main-White, #fff);
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.hero_info_1 {
+  align-self: stretch;
+
+  color: var(--Main-White, #fff);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.hero_info_2 {
+  align-self: stretch;
+
+  color: var(--Main-White, #fff);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.group_tag {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
