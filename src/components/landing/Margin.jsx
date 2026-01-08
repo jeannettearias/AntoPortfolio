@@ -25,7 +25,6 @@ function Margin() {
               <label className="hero_info_1">Soy Diseñadora Industrial especializada en UX/UI y diseño de producto digital. Mi trabajo se enfoca en entender a las personas, definir problemas reales y diseñar soluciones funcionales que equilibren usuario, negocio y tecnología.</label>
               <label className="hero_info_2">Trabajo con metodologías ágiles y procesos colaborativos, aplicando accesibilidad, diseño atómico y métricas para crear productos consistentes y escalables.</label>
             </div>
-            <div className="group_tag"></div>
           </div>
         </div>
 
