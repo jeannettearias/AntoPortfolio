@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 function Hero({ heroData, Buttons }) {
 
     return (
+
         <>
             <section id="Hero" className="hero">
                 <div className="hero__content">
@@ -30,22 +31,26 @@ function Hero({ heroData, Buttons }) {
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
                     </div>
+
+
                     <div className="figma__picture">
                         <img className="hero__img"
-                            alt=""
-                        />
+                            alt="" />
                     </div>
+
                     <div className="data__sections">
                         <div className="data__content">
                             {heroData.map(item => (
-                                <div key={item.id} >
-                                    <p className="hero__title">{item.numbData}</p>
-                                    <p className="hero__info__description">{item.description}</p>
-                                </div>
+                                <ul key={item.id}>
+                                    <li className="hero__title">{item.title}</li>
+                                    <li className="hero__info__description">{item.description}</li>
+                                </ul>
                             ))}
                         </div>
                     </div>
+                    <div className="Detail_2"></div>
                 </div>
+
             </section>
         </>
     );
@@ -56,4 +61,5 @@ export default Hero;
 
 Hero.propTypes = {
     heroData: PropTypes.array.isRequired,
+    Buttons: PropTypes.object,
 };

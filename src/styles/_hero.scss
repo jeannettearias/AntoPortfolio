@@ -15,6 +15,8 @@
   align-items: flex-start;
   gap: var(--base-px-06, 20px);
   flex: 1 0 0;
+
+  min-width: 710px;
 }
 
 .tag {
@@ -91,19 +93,21 @@
 
 .hero__info {
   display: flex;
+  width: 510px;
   align-items: center;
-  gap: 94px;
+  gap: 44px;
+  flex-shrink: 0;
   align-self: stretch;
 }
 
 .Detail_2 {
-  width: 449px;
+  width: 449.489px;
   height: 521px;
 
   position: absolute;
-  right: -87.677px;
+  right: 151.323px;
 
-  background: var(--Green-01, #e2f2eb);
+  background: var(--Purple-01, #f2efff);
 }
 
 .Detail_1 {
@@ -138,11 +142,13 @@
 .figma__picture {
   display: flex;
   width: 304px;
-  padding-bottom: 3px;
+  padding: 43.5px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   align-self: stretch;
+  z-index: 2;
 
   border-radius: 10000px;
 }
@@ -159,29 +165,29 @@
 
 .data__sections {
   display: flex;
-  width: 112px;
   height: 521px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
+  flex: 1 0 0;
 }
 
 .data__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 4px;
   align-self: stretch;
-  position: relative;
+
+  z-index: 1;
 }
 
 .hero__title {
   align-self: stretch;
 
-  color: var(--Main-Primary, #057f4c);
-  text-align: right;
+  color: var(--Main-Primary, #6e38d9);
 
   /* H3/Bold */
   font-family: var(--Family-Content, Raleway);
@@ -189,18 +195,19 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  list-style-type: none;
 }
 
 .hero__info__description {
   align-self: stretch;
 
   color: var(--Neutral-07, #424544);
-  text-align: right;
 
   /* MediumText/Regular */
   font-family: var(--Family-Content, Raleway);
   font-size: var(--Size-Medium, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px; /* 125% */
+  list-style-type: none;
 }

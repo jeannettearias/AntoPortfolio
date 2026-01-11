@@ -4,34 +4,34 @@
         "title": "Product designer",
         "description": "Acompaño el diseño del producto desde la definición del problema hasta la validación de la solución, asegurando coherencia y valor para el usuario.",
         "icon": "/images/skills/Cube.svg",
-        "status": "active"
+        "active": true
     },
     {
         "id": 2,
         "title": "UX/UI Designer",
         "description": "Diseño experiencias intuitivas y visualmente claras, priorizando la usabilidad, jerarquía visual y consistencia.",
         "icon": "/images/skills/Pencil.svg",
-        "status": "active"
+        "active": true
     },
     {
         "id": 3,
         "title": "Visual Designer",
         "description": "Aplico principios de diseño visual para reforzar identidad, claridad y coherencia en productos digitales.",
         "icon": "/images/skills/PenNib.svg",
-        "status": "active"
+        "active": true
     },
     {
         "id": 4,
         "title": "Design System",
         "description": "Creo y mantengo sistemas de diseño escalables que facilitan el trabajo en equipo y la evolución del producto.",
         "icon": "/images/skills/TreeStructure.svg",
-        "status": "active"
+        "active": true
     },
     {
         "id": 5,
         "title": "UX Research",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "icon": "/images/skills/Bullet.svg",
-        "status": "inactive"
+        "active": false
     }
 ]

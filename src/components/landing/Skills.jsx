@@ -6,7 +6,7 @@ import Margin from './Margin';
 
 function Skills({ SkillsData }) {
 
-    const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.status === 'active'));
+    const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
 
     return (
         <>

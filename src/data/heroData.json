@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "numbData": "+4",
+        "title": "+5",
         "description": "Años de experiencia"
     },
     {
         "id": 2,
-        "numbData": "+64",
-        "description": "Clientes satisfechos"
+        "title": "End-to-end",
+        "description": "Proyectos diseñados y lanzados"
     },
     {
         "id": 3,
-        "numbData": "+30",
-        "description": "Proyectos completados"
+        "title": "Trabajo colaborativo",
+        "description": "Equipos multidisciplinarios"
     }
 ]

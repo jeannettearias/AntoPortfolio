@@ -1,4 +1,5 @@
 import '../../../styles/_heroBtns.scss';
+import PropTypes from 'prop-types';
 
 function ContactBtn({ Buttons }) {
     return (
@@ -14,5 +15,9 @@ function ContactBtn({ Buttons }) {
         </>
     );
 }
+
+ContactBtn.propTypes = {
+    Buttons: PropTypes.object,
+};
 
 export default ContactBtn;

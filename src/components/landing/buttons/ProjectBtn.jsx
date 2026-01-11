@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-
 import '../../../styles/_heroBtns.scss';
+import PropTypes from 'prop-types';
 
 function ProjectBtn({ Buttons }) {
 
@@ -15,5 +15,9 @@ function ProjectBtn({ Buttons }) {
         </>
     );
 }
+
+ProjectBtn.propTypes = {
+    Buttons: PropTypes.object,
+};
 
 export default ProjectBtn;
