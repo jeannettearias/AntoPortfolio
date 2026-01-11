@@ -18,9 +18,11 @@
 
 .sally_4 {
   position: relative;
-  z-index: 2;
   max-width: 100%;
   height: auto;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
 }
 
 .library_clouds_cloud_2 {
@@ -38,7 +40,7 @@
   top: 65%; // Adjust position
   left: 10%; // Adjust position
   z-index: 1; // Behind Sally
-  width: 150px; // Adjust size
+  width: 155px; // Adjust size
   height: auto;
 }
 
@@ -47,9 +49,8 @@
   min-width: 600px;
   flex-direction: column;
   align-items: flex-start;
+  gap: var(--base-px-06, 20px);
   flex: 1 0 0;
-
-  border-radius: 8px;
 }
 
 .Badge {
@@ -140,10 +141,11 @@
 ///////////////////////////// CONTENT ///////////////////////////////////
 .Content_content_tags {
   display: flex;
+  min-width: 600px;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--base-px-03, 12px);
-  align-self: stretch;
+  gap: var(--base-px-06, 20px);
+  flex: 1 0 0;
 }
 
 .content_tag_title {

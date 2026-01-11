@@ -4,8 +4,9 @@ import ContactBtn from "../landing/buttons/ContactBtn";
 import PropTypes from 'prop-types';
 
 function Hero({ heroData, Buttons }) {
-
+    console.log(heroData);
     return (
+
         <>
             <section id="Hero" className="hero">
                 <div className="hero__content">
@@ -30,21 +31,25 @@ function Hero({ heroData, Buttons }) {
                         <div className="rectangle_3"></div>
                         <div className="rectangle_4"></div>
                     </div>
-                    <div className="figma__picture">
-                        <img className="hero__img"
-                            alt=""
-                        />
-                    </div>
-                    <div className="data__sections">
-                        <div className="data__content">
-                            {heroData.map(item => (
-                                <div key={item.id} >
-                                    <p className="hero__title">{item.numbData}</p>
-                                    <p className="hero__info__description">{item.description}</p>
-                                </div>
-                            ))}
+
+                    <div className="Detail_2">
+                        <div className="figma__picture">
+                            <img className="hero__img"
+                                alt=""
+                            />
+                        </div>
+                        <div className="data__sections">
+                            <div className="data__content">
+                                {heroData.map(item => (
+                                    <div key={item.id}>
+                                        <label className="hero__title">{item.title}</label>
+                                        <label className="hero__info__description">{item.description}</label>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </>
@@ -56,4 +61,5 @@ export default Hero;
 
 Hero.propTypes = {
     heroData: PropTypes.array.isRequired,
+    Buttons: PropTypes.object,
 };

@@ -1,14 +1,10 @@
 import '../styles/App.scss';
 import Header from './layout/Header';
 import Landing from './landing/Landing';
-
-import React from 'react';
-import { useEffects, useState } from 'react';
+import { useState } from 'react';
 
 import heroData from '../data/heroData.json';
 import SkillsData from '../data/skillsData.json';
-import GroupHeroData from '../data/GroupHeroData.json';
-import GroupHeroChips from '../data/GroupHeroChips.json';
 import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
 import ProjecsData from '../data/Projects.json';
@@ -25,9 +21,6 @@ function App() {
   const [heroSectionData, setHeroSectionData] = useState([heroData]);
   // state to skills from JSON data
   const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.status === 'active'));
-  // state to group hero from JSON data
-  const [groupHeroSectionData, setGroupHeroSectionData] = useState([GroupHeroData]);
-  const [groupHeroChipsData, setGroupHeroChipsData] = useState([GroupHeroChips]);
   // state to experience from JSON data
   const [expSectionData, setExpSectionData] = useState([ExpData]);
   // state to study from JSON data
@@ -49,8 +42,6 @@ function App() {
           heroData={heroSectionData}
 
           SkillsData={activeCards}
-          GroupHeroData={groupHeroSectionData}
-          GroupHeroChips={groupHeroChipsData}
           ExpData={expSectionData}
           StudyData={studySectionData}
 
