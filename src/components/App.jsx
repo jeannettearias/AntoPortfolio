@@ -17,16 +17,14 @@ function App() {
 
   // state to projects from JSON data
   const [activeProjects, setActiveProjects] = useState(ProjecsData.filter(project => project.active === true));
-  // state to hero from JSON data
-  const [heroSectionData, setHeroSectionData] = useState([heroData]);
+
   // state to skills from JSON data
-  const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.status === 'active'));
+  const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
   // state to experience from JSON data
   const [expSectionData, setExpSectionData] = useState([ExpData]);
   // state to study from JSON data
   const [studySectionData, setStudySectionData] = useState([StudyData]);
-  // state to contact us from JSON data
-  const [contactCountryData, setContactCountryData] = useState([]);
+
   const [contactForm, setContactForm] = useState([ContactForm]);
   const [contactData, setContactData] = useState([ContactData]);
 
@@ -39,7 +37,7 @@ function App() {
 
       <section className="body">
         <Landing
-          heroData={heroSectionData}
+          heroData={heroData}
 
           SkillsData={activeCards}
           ExpData={expSectionData}

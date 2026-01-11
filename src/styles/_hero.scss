@@ -15,6 +15,8 @@
   align-items: flex-start;
   gap: var(--base-px-06, 20px);
   flex: 1 0 0;
+
+  min-width: 710px;
 }
 
 .tag {
@@ -91,23 +93,21 @@
 
 .hero__info {
   display: flex;
-  flex-direction: row;
+  width: 510px;
   align-items: center;
-  gap: 94px;
+  gap: 44px;
+  flex-shrink: 0;
   align-self: stretch;
 }
 
 .Detail_2 {
-  display: block;
-  flex-direction: row;
-  width: 449px;
+  width: 449.489px;
   height: 521px;
 
-  position: relative;
-  right: -87.677px;
+  position: absolute;
+  right: 151.323px;
 
   background: var(--Purple-01, #f2efff);
-  z-index: 2;
 }
 
 .Detail_1 {
@@ -142,11 +142,13 @@
 .figma__picture {
   display: flex;
   width: 304px;
-  padding-bottom: 3px;
+  padding: 43.5px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   align-self: stretch;
+  z-index: 2;
 
   border-radius: 10000px;
 }
@@ -169,17 +171,17 @@
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
-  z-index: 1;
 }
 
 .data__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 4px;
   align-self: stretch;
-  position: relative;
+
+  z-index: 1;
 }
 
 .hero__title {
@@ -193,6 +195,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  list-style-type: none;
 }
 
 .hero__info__description {
@@ -206,4 +209,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
+  list-style-type: none;
 }
