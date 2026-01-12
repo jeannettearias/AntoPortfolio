@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 function Bar({ SkillsData }) {
-    const [labels, setLabels] = useState(SkillsData.filter(label => label.status === 'active'));
+    const [labels, setLabels] = useState(SkillsData.filter(label => label.active === true));
 
     return (
 
