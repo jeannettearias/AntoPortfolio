@@ -4,38 +4,28 @@ import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 
 import Skills from './Skills';
-import GroupTools from './Group-sections/GroupTools';
-import GroupExperience from './Group-sections/GroupExperience';
-import GroupProjectsContactUs from './Group-sections/GroupProjectsContactUs';
-import GroupTestimony from './Group-sections/GroupTestimony';
+import GroupSections from './Group-sections/GroupSections';
 
 
 function Landing({ heroData, SkillsData, ExpData, StudyData, activeProjects, contactData, contactCountryData, contactForm }) {
 
     return (
-        <>
-            <section className='landing'>
-                <Hero heroData={heroData} />
-                <Bar SkillsData={SkillsData} />
+        <section className='landing'>
+            <Hero heroData={heroData} />
+            <Bar SkillsData={SkillsData} />
 
-                <Skills SkillsData={SkillsData} />
+            <Skills SkillsData={SkillsData} />
 
-                <section className='group-sections'>
-                    <GroupTools />
-                    <GroupExperience ExpData={ExpData}
-                        StudyData={StudyData} />
-
-                    <GroupProjectsContactUs
-                        projectsData={activeProjects}  // Pass activeProjects as projectsData
-
-                        contactData={contactData}
-                        contactCountryData={contactCountryData}
-                        contactForm={contactForm} />
-
-                    <GroupTestimony />
-                </section>
+            <section className='group-sections'>
+                <GroupSections
+                    ExpData={ExpData}
+                    StudyData={StudyData}
+                    activeProjects={activeProjects}
+                    contactData={contactData}
+                    contactCountryData={contactCountryData}
+                    contactForm={contactForm} />
             </section>
-        </>
+        </section>
     );
 }
 

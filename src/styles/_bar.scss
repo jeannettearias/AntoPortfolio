@@ -1,33 +1,38 @@
 .bar {
   position: relative; /* container for absolute positioned children */
   width: 100%;
+
   /* optional layout sizing */
-  display: block;
   margin: 1rem 0;
 }
 
 .detail_bar {
-  width: 1609px;
-  height: 89.018px;
+  position: absolute; /* Position relative to . bar */
+  top: 0;
+  left: 0;
+  width: 1456.664px;
+  height: 113.018px;
   transform: rotate(-2.035deg);
+  background: var(--Main-Secondary, #2fc9ce);
 
-  background: var(--Main-Secondary, #e6ae37);
+  /* Place it behind bar-info */
+  z-index: 1;
 }
 
 .bar-info {
-  height: 118px; /* adjust as needed */
-  width: 100%;
-  padding: 24px 88px;
+  position: relative; /* Needed for z-index to work */
+  display: flex;
   align-items: center;
   gap: 16px;
+  background: var(--Main-Primary, #6e38d9);
 
-  background: var(--Main-Primary, #057f4c);
+  /* Place it above detail_bar */
+  z-index: 2;
 }
 
 .Group-card {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
+  align-items: center;
   gap: 16px;
 }
 
