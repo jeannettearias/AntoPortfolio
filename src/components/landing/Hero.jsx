@@ -41,10 +41,10 @@ function Hero({ heroData, Buttons }) {
                     <div className="data__sections">
                         <div className="data__content">
                             {heroData.map(item => (
-                                <ul key={item.id}>
-                                    <li className="hero__title">{item.title}</li>
-                                    <li className="hero__info__description">{item.description}</li>
-                                </ul>
+                                <div key={item.id}>
+                                    <div className="hero__title">{item.title}</div>
+                                    <div className="hero__info__description">{item.description}</div>
+                                </div>
                             ))}
                         </div>
                     </div>

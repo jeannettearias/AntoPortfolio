@@ -165,12 +165,15 @@
 
 .data__sections {
   display: flex;
+  width: 205px;
   height: 521px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 32px;
+
   flex: 1 0 0;
+
+  margin-right: auto;
 }
 
 .data__content {
@@ -178,7 +181,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 4px;
+  gap: 32px;
   align-self: stretch;
 
   z-index: 1;
