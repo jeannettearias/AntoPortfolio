@@ -281,7 +281,7 @@
   padding: var(--base-px-24, 104px) var(--base-px-19, 88px);
   flex-direction: column;
   align-items: center;
-  gap: var(--base-px-11, 40px);
+  gap: var(--base-px-12, 44px);
   align-self: stretch;
 }
 
@@ -289,7 +289,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: var(--base-px-02, 8px);
   align-self: stretch;
 }
 
@@ -300,18 +300,18 @@
   gap: var(--base-px-01, 4px);
 
   border-radius: 10000px;
-  background: var(--Orange-01, #fcf5e4);
+  background: var(--Light-03, #d5feff);
 }
 
 .label-badge {
-  color: var(--Orange-06, #bb8513);
+  color: var(--Light-07, #026e72);
 
   /* MediumText/Regular */
   font-family: var(--Family-Content, Raleway);
   font-size: var(--Size-Medium, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px; /* 125% */
 }
 
 .Content-text {
@@ -335,7 +335,7 @@
 }
 
 .span_title_text {
-  color: var(--Main-Secondary, #e6ae37);
+  color: var(--Main-Secondary, #2fc9ce);
   font-family: Montserrat;
   font-size: 48px;
   font-style: italic;
