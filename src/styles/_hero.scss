@@ -4,7 +4,6 @@
   padding: 116px 88px;
   align-items: center;
   gap: var(--base-px-09, 32px);
-  align-self: stretch;
 
   background: var(--Main-White, #fff);
 }
@@ -44,7 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 16px;
   align-self: stretch;
 }
 
@@ -58,17 +57,16 @@
   font-size: var(--Size-Heading-1, 64px);
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 80px; /* 125% */
 
   .hero-green-text {
-    color: var(--Main-Primary, #057f4c);
+    color: var(--Main-Primary, #6e38d9);
 
-    /* H1/Semibold */
     font-family: var(--Family-Title, Montserrat);
     font-size: var(--Size-Heading-1, 64px);
-    font-style: normal;
+    font-style: italic;
     font-weight: 700;
-    line-height: normal;
+    line-height: 80px;
   }
 }
 
@@ -77,12 +75,12 @@
 
   color: var(--Neutral-07, #424544);
 
-  /* H4/Regular */
+  /* LargeText/Regular */
   font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Heading-4, 24px);
+  font-size: var(--Size-Large, 18px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 24px; /* 133.333% */
 }
 
 .group-buttons {
