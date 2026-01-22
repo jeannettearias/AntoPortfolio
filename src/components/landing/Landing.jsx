@@ -25,6 +25,9 @@ function Landing({ heroData, SkillsData, ExpData, StudyData, activeProjects, con
                     contactCountryData={contactCountryData}
                     contactForm={contactForm} />
             </section>
+            <section className='section-footer'>
+
+            </section>
         </section>
     );
 }

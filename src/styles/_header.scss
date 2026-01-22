@@ -17,13 +17,14 @@
 
 .head {
   display: inline-flex;
-  padding: var(--base-px-04, 16px);
   align-items: center;
-  gap: var(--base-px-11, 40px);
+  padding: var(--base-px-04, 16px);
 
   border-radius: var(--base-px-06, 20px);
+  border: 1px solid var(--Neutral-02, #dfe7e4);
   background: var(--Main-White, #fff);
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
+
+  z-index: 9999;
 }
 
 .logo {

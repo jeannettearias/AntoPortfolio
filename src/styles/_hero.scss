@@ -1,7 +1,7 @@
 .hero {
   display: flex;
 
-  padding: 200px 88px 116px 88px;
+  padding: 116px 88px;
   align-items: center;
   gap: var(--base-px-09, 32px);
   align-self: stretch;
@@ -105,7 +105,7 @@
   height: 521px;
 
   position: absolute;
-  left: 987.999px;
+  left: 1075.999px;
 
   background: var(--Purple-01, #f2efff);
 }
@@ -158,8 +158,9 @@
   align-self: stretch;
 
   border-radius: 1000px;
-  background: url("/images/Anto__hero_bw.png") -84.265px -37.958px / 154.117%
-      107.579% no-repeat,
+  background:
+    url("/images/hero/HeroImage.svg") -84.265px -37.958px / 154.117% 107.579%
+      no-repeat,
     var(--Main-Secondary, #2fc9ce);
 }
 
