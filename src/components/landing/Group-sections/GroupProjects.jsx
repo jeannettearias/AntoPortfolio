@@ -45,10 +45,6 @@ function GroupProjects({ projectsData }) {
                 </section>
 
             </section>
-            <div className="Details-projects">
-                <img alt="" className="Detail__projects_1" />
-                <img alt="" className="Detail__projects_2" />
-            </div>
         </>
     );
 }
