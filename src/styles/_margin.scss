@@ -22,26 +22,6 @@
   height: auto;
   width: 600px;
   height: 600px;
-  z-index: 2;
-}
-
-.library_clouds_cloud_2 {
-  position: absolute;
-  top: 25%; // Adjust position
-  right: 10%; // Adjust position
-  z-index: 3; // In front of Sally
-  width: 186px; // Adjust size
-  height: auto;
-  z-index: 1;
-}
-
-.library_clouds_cloud_4 {
-  position: absolute;
-  top: 65%; // Adjust position
-  left: 10%; // Adjust position
-  z-index: 1; // Behind Sally
-  width: 155px; // Adjust size
-  height: auto;
 }
 
 .content-tag {

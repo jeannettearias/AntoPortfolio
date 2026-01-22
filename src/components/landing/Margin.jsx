@@ -3,18 +3,12 @@ import "../../styles/_margin.scss";
 
 function Margin() {
 
-
   return (
     <>
       <section className="section-hero">
         <div className="image_margin">
-          <img className="library_clouds_cloud_2"
-            src={`${import.meta.env.BASE_URL}images/skills/cloud_2.png`} alt="" />
           <img className="sally_4"
-            src={`${import.meta.env.BASE_URL}images/skills/sally_4.png`} alt="" />
-          <img className="library_clouds_cloud_4"
-            src={`${import.meta.env.BASE_URL}images/skills/cloud_4.png`} alt="" />
-
+            src={`${import.meta.env.BASE_URL}images/skills/AboutMeImage.svg`} alt="" />
         </div>
 
         <div className="content-tag">

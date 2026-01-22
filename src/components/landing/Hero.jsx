@@ -11,12 +11,13 @@ function Hero({ heroData, Buttons }) {
             <section id="Hero" className="hero">
                 <div className="hero__content">
                     <div className="tag">
-                        <h3 className="tag__label">Hello there</h3>
+                        <label className="tag__label">Hello there</label>
                     </div>
                     <div className="hero__content__content">
-                        <h1 className="hero-text">Soy <span className="hero-green-text">Antonia</span>, product Designer</h1>
-                        <p className="hero__description">Lorem Ipsum is simply dummy text
-                            of the printing and typesetting industry.</p>
+                        <label className="hero-text">Soy <span className="hero-green-text">Antonia,</span><br /> product Designer</label>
+                        <label className="hero__description">Diseño productos digitales centrados en las personas, combinando investigación,
+                            diseño de interfaces y sistemas escalables para crear experiencias claras,
+                            accesibles y alineadas con objetivos de negocio.</label>
                     </div>
                     <div className="group-buttons">
                         <ProjectBtn
@@ -51,7 +52,7 @@ function Hero({ heroData, Buttons }) {
                     <div className="Detail_2"></div>
                 </div>
 
-            </section>
+            </section >
         </>
     );
 
