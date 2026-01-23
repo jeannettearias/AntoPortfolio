@@ -31,11 +31,9 @@ function App() {
 
   return (
     <>
-      <section className="Home">
-        <Header />
-      </section>
-
       <section className="body">
+        <Header />
+
         <Landing
           heroData={heroData}
 
