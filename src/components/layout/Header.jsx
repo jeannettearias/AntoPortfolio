@@ -6,38 +6,40 @@ import '../../styles/core/_variables.scss'
 
 function Header() {
 
-
     return (
-        <>
-            <section className="background"></section>
-            <section className='section-head'>
-                <nav className="head">
-                    <div className="logo"></div>
-                    <ul className="nav">
-                        <li className='tab selected-tab'>
-                            <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
-                        </li>
-                        <li className='tab'>
-                            <HashLink smooth to="#Skills" className='menu__link'>Acerca de mí</HashLink>
-                        </li>
-                        <li className='tab'>
-                            <HashLink smooth to="#GroupHero" className='menu__link'>Competencias</HashLink>
-                        </li>
-                        <li className='tab'>
-                            <HashLink smooth to="#GroupExperience" className='menu__link'>Estudios y Experiencia</HashLink>
-                        </li>
-                        <li className='tab'>
-                            <HashLink smooth to="#GroupProjects" className='menu__link'>Proyectos</HashLink>
-                        </li>
-                        <li className='tab'>
-                            <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
-                        </li>
-                    </ul>
-                    <button className='btn-contact'>Contacto</button>
-                </nav>
-            </section>
+        <section className='section-head'>
 
-        </>
+            <div className="logo">
+                <div className='ISO_header_logo'>
+                    <img
+                        className='header_logo'
+                        src="images/header/Anto_logo.png"
+                        alt="" />
+                </div>
+            </div>
+            <div className="nav">
+                <div className='tab'>
+                    <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
+                </div>
+                <div className='tab'>
+                    <HashLink smooth to="#Skills" className='menu__link'>Acerca de mí</HashLink>
+                </div>
+                <div className='tab'>
+                    <HashLink smooth to="#GroupHero" className='menu__link'>Competencias</HashLink>
+                </div>
+                <div className='tab'>
+                    <HashLink smooth to="#GroupExperience" className='menu__link'>Estudios y Experiencia</HashLink>
+                </div>
+                <div className='tab'>
+                    <HashLink smooth to="#GroupProjects" className='menu__link'>Proyectos</HashLink>
+                </div>
+                <div className='tab'>
+                    <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
+                </div>
+            </div>
+            <button className='btn-contact'>Contacto</button>
+
+        </section>
     );
 }
 
