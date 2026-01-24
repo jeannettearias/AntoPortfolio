@@ -10,8 +10,12 @@ function Hero({ heroData, Buttons }) {
         <>
             <section id="Hero" className="hero">
                 <div className="hero__content">
-                    <div className="tag">
-                        <label className="tag__label">Hello there</label>
+                    <div className="logo__content">
+                        <div className="ISO__logo">
+                            <img
+                                className="hero__logo"
+                                src="images/hero/ISO_Logo.svg" alt="" />
+                        </div>
                     </div>
                     <div className="hero__content__content">
                         <label className="hero-text">Soy <span className="hero-green-text">Antonia,</span><br /> product Designer</label>
@@ -27,16 +31,9 @@ function Hero({ heroData, Buttons }) {
                     </div>
                 </div>
                 <div className="hero__info">
-
-                    <div className="Detail_1">
-                        <div className="rectangle_3"></div>
-                        <div className="rectangle_4"></div>
-                    </div>
-
-
                     <div className="figma__picture">
                         <img className="hero__img"
-                            alt="" />
+                            src="images/hero/HeroImage.svg" alt="" />
                     </div>
 
                     <div className="data__sections">

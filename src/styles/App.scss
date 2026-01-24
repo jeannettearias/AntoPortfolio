@@ -1,19 +1,6 @@
 @use "./core/reset";
 @use "./core/variables";
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-#root,
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   flex: 1; /* pushes footer down */
 }
@@ -23,8 +10,8 @@ main {
 }
 
 .body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  width: 1440px;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
 }
