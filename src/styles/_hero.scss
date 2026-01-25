@@ -91,7 +91,7 @@
 
 .hero__info {
   display: flex;
-  width: 510px;
+
   align-items: center;
   gap: 44px;
   flex-shrink: 0;
@@ -99,42 +99,16 @@
 }
 
 .Detail_2 {
-  width: 449.489px;
+  width: 100%;
+  max-width: 720px;
   height: 521px;
 
   position: absolute;
-  left: 1075.999px;
+  left: 50%; /* Start positioning it from 50% of its containing block */
+  transform: translateX(35%); /* Center the element horizontally at 40% */
+  z-index: 1; /* Behind other elements */
 
   background: var(--Purple-01, #f2efff);
-}
-
-.Detail_1 {
-  width: 304px;
-  height: 462px;
-  transform: rotate(50deg);
-
-  position: absolute;
-  left: -119px;
-  top: -10px;
-}
-.rectangle_3 {
-  width: 304px;
-  height: 462px;
-  transform: rotate(50.694deg);
-  flex-shrink: 0;
-
-  border-radius: 1000px;
-  border: 1px solid var(--Neutral-03, #c3cfca);
-}
-
-.rectangle_4 {
-  width: 272px;
-  height: 425.04px;
-  transform: rotate(50.694deg);
-  flex-shrink: 0;
-
-  border-radius: 1000px;
-  border: 1px solid var(--Neutral-03, #c3cfca);
 }
 
 .figma__picture {
