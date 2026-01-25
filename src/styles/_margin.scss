@@ -1,6 +1,7 @@
 .section-hero {
   display: flex;
-  padding: var(--base-px-12, 44px);
+  padding: var(--base-px-17, 72px) var(--base-px-12, 44px);
+  align-items: center;
   gap: var(--base-px-08, 28px);
   align-self: stretch;
 
@@ -31,6 +32,8 @@
   align-items: flex-start;
   gap: var(--base-px-06, 20px);
   flex: 1 0 0;
+
+  border-radius: 8px;
 }
 
 .Badge {
@@ -121,11 +124,10 @@
 ///////////////////////////// CONTENT ///////////////////////////////////
 .Content_content_tags {
   display: flex;
-  min-width: 600px;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--base-px-06, 20px);
-  flex: 1 0 0;
+  gap: var(--base-px-03, 12px);
+  align-self: stretch;
 }
 
 .content_tag_title {
@@ -148,6 +150,8 @@
   }
 }
 .label_content {
+  align-self: stretch;
+
   color: var(--Main-White, #fff);
   font-family: Raleway;
   font-size: 16px;

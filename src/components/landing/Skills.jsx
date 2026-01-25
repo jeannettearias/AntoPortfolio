@@ -31,16 +31,13 @@ function Skills({ SkillsData }) {
                             <div className="card_frame">
                                 <img className="card_icon" alt="" src={`${import.meta.env.BASE_URL}${card.icon}`} />
                             </div>
-
                             <label className="card_label" htmlFor="">{card.title}</label>
                             <p className="card_description">{card.description}</p>
                         </div>
                     ))}
                 </section>
             </section>
-            <section className='margin'>
-                <Margin />
-            </section>
+            <Margin />
         </>
     );
 }
