@@ -31,14 +31,17 @@
   gap: var(--base-px-01, 4px);
 
   border-radius: 10000px;
-  background: var(--Orange-04, #a9fcff);
+  background: var(--Light-03, #d5feff);
+}
+.badge-text {
+  color: var(--Light-07, #026e72);
 
   /* MediumText/Regular */
   font-family: var(--Family-Content, Raleway);
   font-size: var(--Size-Medium, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px; /* 125% */
 }
 
 .content-text {
@@ -119,7 +122,7 @@
   aspect-ratio: 1/1;
 
   border-radius: 3076.923px;
-  background: var(--Main-Secondary, #2fc9ce);
+  background: var(--Light-04, #a9fcff);
 }
 
 .card_label {

@@ -13,7 +13,9 @@ function Skills({ SkillsData }) {
             <section id="Skills" className="Section-skills">
                 <section className='area-content'>
                     <div className="content-area">
-                        <div className="Badge">Sobre mí</div>
+                        <div className="Badge">
+                            <span className="badge-text">Servicios</span>
+                        </div>
                         <p className="content-text"
                         >¿Por qué <span className="purple-text">elegirme </span> para tu próximo proyecto?</p>
                     </div>
