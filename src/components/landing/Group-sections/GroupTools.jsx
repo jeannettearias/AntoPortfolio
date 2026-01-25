@@ -9,13 +9,11 @@ function GroupTools() {
             <section className='Section-tools'>
                 <div className="text-tools">
                     <div className="Badge-text">
-                        <div className="Tag-badge"></div>
-                        <label className="label-badge">Sobre mi</label>
+                        <label className="label_badge">Competencias</label>
                     </div>
-                    <div className="Content-text">
-                        <h1 className="title-text">Las herramientas detrás de mis  <span className="span_title_text">diseños</span></h1>
+                    <div className="Content_text">
+                        <label className="title-text">Las herramientas <br /> detrás de mis  <span className="span_title_text">diseños</span></label>
                     </div>
-                    <div className="Group-tag"></div>
                 </div>
                 <div className="Group-info-tools">
                     <div className="item-label">

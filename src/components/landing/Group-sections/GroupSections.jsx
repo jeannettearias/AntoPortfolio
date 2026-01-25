@@ -13,6 +13,7 @@ function GroupSections({ ExpData, StudyData, activeProjects, contactData, contac
     return (
         <section id='GroupHero' className='group-sections'>
             <GroupTools />
+
             <GroupExperience ExpData={ExpData}
                 StudyData={StudyData} />
 
