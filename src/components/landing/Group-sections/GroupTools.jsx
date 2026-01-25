@@ -1,8 +1,25 @@
 import '../../../styles/_groupSections.scss';
+import { useState } from 'react';
 
 
+function GroupTools({ }) {
+    const [showMoreTools, setShowMoreTools] = useState(false);
 
-function GroupTools() {
+    // Sample list of tools with their icons
+    const toolList = [
+        { id: 1, icon: "images/icons/figma-Icon.svg", name: "Figma" },
+        { id: 2, icon: "images/icons/VSCode_Icon.svg", name: "Visual Studio Code" },
+        { id: 3, icon: "images/icons/AfterEffects_Icon.svg", name: "After Effects" },
+        { id: 4, icon: "images/icons/AdobePhotoshop_Icon.svg", name: "Adobe Photoshop" },
+        { id: 5, icon: "images/icons/AdobeIlustrator_Icon.svg", name: "Adobe Illustrator" },
+        { id: 6, icon: "images/icons/3DSMax_Icon.svg", name: "3DS Max" },
+        { id: 7, icon: "images/icons/Spline_Icon.svg", name: "Spline" },
+    ];
+
+    // Limit the initial number of items displayed
+    const initialDisplayCount = 6;
+    const displayedTools = showMoreTools ? toolList : toolList.slice(0, initialDisplayCount);
+
 
     return (
         <>
@@ -16,33 +33,21 @@ function GroupTools() {
                     </div>
                 </div>
                 <div className="Group-info-tools">
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/figma-Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="figma-icon">Figma</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/VSCode_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="visual-studio-code-icon">Visual Studio Code</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/AfterEffects_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="after-effects-icon">After Effects</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/AdobePhotoshop_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="adobe-photoshop-icon">Adobe Photoshop</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/AdobeIlustrator_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="adobe-illustrator-icon">Adobe Illustrator</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/3DSMax_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="3ds-max-icon">3DS Max</label>
-                    </div>
-                    <div className="item-label">
-                        <img src={`${import.meta.env.BASE_URL}images/icons/Spline_Icon.svg`} alt="Bullet" />
-                        <label className="label-item" htmlFor="spline-icon">Spline</label>
+                    {displayedTools.map((tool) => (
+                        <div key={tool.id} className="item-label">
+                            {/* The icon */}
+                            <img src={`${import.meta.env.BASE_URL}${tool.icon}`} alt={`${tool.name} Icon`} />
+                            <label className="label-item">{tool.name}</label>
+                        </div>
+                    ))}
+                </div>
+                <div className="button_tools">
+                    <div
+                        className="load_more_button"
+                        onClick={() => setShowMoreTools(!showMoreTools)}
+                    >
+                        {showMoreTools ? "Cargar menos" : "Cargar más"}
+
                     </div>
                 </div>
             </section>

@@ -22,7 +22,6 @@ function Skills({ SkillsData }) {
                     <div className="button-area">
                         <div className='btn-me'>Háblame</div>
                     </div>
-
                 </section>
 
                 <section className="area_box">

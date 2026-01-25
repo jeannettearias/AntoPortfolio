@@ -89,10 +89,11 @@
 }
 
 .Group-info-tools {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: var(--base-px-11, 40px);
+  display: inline-grid;
+  row-gap: var(--base-px-07, 24px);
+  column-gap: var(--base-px-04, 16px);
+  grid-template-rows: repeat(1, fit-content(100%));
+  grid-template-columns: repeat(6, fit-content(100%));
 }
 
 .item-label {
@@ -106,10 +107,10 @@
   width: 128px;
   height: 128px;
 
-  border-radius: 128px;
+  border-radius: 116px;
   background:
-    url("images/icons/figma-Icon.svg") lightgray 50% / contain no-repeat,
-    var(--Main-Background_Alt, #fcf5e4);
+    url(<path-to-image>) lightgray 18.34px 17.493px / 68.379% 72.965% no-repeat,
+    var(--Neutral-02, #dfe7e4);
 }
 
 .label-item {
@@ -120,4 +121,28 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.button_tools {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  border: 1px solid var(--Light-05, #2fc9ce);
+  background: var(--Main-Background_Alt, #f5f5f5);
+}
+
+.load_more_button {
+  color: var(--Light-07, #026e72);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
 }
