@@ -21,18 +21,18 @@ function Margin() {
               <label className="hero_info_2">Trabajo con metodologías ágiles y procesos colaborativos, aplicando accesibilidad, diseño atómico y métricas para crear productos consistentes y escalables.</label>
             </div>
           </div>
-
           <div className="Content_content_tags">
-            <label className="content_tag_title">¿Por qué <a className="content_bold_tag_title">trabajar conmigo?</a></label>
-            <label className="label_content">Diseño basado en investigación y datos, no solo en estética
-              Experiencia real en consultoría y producto digital
-              Enfoque en accesibilidad y usabilidad
-              Capacidad para trabajar con stakeholders y equipos técnicos
-              Pensamiento estratégico orientado a impacto y resultados</label>
+            <label className="content_tag_title"> ¿Por qué <a className="content_bold_tag_title">trabajar conmigo?</a></label>
+            <p className="label_content">
+              - Diseño basado en investigación y datos, no solo en estética <br />
+              - Experiencia real en consultoría y producto digital <br />
+              - Enfoque en accesibilidad y usabilidad <br />
+              - Capacidad para trabajar con stakeholders y equipos técnicos <br />
+              - Pensamiento estratégico orientado a impacto y resultados
+            </p>
           </div>
         </div>
-
-      </section>
+      </section >
     </>
   );
 }

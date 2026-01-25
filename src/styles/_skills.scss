@@ -88,11 +88,10 @@
 
 .area_box {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allows cards to wrap if needed */
+  gap: 16px; /* Controls spacing between cards */
+  margin: 0; /* Removes any outer margin */
+  padding: 0; /* Removes any outer padding */
 }
 
 .cards_aboutMe {
