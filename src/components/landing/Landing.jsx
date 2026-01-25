@@ -16,15 +16,14 @@ function Landing({ heroData, SkillsData, ExpData, StudyData, activeProjects, con
 
             <Skills SkillsData={SkillsData} />
 
-            <section className='group-sections'>
-                <GroupSections
-                    ExpData={ExpData}
-                    StudyData={StudyData}
-                    activeProjects={activeProjects}
-                    contactData={contactData}
-                    contactCountryData={contactCountryData}
-                    contactForm={contactForm} />
-            </section>
+            <GroupSections
+                ExpData={ExpData}
+                StudyData={StudyData}
+                activeProjects={activeProjects}
+                contactData={contactData}
+                contactCountryData={contactCountryData}
+                contactForm={contactForm} />
+
             <section className='section-footer'>
 
             </section>
