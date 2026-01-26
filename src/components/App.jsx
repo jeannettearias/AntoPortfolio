@@ -8,10 +8,6 @@ import SkillsData from '../data/skillsData.json';
 import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
 import ProjecsData from '../data/Projects.json';
-import ContactData from '../data/contactData.json';
-import ContactForm from '../data/contactForm.json';
-import contactCountryData from '../data/contactCountry.json';
-
 
 function App() {
 
@@ -21,12 +17,9 @@ function App() {
   // state to skills from JSON data
   const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
   // state to experience from JSON data
-  const [expSectionData, setExpSectionData] = useState([ExpData]);
+  const [activeExp, setActiveExp] = useState(ExpData);
   // state to study from JSON data
-  const [studySectionData, setStudySectionData] = useState([StudyData]);
-
-  const [contactForm, setContactForm] = useState([ContactForm]);
-  const [contactData, setContactData] = useState([ContactData]);
+  const [activeStudy, setActiveStudy] = useState(StudyData);
 
 
   return (
@@ -38,14 +31,11 @@ function App() {
           heroData={heroData}
 
           SkillsData={activeCards}
-          ExpData={expSectionData}
-          StudyData={studySectionData}
+          activeExp={activeExp}
+          activeStudy={activeStudy}
 
           activeProjects={activeProjects}
 
-          contactData={contactData}
-          contactCountryData={contactCountryData}
-          contactForm={contactForm}
         />
 
       </section>
