@@ -26,7 +26,10 @@ function GroupExperience({ ExpData, StudyData }) {
 
                 <div className="educ__card">
                     <div className="head-educ">
-                        <img className="icon__educ" alt="" />
+                        <img
+                            className="icon__educ"
+                            src='images/experiences/moon_icon.svg'
+                            alt="" />
                         <label className="label__educ">Educación</label>
                     </div>
                     <div className="divider"></div>
@@ -44,7 +47,10 @@ function GroupExperience({ ExpData, StudyData }) {
                 </div>
                 <div className="exp__card">
                     <div className="head-exp">
-                        <img className="icon__exp" alt="" />
+                        <img
+                            className="icon__exp"
+                            src="images/experiences/moon2_icon.svg"
+                            alt="" />
                         <label className="label__exp">Experiencia laboral</label>
                     </div>
                     <div className="divider"></div>
