@@ -16,10 +16,11 @@ function App() {
 
   // state to skills from JSON data
   const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
-  // state to experience from JSON data
-  const [activeExp, setActiveExp] = useState(ExpData);
-  // state to study from JSON data
-  const [activeStudy, setActiveStudy] = useState(StudyData);
+  // State for experience from JSON data
+  const [activeExp, setActiveExp] = useState(ExpData ? ExpData : []);
+
+  // State for study from JSON data
+  const [activeStudy, setActiveStudy] = useState(StudyData ? StudyData : []);
 
 
   return (

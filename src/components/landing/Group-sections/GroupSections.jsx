@@ -8,15 +8,15 @@ import '../../../styles/_groupSections.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupSections({ ExpData, StudyData, activeProjects }) {
+function GroupSections({ activeExp, activeStudy, activeProjects }) {
 
     return (
         <section id='GroupHero' className='group-sections'>
             <GroupTools />
 
             <GroupExperience
-                StudyData={StudyData}
-                ExpData={ExpData} />
+                StudyData={activeStudy}
+                ExpData={activeExp} />
 
             <GroupProjectsContactUs
                 projectsData={activeProjects}  // Pass activeProjects as activeProjects
@@ -27,9 +27,9 @@ function GroupSections({ ExpData, StudyData, activeProjects }) {
     );
 }
 GroupSections.propTypes = {
-    ExpData: PropTypes.array,
-    StudyData: PropTypes.array,
-    projectsData: PropTypes.array,
+    activeExp: PropTypes.array.isRequired, // Change to match new prop names
+    activeStudy: PropTypes.array.isRequired,
+    activeProjects: PropTypes.array.isRequired,
 };
 
 export default GroupSections;

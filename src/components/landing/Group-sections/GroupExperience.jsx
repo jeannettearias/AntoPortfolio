@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
 
 function GroupExperience({ ExpData, StudyData }) {
+
     // state to experience from JSON data
     const [activeExp, setActiveExp] = useState(
-        ExpData ? ExpData.filter((experience) => experience.active === true) : []
-    );
+        ExpData ? ExpData.filter((experience) => experience.active === true) : []);
+
     // state to study from JSON data
     const [activeStudy, setActiveStudy] = useState(
         StudyData ? StudyData.filter(education => education.active === true) : []);
+
+
     return (
         <section id="GroupExperience" className="experience-section">
             <div className='Content-exp'>
@@ -20,7 +23,7 @@ function GroupExperience({ ExpData, StudyData }) {
                 <label className="content-text">Mis <span className="color-text">estudios y experiencia</span></label>
             </div>
             <div className="group-card">
-                {/* Education Card */}
+
                 <div className="educ__card">
                     <div className="head-educ">
                         <img className="icon__educ" alt="" />
@@ -49,7 +52,8 @@ function GroupExperience({ ExpData, StudyData }) {
                         {activeExp.map((experience, idx) => (
                             <ul key={experience.id} className="experience__item">
                                 <li className="date__label">{experience.date}</li>
-                                <li className="position__label">{experience.jobtitle} &nbsp;-&nbsp;
+                                <li className="position__label">
+                                    {experience.jobtitle} &nbsp;-&nbsp;
                                     {experience.modality} &nbsp;-&nbsp;
                                     {experience.company}</li>
                                 <li className="description__label">{experience.description}</li>
