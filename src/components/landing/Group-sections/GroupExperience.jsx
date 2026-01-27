@@ -25,6 +25,7 @@ function GroupExperience({ ExpData, StudyData }) {
             <div className="group-card">
 
                 <div className="educ__card">
+
                     <div className="head-educ">
                         <img
                             className="icon__educ"
@@ -33,17 +34,17 @@ function GroupExperience({ ExpData, StudyData }) {
                         <label className="label__educ">Educación</label>
                     </div>
                     <div className="divider"></div>
-                    <div className="items__educ">
-                        {activeStudy.map((education) => (
-                            <ul key={education.id} className="education__item">
-                                <li className="date__label">{education.date}</li>
-                                <li className="degree__label">{education.degree}</li>
-                                <li className="institution__label">
-                                    {education.institution}
-                                </li>
-                            </ul>
-                        ))}
-                    </div>
+
+                    {activeStudy.map((education) => (
+                        <div key={education.id} className="education__item">
+                            <div className="date__label">{education.date}</div>
+                            <div className="degree__label">{education.degree}</div>
+                            <div className="institution__label">
+                                {education.institution}
+                            </div>
+                        </div>
+                    ))}
+
                 </div>
                 <div className="exp__card">
                     <div className="head-exp">
@@ -54,18 +55,14 @@ function GroupExperience({ ExpData, StudyData }) {
                         <label className="label__exp">Experiencia laboral</label>
                     </div>
                     <div className="divider"></div>
-                    <div className="items__exp">
-                        {activeExp.map((experience, idx) => (
-                            <ul key={experience.id} className="experience__item">
-                                <li className="date__label">{experience.date}</li>
-                                <li className="position__label">
-                                    {experience.jobtitle} &nbsp;-&nbsp;
-                                    {experience.modality} &nbsp;-&nbsp;
-                                    {experience.company}</li>
-                                <li className="description__label">{experience.description}</li>
-                            </ul>
-                        ))}
-                    </div>
+                    {activeExp.map((experience, idx) => (
+                        <div key={experience.id} className="experience__item">
+                            <div className="date__label">{experience.date}</div>
+                            <div className="position__label">
+                                {experience.jobtitle}</div>
+                            <div className="description__label">{experience.description}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
