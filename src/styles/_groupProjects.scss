@@ -1,3 +1,10 @@
+.Section-projects-contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
 .projects-section {
   display: flex;
   height: 1204px;
@@ -31,18 +38,18 @@
   gap: var(--base-px-01, 4px);
 
   border-radius: 10000px;
-  background: var(--Orange-04, #a9fcff);
+  background: var(--Light-03, #d5feff);
 }
 
 .label__badge {
-  color: var(--Orange-06, #bb8513);
+  color: var(--Light-07, #026e72);
 
   /* MediumText/Regular */
   font-family: var(--Family-Content, Raleway);
   font-size: var(--Size-Medium, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px; /* 125% */
 }
 
 .content__text {
@@ -64,7 +71,7 @@
   line-height: normal;
 
   .title__span {
-    color: var(--Main-Primary, #057f4c);
+    color: var(--Main-Primary, #6e38d9);
     font-family: Montserrat;
     font-size: 48px;
     font-style: italic;
@@ -90,19 +97,19 @@
   gap: 10px;
 
   border-radius: 12px;
-  border: 1px solid var(--Orange-05, #e6ae37);
-  background: var(--Main-Background_cream, #fcf5e4);
+  border: 1px solid var(--Light-05, #2fc9ce);
+  background: var(--Main-Background_Alt, #f5f5f5);
 }
 
 .button__text {
-  color: var(--Orange-06, #bb8513);
+  color: var(--Light-07, #026e72);
 
   /* MediumText/Regular */
   font-family: var(--Family-Content, Raleway);
   font-size: var(--Size-Medium, 16px);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px; /* 125% */
 }
 
 .Group-cards {
@@ -116,13 +123,13 @@
 
 .Card-project {
   display: flex;
+  height: 428.5px;
   min-width: 400px;
   padding: var(--base-px-07, 24px);
   flex-direction: column;
   align-items: flex-start;
-
-  flex: 1 1 calc(25% - 1rem); /* Adjust based on how many cards per row */
-  align-self: stretch;
+  gap: var(--base-px-06, 20px);
+  flex: 1 0 0;
 
   border-radius: var(--base-px-06, 20px);
   background: var(--Main-White, #fff);
@@ -138,40 +145,13 @@
 }
 
 .image-card {
-  flex: 0 0 0;
+  flex: 1 0 0;
   align-self: stretch;
 
   border-radius: var(--base-px-04, 16px);
-  background: lightgray 50% / cover no-repeat;
-}
-
-.Group-pills {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-
-  left: 12px;
-  bottom: 11.991px;
-}
-
-.pill {
-  display: flex;
-  padding: var(--base-px-01, 40px) var(--base-px-03, 12px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 1000px;
-  background: var(--Orange-04, #fecd64);
-  list-style-type: none;
-
-  color: var(--Main-Black, #000);
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
+  background:
+    lightgray 50% / cover no-repeat,
+    var(--Main-Background_Alt, #f5f5f5);
 }
 
 .Content-card {
