@@ -22,9 +22,9 @@
     },
     {
         "Cardid": 4,
-        "title": "Plataforma de Blog",
-        "description": "Desarrollé una plataforma de blog completa con funcionalidades de publicación, comentarios y administración.",
-        "image": "/images/projects/project-img.png",
+        "title": "Rediseño Web & Apps GPS Chile",
+        "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
+        "image": "/images/projects/vaib_project.png",
         "active": true
     }
 ]

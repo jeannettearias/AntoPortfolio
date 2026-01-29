@@ -5,24 +5,28 @@ import '../../styles/_landing.scss';
 
 import Skills from './Skills';
 import GroupSections from './Group-sections/GroupSections';
+import Margin from './Margin';
 
 function Landing({ heroData, SkillsData, activeExp, activeStudy, activeProjects }) {
 
     return (
-        <section className='landing'>
-            <Hero heroData={heroData} />
-            <Bar SkillsData={SkillsData} />
-            <Skills SkillsData={SkillsData} />
+        <>
 
-            <GroupSections
-                activeExp={activeExp}
-                activeStudy={activeStudy}
+            <section className='landing'>
+                <Hero heroData={heroData} />
+                <Bar SkillsData={SkillsData} />
+                <Skills SkillsData={SkillsData} />
+                <section className='margin'>
+                    <Margin />
+                </section>
+                <GroupSections
+                    activeExp={activeExp}
+                    activeStudy={activeStudy}
 
-                activeProjects={activeProjects} />
+                    activeProjects={activeProjects} />
 
-            <section className='section-footer'>
             </section>
-        </section>
+        </>
     );
 }
 
