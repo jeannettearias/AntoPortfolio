@@ -35,17 +35,20 @@ function GroupExperience({ ExpData, StudyData }) {
                             alt="" />
                         <label className="label__educ">Educación</label>
                     </div>
-                    <div className="divider"></div>
-
-                    {activeStudy.map((education) => (
-                        <div key={education.id} className="education__item">
-                            <div className="date__label">{education.date}</div>
-                            <div className="degree__label">{education.degree}</div>
-                            <div className="institution__label">
-                                {education.institution}
+                    <img
+                        src='images/Divider.png'
+                        className="divider" alt="" />
+                    <div>
+                        {activeStudy.map((education) => (
+                            <div key={education.id} className="education__item">
+                                <div className="date__label">{education.date} </div>
+                                <div className="degree__label">{education.degree}</div>
+                                <div className="institution__label">
+                                    {education.institution} <br />
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
                 <div className="exp__card">
                     <div className="head-exp">
@@ -55,13 +58,30 @@ function GroupExperience({ ExpData, StudyData }) {
                             alt="" />
                         <label className="label__exp">Experiencia laboral</label>
                     </div>
-                    <div className="divider"></div>
+                    <img
+                        src='images/Divider.png'
+                        className="divider" alt="" />
                     {activeExp.map((experience, idx) => (
                         <div key={experience.id} className="experience__item">
                             <div className="date__label">{experience.date}</div>
                             <div className="position__label">
                                 {experience.jobtitle}</div>
-                            <div className="description__label">{experience.description}</div>
+
+                            {/* // bullet point between activities */}
+                            <div className="description__label">{experience.description}
+                                {idx !== activeExp.length - 1 && (
+                                    <svg
+                                        className="bullet-point"
+                                        width="4"
+                                        height="4"
+                                        viewBox="0 0 4 4"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#424544" />
+                                    </svg>
+                                )}
+                            </div>
+
                         </div>
                     ))}
                 </div>

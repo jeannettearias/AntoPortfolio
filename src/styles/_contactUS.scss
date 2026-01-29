@@ -1,0 +1,23 @@
+.section-contact-us {
+  display: flex;
+  width: 100%;
+  height: 686px;
+  padding-right: var(--base-px-24, 104px);
+  align-items: center;
+  gap: var(--base-px-12, 44px);
+
+  background: var(--Main-Primary, #6e38d9);
+}
+
+.image_contact_us {
+  flex-shrink: 0;
+
+  border-radius: var(--base-px-04, 16px);
+}
+
+.Saly-16 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}

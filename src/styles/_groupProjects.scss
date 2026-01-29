@@ -7,8 +7,7 @@
 
 .projects-section {
   display: flex;
-
-  height: 1440px;
+  height: 1204px;
   padding: var(--base-px-19, 88px) var(--base-px-24, 104px);
   flex-direction: column;
   align-items: center;
@@ -116,6 +115,7 @@
 .Group-cards {
   display: flex;
   align-items: center;
+  align-content: center;
   gap: 28px var(--base-px-08, 28px);
   flex: 1 0 0;
   align-self: stretch;
