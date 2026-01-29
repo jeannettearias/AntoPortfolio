@@ -1,4 +1,5 @@
 import '../../../styles/_groupProjects.scss';
+import ContactUS from './ContactUs';
 import GroupProjects from './GroupProjects';
 import PropTypes from 'prop-types';
 
@@ -8,6 +9,8 @@ function GroupContactUs({ projectsData }) {
         < section className='Section-projects-contactus'>
 
             <GroupProjects projectsData={projectsData} />
+
+            <ContactUS />
 
         </section >
 

@@ -8,23 +8,23 @@
     },
     {
         "Cardid": 2,
-        "title": "Portafolio profesional",
-        "description": "Diseño proyecto de portafolio profesional para mostrar mis habilidades y proyectos.",
-        "image": "/images/projects/project-img.png",
+        "title": "Diseño Web Vaib",
+        "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
+        "image": "/images/projects/vaib_project.png",
         "active": true
     },
     {
         "Cardid": 3,
-        "title": "Portfolio Personal design",
-        "description": "Creé una API RESTful para la gestión de usuarios, permitiendo operaciones CRUD y autenticación.",
-        "image": "/images/projects/project-img.png",
+        "title": "Sistema de diseño Caja los Andes",
+        "description": "CEste proyecto se baso en diseñar el sitio web responsive de Vaib.",
+        "image": "/images/projects/los_andes_project.png",
         "active": true
     },
     {
         "Cardid": 4,
         "title": "Rediseño Web & Apps GPS Chile",
         "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
-        "image": "/images/projects/vaib_project.png",
+        "image": "/images/projects/gps_project.png",
         "active": true
     }
 ]

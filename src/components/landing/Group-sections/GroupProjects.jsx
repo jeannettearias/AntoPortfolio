@@ -15,7 +15,7 @@ function GroupProjects({ projectsData }) {
                             <label className='label__badge'>Proyectos</label>
                         </div>
                         <div className='content__text'>
-                            <label className='title__tag'>Algunos de mis<span className='title__span'>proyectos</span></label>
+                            <label className='title__tag'>Algunos de mis <span className='title__span'>proyectos</span></label>
                             <div className='group__tag'></div>
                         </div>
                     </div>
