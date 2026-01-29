@@ -13,3 +13,12 @@
   gap: var(--base-px-08, 28px);
   align-self: stretch;
 }
+
+.margin {
+  display: flex;
+  padding: var(--base-px-08, 28px) var(--base-px-16, 64px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}

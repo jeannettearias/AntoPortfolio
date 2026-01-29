@@ -1,7 +1,6 @@
 import '../../styles/_skills.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import Margin from './Margin';
 
 
 function Skills({ SkillsData }) {
@@ -36,7 +35,7 @@ function Skills({ SkillsData }) {
                     ))}
                 </section>
             </section>
-            <Margin />
+
         </>
     );
 }
