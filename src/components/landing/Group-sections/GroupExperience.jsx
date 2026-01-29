@@ -8,10 +8,14 @@ function GroupExperience({ ExpData, StudyData }) {
     // state to experience from JSON data
     const [activeExp, setActiveExp] = useState(
         ExpData ? ExpData.filter((experience) => experience.active === true) : []);
+    // ordered list by date descending
+    activeExp.sort((a, b) => (a.date < b.date) ? 1 : -1);
 
     // state to study from JSON data
     const [activeStudy, setActiveStudy] = useState(
         StudyData ? StudyData.filter(education => education.active === true) : []);
+    // ordered list by date descending
+    activeStudy.sort((a, b) => (a.date < b.date) ? 1 : -1);
 
 
     return (
@@ -23,9 +27,7 @@ function GroupExperience({ ExpData, StudyData }) {
                 <label className="content-text">Mis <span className="color-text">estudios y experiencia</span></label>
             </div>
             <div className="group-card">
-
                 <div className="educ__card">
-
                     <div className="head-educ">
                         <img
                             className="icon__educ"
@@ -44,7 +46,6 @@ function GroupExperience({ ExpData, StudyData }) {
                             </div>
                         </div>
                     ))}
-
                 </div>
                 <div className="exp__card">
                     <div className="head-exp">
