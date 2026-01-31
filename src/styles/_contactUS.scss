@@ -21,3 +21,129 @@
   justify-content: center;
   align-items: center;
 }
+
+.group-interactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.Text_interaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: var(--base-px-04, 16px);
+  align-self: stretch;
+}
+
+.Badge_contact {
+  display: inline-flex;
+  padding: var(--base-px-02, 8px);
+  align-items: center;
+  gap: var(--base-px-01, 4px);
+
+  border-radius: 10000px;
+  background: var(--Light-03, #d5feff);
+}
+
+.text_badge {
+  color: var(--Light-07, #026e72);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-01, 4px);
+  align-self: stretch;
+
+  .text_content {
+    align-self: stretch;
+
+    color: var(--Main-White, #fff);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .content_info_color {
+    color: var(--Light-03, #d5feff);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.Data_interaction {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.content_data {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--base-px-03, 12px);
+  flex: 1 0 0;
+
+  border-radius: var(--base-px-03, 12px);
+  background: var(--Purple-06, #3f1390);
+}
+
+.icon__data {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 100000px;
+}
+
+.text_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--base-px-01, 4px);
+  align-self: stretch;
+}
+
+.label_text {
+  align-self: stretch;
+
+  color: var(--Main-White, #fff);
+
+  /* LargeText/Semibold */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Large, 18px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.label_text_data {
+  align-self: stretch;
+
+  color: var(--Main-White, #fff);
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
