@@ -28,7 +28,8 @@ function GroupProjects({ projectsData }) {
                     {projectsData.map(project => (
                         <div key={project.Cardid} className='Card-project'>
                             <div className='Image-cards'>
-                                <img src={`${import.meta.env.BASE_URL}${project.image}`} className="image-card" alt="" />
+                                <img src={`${import.meta.env.BASE_URL}${project.image}`}
+                                    className="image-card" alt="" />
                             </div>
 
                             <div className='Content-card'>
