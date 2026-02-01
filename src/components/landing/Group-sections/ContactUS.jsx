@@ -7,7 +7,7 @@ function ContactUS() {
             <div className="image_contact_us">
                 <img
                     className="Saly-16"
-                    src="images/contactUs/Saly-16.png" alt="" />
+                    src="images/contactUs/Image.svg" alt="" />
             </div>
             <div className="group-interactions">
                 <div className="Text_interaction">
@@ -25,7 +25,7 @@ function ContactUS() {
                         <div className="icon__data">
                             <img
                                 className="icon_img"
-                                src="" alt="" />
+                                src="images/contactUs/flower_icon.svg" alt="" />
                         </div>
                         <div className="text_data">
                             <label
@@ -40,7 +40,7 @@ function ContactUS() {
                         <div className="icon__data">
                             <img
                                 className="icon_img"
-                                src="" alt="" />
+                                src="images/contactUs/flowerPoint_icon.svg" alt="" />
                         </div>
                         <div className="text_data">
                             <label
