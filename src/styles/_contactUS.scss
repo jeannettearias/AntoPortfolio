@@ -15,6 +15,41 @@
   border-radius: var(--base-px-04, 16px);
 }
 
+.flower_img {
+  width: 237px;
+  height: 225px;
+  transform: rotate(-18.131deg);
+
+  fill: var(--Purple-06, #3f1390);
+}
+.flower2_img {
+  width: 210px;
+  height: 199px;
+
+  fill: var(--Purple-03, #b69df0);
+}
+
+.star_img {
+  width: 204px;
+  height: 194px;
+
+  fill: var(--Light-04, #a9fcff);
+}
+
+.star2_img {
+  display: flex;
+  width: 276.544px;
+  height: 262.205px;
+  transform: rotate(29.751deg);
+  padding: 0.131px 0 0.336px 0;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  fill: var(--Main-Secondary, #2fc9ce);
+}
+
 .Saly-16 {
   display: flex;
 
@@ -114,6 +149,7 @@
   height: 44px;
 
   border-radius: 100000px;
+  fill: var(--Main-Secondary, #2fc9ce);
 }
 
 .text_data {
