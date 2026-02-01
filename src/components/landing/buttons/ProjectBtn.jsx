@@ -3,14 +3,24 @@ import '../../../styles/_heroBtns.scss';
 import PropTypes from 'prop-types';
 
 function ProjectBtn({ Buttons }) {
+    const handleClick = () => {
+        e.preventDefault();
 
+        const element = document.getElementById('GroupProjects');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <>
             <div className="project__btn">
-                <Link to="/Projects" className='button__link'>
+                <a
+                    href='#GroupProjects'
+                    className='button__link'
+                    onClick={handleClick}>
                     Proyectos
-                </Link>
+                </a>
             </div>
         </>
     );
