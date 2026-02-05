@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "testimony": "Antonia is an exceptional UX/UI designer. Her attention to detail and problem-solving skills are top-notch. She consistently delivers high-quality work and is a great team player.",
+        "image": "images/testimony/circle_icon.png"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "Product Manager",
+        "testimony": "Working with Antonia has been a pleasure. Her creativity and ability to understand user needs have greatly contributed to the success of our projects. She is always willing to go the extra mile.",
+        "image": "images/testimony/circle_icon.png"
+    },
+    {
+        "id": 3,
+        "name": "Michael Johnson",
+        "position": "UX Researcher",
+        "testimony": "Antonia's expertise in UX design is evident in her work. She has a deep understanding of user behavior and consistently creates intuitive and engaging designs. I highly recommend her for any UX/UI design project.",
+        "image": "images/testimony/circle_icon.png"
+    }
+]

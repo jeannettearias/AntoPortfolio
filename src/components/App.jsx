@@ -8,6 +8,7 @@ import SkillsData from '../data/skillsData.json';
 import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
 import ProjecsData from '../data/Projects.json';
+import testimonyData from '../data/testimonyData.json';
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
 
   // State for study from JSON data
   const [activeStudy, setActiveStudy] = useState(StudyData ? StudyData : []);
+
+  // State for testimony from JSON data
+  const [activeTestimony, setActiveTestimony] = useState(testimonyData ? testimonyData : []);
 
 
   return (
@@ -36,6 +40,8 @@ function App() {
           activeStudy={activeStudy}
 
           activeProjects={activeProjects}
+
+          activeTestimony={activeTestimony}
 
         />
 
