@@ -7,7 +7,7 @@ import Skills from './Skills';
 import GroupSections from './Group-sections/GroupSections';
 import Margin from './Margin';
 
-function Landing({ heroData, SkillsData, activeExp, activeStudy, activeProjects }) {
+function Landing({ heroData, SkillsData, activeExp, activeStudy, activeProjects, activeTestimony }) {
 
     return (
         <>
@@ -23,7 +23,9 @@ function Landing({ heroData, SkillsData, activeExp, activeStudy, activeProjects 
                     activeExp={activeExp}
                     activeStudy={activeStudy}
 
-                    activeProjects={activeProjects} />
+                    activeProjects={activeProjects}
+                    activeTestimony={activeTestimony}
+                />
 
             </section>
         </>
@@ -36,6 +38,7 @@ Landing.propTypes = {
     activeExp: PropTypes.array.isRequired,
     activeStudy: PropTypes.array.isRequired,
     activeProjects: PropTypes.array.isRequired,
+    activeTestimony: PropTypes.array.isRequired,
 };
 
 export default Landing;

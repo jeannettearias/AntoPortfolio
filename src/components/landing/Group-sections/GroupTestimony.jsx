@@ -2,7 +2,7 @@ import '../../../styles/_testimony.scss';
 
 
 
-function GroupTestimony() {
+function GroupTestimony({ activeTestimony }) {
     return (
         <>
             <section id="References" className="references-section">
@@ -20,24 +20,24 @@ function GroupTestimony() {
 
                 </div>
                 <div className='group_testimony_cards'>
-                    <div className='margin_card'>
-                        <div className='card_testimony'>
-                            <div className='item_card'>
-                                <label className='label_testimony_card'>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</label>
-                            </div>
-                            <div className='item_item_card'>
-                                <img
-                                    className='icono_item_card'
-                                    src="images/testimony/circle_icon.png" />
-                                <div className='content_item'>
-                                    <label className='number_label'>Nombre de persona</label>
-                                    <label className='content_label'>Área laboral, cargo, etc...</label>
+                    {activeTestimony.map((testimony, index) => (
+                        <div key={index} className='margin_card'>
+                            <div className='card_testimony'>
+                                <div className='item_card'>
+                                    <label className='label_testimony_card'>{testimony.testimony}</label>
+                                </div>
+                                <div className='item_item_card'>
+                                    <img
+                                        className='icono_item_card'
+                                        src={testimony.image} />
+                                    <div className='content_item'>
+                                        <label className='name_label'>{testimony.name}</label>
+                                        <label className='position_label'>{testimony.position}</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='margin_card'></div>
-                    <div className='margin_card'></div>
+                    ))}
                 </div>
             </section>
         </>
