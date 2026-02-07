@@ -6,6 +6,7 @@ import '../../styles/_landing.scss';
 import Services from './Services';
 import GroupSections from './Group-sections/GroupSections';
 import Margin from './Margin';
+import AboutMe from './Group-sections/AboutMe';
 
 function Landing({ heroData, services, activeExp, activeStudy, activeProjects, activeTestimony }) {
 
@@ -16,10 +17,9 @@ function Landing({ heroData, services, activeExp, activeStudy, activeProjects, a
                 <Hero heroData={heroData} />
                 <Bar services={services} />
                 <Services services={services} />
+                <AboutMe />
 
-                <section className='margin'>
-                    <Margin />
-                </section>
+
                 <GroupSections
                     activeExp={activeExp}
                     activeStudy={activeStudy}
