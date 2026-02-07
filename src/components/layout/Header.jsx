@@ -19,7 +19,7 @@ function Header() {
             </div>
             <div className="nav">
                 <div className='tab'>
-                    <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
+                    <HashLink smooth to="#Services" className='menu__link'>Services</HashLink>
                 </div>
                 <div className='tab'>
                     <HashLink smooth to="#aboutMe" className='menu__link'>Acerca de mí</HashLink>
