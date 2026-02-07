@@ -22,7 +22,7 @@ function Header() {
                     <HashLink smooth to="#Services" className='menu__link' id="Services">Services</HashLink>
                 </div>
                 <div className='tab'>
-                    <HashLink smooth to="#Skills" className='menu__link'>Acerca de mí</HashLink>
+                    <HashLink smooth to="#aboutMe" className='menu__link'>Acerca de mí</HashLink>
                 </div>
                 <div className='tab'>
                     <HashLink smooth to="#GroupHero" className='menu__link'>Competencias</HashLink>

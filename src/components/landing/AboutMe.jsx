@@ -1,15 +1,15 @@
-import '../../styles/_skills.scss';
+import '../../styles/_aboutMe.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 
-function Skills({ SkillsData }) {
+function AboutMe({ aboutMe }) {
 
-    const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
+    const [activeCards, setActiveCards] = useState(aboutMe.filter(card => card.active === true));
 
     return (
         <>
-            <section id="Skills" className="Section-skills">
+            <section id="aboutMe" className="Section-aboutMe">
                 <section className='area-content'>
                     <div className="content-area">
                         <div className="Badge">
@@ -40,9 +40,9 @@ function Skills({ SkillsData }) {
     );
 }
 
-export default Skills;
+export default AboutMe;
 
-Skills.propTypes = {
-    SkillsData: PropTypes.array.isRequired,
+AboutMe.propTypes = {
+    aboutMe: PropTypes.array.isRequired,
     activeCards: PropTypes.array,
 };  

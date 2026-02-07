@@ -4,7 +4,7 @@ import Landing from './landing/Landing';
 import { useState } from 'react';
 
 import heroData from '../data/heroData.json';
-import SkillsData from '../data/skillsData.json';
+import aboutMe from '../data/aboutMe.json';
 import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
 import ProjecsData from '../data/Projects.json';
@@ -16,7 +16,7 @@ function App() {
   const [activeProjects, setActiveProjects] = useState(ProjecsData.filter(project => project.active === true));
 
   // state to skills from JSON data
-  const [activeCards, setActiveCards] = useState(SkillsData.filter(card => card.active === true));
+  const [activeCards, setActiveCards] = useState(aboutMe.filter(card => card.active === true));
   // State for experience from JSON data
   const [activeExp, setActiveExp] = useState(ExpData ? ExpData : []);
 
@@ -35,7 +35,7 @@ function App() {
         <Landing
           heroData={heroData}
 
-          SkillsData={activeCards}
+          aboutMe={activeCards}
           activeExp={activeExp}
           activeStudy={activeStudy}
 
