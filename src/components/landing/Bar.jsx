@@ -2,8 +2,8 @@ import '../../styles/_bar.scss';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Bar({ aboutMe }) {
-    const [labels, setLabels] = useState(aboutMe.filter(label => label.active === true));
+function Bar({ services }) {
+    const [labels, setLabels] = useState(services.filter(label => label.active === true));
 
     return (
 
@@ -26,5 +26,5 @@ function Bar({ aboutMe }) {
 export default Bar;
 
 Bar.propTypes = {
-    aboutMe: PropTypes.array.isRequired
+    services: PropTypes.array.isRequired
 };

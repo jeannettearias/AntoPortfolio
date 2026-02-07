@@ -3,19 +3,20 @@ import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
 import '../../styles/_landing.scss';
 
-import AboutMe from './AboutMe';
+import Services from './Services';
 import GroupSections from './Group-sections/GroupSections';
 import Margin from './Margin';
 
-function Landing({ heroData, aboutMe, activeExp, activeStudy, activeProjects, activeTestimony }) {
+function Landing({ heroData, services, activeExp, activeStudy, activeProjects, activeTestimony }) {
 
     return (
         <>
 
             <section className='landing'>
                 <Hero heroData={heroData} />
-                <Bar aboutMe={aboutMe} />
-                <AboutMe aboutMe={aboutMe} />
+                <Bar services={services} />
+                <Services services={services} />
+
                 <section className='margin'>
                     <Margin />
                 </section>
@@ -34,7 +35,7 @@ function Landing({ heroData, aboutMe, activeExp, activeStudy, activeProjects, ac
 
 Landing.propTypes = {
     heroData: PropTypes.array.isRequired,
-    aboutMe: PropTypes.array.isRequired,
+    services: PropTypes.array.isRequired,
     activeExp: PropTypes.array.isRequired,
     activeStudy: PropTypes.array.isRequired,
     activeProjects: PropTypes.array.isRequired,
