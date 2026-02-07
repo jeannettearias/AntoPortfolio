@@ -37,7 +37,9 @@ function Header() {
                     <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
                 </div>
             </div>
-            <button className='btn-contact'>Contacto</button>
+            <button className='btn-contact'>
+                <HashLink smooth to="#contactUs" className='menu__link'>Contacto</HashLink>
+            </button>
 
         </section>
     );
