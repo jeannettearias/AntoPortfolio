@@ -1,10 +1,10 @@
 ///////////////////// BEGIN groupSections ///////////////////////
 .group-sections {
   display: flex;
-  padding: var(--base-px-16, 64px) var(--base-px-19, 88px);
   flex-direction: column;
-  align-items: center;
-  gap: var(--base-px-12, 44px);
+  align-items: flex-start;
+  gap: var(--base-px-08, 28px);
+  align-self: stretch;
 }
 //////////////////// END groupSections ///////////////////////
 

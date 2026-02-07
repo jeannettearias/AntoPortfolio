@@ -39,6 +39,17 @@ function GroupTestimony({ activeTestimony }) {
                         </div>
                     ))}
                 </div>
+                <div className='carrousel'>
+                    <div className='left_chevron'>
+                        <img
+                            className=''
+                            src="images/testimony/arrow_left.svg" alt="" />
+                    </div>
+                    <div className='right_chevron'>
+                        <img
+                            src="images/testimony/arrow_right.svg" alt="" />
+                    </div>
+                </div>
             </section>
         </>
     );

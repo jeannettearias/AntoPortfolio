@@ -163,3 +163,31 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.carrousel {
+  display: flex;
+  align-items: center;
+  gap: var(--base-px-03, 12px);
+}
+
+.left_chevron {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 1000px;
+  background: var(--Main-Primary, #6e38d9);
+}
+
+.right_chevron {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 1000px;
+  background: var(--Main-Primary, #6e38d9);
+}
