@@ -1,35 +1,32 @@
 import PropTypes from 'prop-types';
 import Hero from '../landing/Hero';
 import Bar from '../landing/Bar';
+import Footer from '../layout/Footer';
 import '../../styles/_landing.scss';
 
 import Services from './Services';
 import GroupSections from './Group-sections/GroupSections';
-import Margin from './Margin';
 import AboutMe from './Group-sections/AboutMe';
 
 function Landing({ heroData, services, activeExp, activeStudy, activeProjects, activeTestimony }) {
 
     return (
-        <>
+        <section className='landing'>
+            <Hero heroData={heroData} />
+            <Bar services={services} />
+            <Services services={services} />
+            <AboutMe />
 
-            <section className='landing'>
-                <Hero heroData={heroData} />
-                <Bar services={services} />
-                <Services services={services} />
-                <AboutMe />
+            <GroupSections
+                activeExp={activeExp}
+                activeStudy={activeStudy}
 
+                activeProjects={activeProjects}
+                activeTestimony={activeTestimony} />
 
-                <GroupSections
-                    activeExp={activeExp}
-                    activeStudy={activeStudy}
+            <Footer />
 
-                    activeProjects={activeProjects}
-                    activeTestimony={activeTestimony}
-                />
-
-            </section>
-        </>
+        </section>
     );
 }
 

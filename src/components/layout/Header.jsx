@@ -13,7 +13,7 @@ function Header() {
                 <div className='ISO_header_logo'>
                     <img
                         className='header_logo'
-                        src="images/header/Anto_logo.png"
+                        src="images/header/Anto_logo.svg"
                         alt="" />
                 </div>
             </div>
