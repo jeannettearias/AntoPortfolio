@@ -13,7 +13,7 @@ function Header() {
                 <div className='ISO_header_logo'>
                     <img
                         className='header_logo'
-                        src="images/header/Anto_logo.png"
+                        src="images/header/Anto_logo.svg"
                         alt="" />
                 </div>
             </div>
@@ -37,7 +37,9 @@ function Header() {
                     <HashLink smooth to="#References" className='menu__link'>Referencias</HashLink>
                 </div>
             </div>
-            <button className='btn-contact'>Contacto</button>
+            <button className='btn-contact'>
+                <HashLink smooth to="#contactUs" className='menu__link'>Contacto</HashLink>
+            </button>
 
         </section>
     );

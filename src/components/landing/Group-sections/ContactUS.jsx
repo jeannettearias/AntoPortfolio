@@ -3,7 +3,7 @@ import "../../../styles/_ContactUS.scss";
 function ContactUS() {
     return (
 
-        <section className="section-contact-us">
+        <section id="contactUs" className="section-contact-us">
             <div className="image_contact_us">
                 <img
                     className="Saly-16"
