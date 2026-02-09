@@ -8,7 +8,7 @@ import Services from './Services';
 import GroupSections from './Group-sections/GroupSections';
 import AboutMe from './Group-sections/AboutMe';
 
-function Landing({ heroData, services, activeExp, activeStudy, activeProjects, activeTestimony }) {
+function Landing({ heroData, services, activeExp, activeStudy, activeProjects, activeTestimony, activeContact }) {
 
     return (
         <section className='landing'>
@@ -22,9 +22,11 @@ function Landing({ heroData, services, activeExp, activeStudy, activeProjects, a
                 activeStudy={activeStudy}
 
                 activeProjects={activeProjects}
-                activeTestimony={activeTestimony} />
+                activeTestimony={activeTestimony}
+            />
 
-            <Footer />
+            <Footer
+                activeContact={activeContact} />
 
         </section>
     );
@@ -37,6 +39,7 @@ Landing.propTypes = {
     activeStudy: PropTypes.array.isRequired,
     activeProjects: PropTypes.array.isRequired,
     activeTestimony: PropTypes.array.isRequired,
+    activeContact: PropTypes.array.isRequired,
 };
 
 export default Landing;
