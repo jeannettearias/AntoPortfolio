@@ -73,7 +73,11 @@ function Footer({ activeContact }) {
                                 </div>
                             </div>
                         </div>
-                        <div className='group_icon_footer'></div>
+                        <div className='group-icons'>
+                            <img className='footer_icon' src="images/footer/footer_linkedin_icon.png" alt="" />
+                            <img className='footer_icon' src="images/footer/footer_behance_icon.png" alt="" />
+
+                        </div>
                     </div>
                 </div>
                 <div className="bar-info">
