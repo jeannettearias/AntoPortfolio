@@ -286,3 +286,17 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.group-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer_icon {
+  width: 44px;
+  height: 44px;
+  aspect-ratio: 1/1;
+
+  background: lightgray 50% / cover no-repeat;
+}
