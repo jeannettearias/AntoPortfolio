@@ -9,6 +9,7 @@ import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
 import ProjecsData from '../data/Projects.json';
 import testimonyData from '../data/testimonyData.json';
+import contactData from '../data/contactData.json';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
   // State for testimony from JSON data
   const [activeTestimony, setActiveTestimony] = useState(testimonyData ? testimonyData : []);
 
+  // State for contact from JSON data
+  const [activeContact, setActiveContact] = useState(contactData ? contactData : []);
 
   return (
     <>
@@ -43,6 +46,8 @@ function App() {
           activeProjects={activeProjects}
 
           activeTestimony={activeTestimony}
+
+          activeContact={activeContact}
 
         />
 

@@ -1,7 +1,10 @@
 [
     {
         "icon": "/images/contactUs/ContactUs_Icon.svg",
-        "phone": "+(34) 618955193",
+        "phone": "+(34) 618 955 193",
+        "email": "aantoniamendozaa@icloud.com",
+        "city": "Barcelona",
+        "country": "Spain",
         "behance": "https://www.behance.net/antoniamendozaa",
         "linkedin": "https://www.linkedin.com/in/antoniamendoza/"
     }
