@@ -8,7 +8,7 @@ import '../../../styles/_groupSections.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupSections({ activeExp, activeStudy, activeProjects, activeTestimony }) {
+function GroupSections({ activeExp, activeStudy, activeProjects, activeTestimony, servicesData }) {
 
     return (
         <section id='GroupHero' className='group-sections'>
@@ -19,7 +19,8 @@ function GroupSections({ activeExp, activeStudy, activeProjects, activeTestimony
                 ExpData={activeExp} />
 
             <GroupProjectsContactUs
-                projectsData={activeProjects}  // Pass activeProjects as activeProjects
+                projectsData={activeProjects}
+                services={servicesData}
             />
 
             <GroupTestimony activeTestimony={activeTestimony} />
@@ -31,6 +32,7 @@ GroupSections.propTypes = {
     activeStudy: PropTypes.array.isRequired,
     activeProjects: PropTypes.array.isRequired,
     activeTestimony: PropTypes.array.isRequired,
+    services: PropTypes.array.isRequired
 };
 
 export default GroupSections;
