@@ -1,5 +1,6 @@
 import React from 'react';
 import GroupTools from './GroupTools';
+import Bar from '../Bar';
 import GroupExperience from './GroupExperience';
 import GroupProjectsContactUs from './GroupProjectsContactUs';
 import GroupTestimony from './GroupTestimony';
@@ -23,7 +24,9 @@ function GroupSections({ activeExp, activeStudy, activeProjects, activeTestimony
                 services={servicesData}
             />
 
-            <GroupTestimony activeTestimony={activeTestimony} />
+            <GroupTestimony
+                activeTestimony={activeTestimony} />
+
         </section>
     );
 }
