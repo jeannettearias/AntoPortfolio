@@ -80,7 +80,7 @@ function Footer({ activeContact }) {
                         </div>
                     </div>
                 </div>
-                <div className="bar-info">
+                <div className="bar-footer-info">
                     <div className='group-cards'>
                         <span className='label_group-cards'>Diseñado por Antonia Mendoza. Desarrollado por Jean</span>
                         <span className='label_group-cards'>Términos y condiciones | Políticas de privacidad</span>

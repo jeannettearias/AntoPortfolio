@@ -157,6 +157,9 @@
   gap: var(--base-px-07, 24px);
   flex: 1 0 0;
 
+  max-width: 618px;
+  min-height: 528px;
+
   border-radius: var(--base-px-06, 20px);
   background: var(--Main-Background_Alt, #f5f5f5);
 }
@@ -208,7 +211,7 @@
   line-height: normal;
 }
 
-.divider {
+.divider_exp {
   height: 1px;
   flex-shrink: 0;
   align-self: stretch;

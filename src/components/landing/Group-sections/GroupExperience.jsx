@@ -37,7 +37,7 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <img
                         src='images/Divider.png'
-                        className="divider" alt="" />
+                        className="divider_exp" alt="" />
                     <div>
                         {activeStudy.map((education) => (
                             <div key={education.id} className="education__item">
@@ -60,7 +60,7 @@ function GroupExperience({ ExpData, StudyData }) {
                     </div>
                     <img
                         src='images/Divider.png'
-                        className="divider" alt="" />
+                        className="divider_exp" alt="" />
                     {activeExp.map((experience, idx) => (
                         <div key={experience.id} className="experience__item">
                             <div className="date__label">{experience.date}</div>
