@@ -23,6 +23,8 @@ function Landing({ heroData, services, activeExp, activeStudy, activeProjects, a
 
                 activeProjects={activeProjects}
                 activeTestimony={activeTestimony}
+
+                servicesData={services}
             />
 
             <Footer
