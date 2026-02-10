@@ -104,8 +104,7 @@
   height: 521px;
 
   position: absolute;
-  left: 50%; /* Start positioning it from 50% of its containing block */
-  transform: translateX(35%); /* Center the element horizontally at 40% */
+  transform: translateX(21%); /* Center the element horizontally at 40% */
   z-index: 1; /* Behind other elements */
 
   background: var(--Purple-01, #f2efff);
