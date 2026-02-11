@@ -111,7 +111,6 @@
   gap: var(--base-px-03, 12px);
   align-self: stretch;
 
-  border-left: 1px solid var(--Neutral-04, #9da9a4);
   padding-bottom: 3%;
 }
 
@@ -150,7 +149,6 @@
 
 .exp__card {
   display: flex;
-  height: 528px;
   padding: var(--base-px-07, 24px);
   flex-direction: column;
   align-items: flex-start;
@@ -171,15 +169,11 @@
 }
 
 .experience__item {
-  list-style-type: none;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--base-px-03, 12px);
   align-self: stretch;
-
-  border-left: 1px solid var(--Neutral-04, #9da9a4);
 }
 
 .Frame__15 {
@@ -188,8 +182,6 @@
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
-
-  border-left: 1px solid var(--Neutral-04, #9da9a4);
 }
 .icon__exp {
   width: 48px;
