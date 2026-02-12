@@ -1,0 +1,78 @@
+.carrousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carrousel-content {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.carrousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrousel-item {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Controls under the cards (keeps your original button styles) */
+.carrousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--base-px-03, 12px);
+}
+
+.left_chevron,
+.right_chevron {
+  display: flex;
+  padding: var(--base-px-03, 12px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1000px;
+  background: var(--Main-Primary, #6e38d9);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+
+.carrousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--Main-Text, #272827);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: var(--Main-Text, #272827);
+    transform: scale(1.2);
+  }
+}
