@@ -31,7 +31,9 @@ function Carrousel({ children }) {
             <div className='carrousel-content'>
                 <div
                     className='carrousel-track'
-                    style={{ transform: `translateX(calc(-1 * ${extendedIndex} * 50% + 25%))` }}
+
+                    // Pass the index to CSS via a custom property used in _carrousel.scss
+                    style={{ '--index': extendedIndex }}
                 >
                     {extendedSlides.map((child, idx) => (
                         <div
