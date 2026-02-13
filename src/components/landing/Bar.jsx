@@ -2,7 +2,7 @@ import '../../styles/_bar.scss';
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Bar({ services, speed = 0.6 }) {
+function Bar({ services, speed = 0.9 }) {
     const [labels] = useState(services.filter(label => label.active === true));
     const containerRef = useRef(null);
     const trackRef = useRef(null);
