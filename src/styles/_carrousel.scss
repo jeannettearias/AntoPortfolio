@@ -1,28 +1,49 @@
 .carrousel {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .carrousel-content {
   overflow: hidden;
   width: 100%;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .carrousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  /* Center the active slide:
+     Each item is 50% width; translate by (-index * 50% + 25%)
+     to keep the active centered and neighbors at half visibility. */
+  transform: translateX(calc(-1 * var(--index, 0) * 50% + 25%));
 }
 
 .carrousel-item {
-  min-width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 50%; /* Show center 50%, neighbors half each side */
   display: flex;
   justify-content: center;
+  align-items: stretch;
+  opacity: 0.5;
+  transform: scale(0.92);
+  filter: blur(1px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    filter 0.6s ease;
 }
 
-/* Controls under the cards (keeps your original button styles) */
+.carrousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+}
+
+/* Keep your existing card styles as-is (from _testimony.scss) */
+
+/* Controls under the cards - preserves your original button look */
 .carrousel-controls {
   display: flex;
   align-items: center;
@@ -74,5 +95,28 @@
   &.active {
     background: var(--Main-Text, #272827);
     transform: scale(1.2);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .carrousel-item {
+    flex-basis: 60%; /* center 60%, neighbors ~ 20% each */
+  }
+  .carrousel-track {
+    transform: translateX(calc(-1 * var(--index, 0) * 60% + 20%));
+  }
+}
+
+@media (max-width: 768px) {
+  .carrousel {
+    padding: 20px 10px;
+  }
+
+  .carrousel-item {
+    flex-basis: 80%; /* center bigger on mobile, neighbors small */
+  }
+  .carrousel-track {
+    transform: translateX(calc(-1 * var(--index, 0) * 80% + 10%));
   }
 }

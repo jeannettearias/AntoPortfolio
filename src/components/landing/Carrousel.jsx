@@ -5,11 +5,18 @@ import '../../styles/_carrousel.scss';
 function Carrousel({ children }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Normalize children to an array
-    const slides = Array.isArray(children) ? children : [children];
-    const total = slides.filter(Boolean).length;
+    // Normalize children to an array of slides
+    const slides = Array.isArray(children) ? children.filter(Boolean) : [children].filter(Boolean);
+    const total = slides.length;
 
     if (total === 0) return null;
+
+    // Create clones at both ends to avoid gaps when the active slide is the first
+    const extendedSlides = total > 1 ? [slides[total - 1], ...slides, slides[0]] : slides;
+
+    // index in the extender array: shift by +1 because of the prepended clone
+    const extendedIndex = total > 1 ? currentIndex + 1 : currentIndex;
+
 
     const goToPrev = () => {
         setCurrentIndex((prev) => (prev - 1 + total) % total);
@@ -24,12 +31,12 @@ function Carrousel({ children }) {
             <div className='carrousel-content'>
                 <div
                     className='carrousel-track'
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    style={{ transform: `translateX(calc(-1 * ${extendedIndex} * 50% + 25%))` }}
                 >
-                    {slides.map((child, idx) => (
+                    {extendedSlides.map((child, idx) => (
                         <div
                             key={idx}
-                            className={`carrousel-item ${idx === currentIndex ? 'active' : ''}`}
+                            className={`carrousel-item ${idx === extendedIndex ? 'active' : ''}`}
                         >
                             {child}
                         </div>
@@ -39,6 +46,7 @@ function Carrousel({ children }) {
 
             {/* Controls under the cards */}
             <div className='carrousel-controls'>
+
                 <button
                     className='left_chevron'
                     onClick={goToPrev}
@@ -61,7 +69,8 @@ function Carrousel({ children }) {
                     className='right_chevron'
                     onClick={goToNext}
                     aria-label="Next testimony">
-                    <img src="images/testimony/arrow_right.svg" alt="" />
+                    <img
+                        src="images/testimony/arrow_right.svg" alt="" />
                 </button>
             </div>
         </div>
