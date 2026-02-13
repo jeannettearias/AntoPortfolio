@@ -70,25 +70,20 @@
 }
 
 .margin_card {
-  display: flex;
-  width: 640px;
-  padding: var(--base-px-00, 0);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
+  width: 100%;
 }
 
 .card_testimony {
-  display: flex;
-  padding: var(--base-px-08, 28px);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--base-px-07, 24px);
-  align-self: stretch;
-
-  border-radius: var(--base-px-06, 20px);
+  width: 100%;
+  padding: 32px;
   background: var(--Main-Background_Alt, #f5f5f5);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+  .active & {
+    box-shadow: 0 8px 24px rgba(110, 56, 217, 0.2);
+  }
 }
 
 .item_card {
@@ -127,23 +122,23 @@
 .item_item_card {
   display: flex;
   align-items: center;
-  gap: var(--base-px-03, 12px);
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .icono_item_card {
-  width: 56px;
-  height: 56px;
-
-  border-radius: 56px;
-  background: lightgray 50% / cover no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .content_item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: var(--base-px-01, 4px);
+  gap: 4px;
 }
 
 .name_label {
@@ -163,31 +158,116 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.carrousel {
+// Controls below cards
+.carrousel-controls {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--base-px-03, 12px);
 }
 
-.left_chevron {
-  display: flex;
-  padding: var(--base-px-03, 12px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 1000px;
-  background: var(--Main-Primary, #6e38d9);
-}
-
+.left_chevron,
 .right_chevron {
   display: flex;
   padding: var(--base-px-03, 12px);
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   border-radius: 1000px;
   background: var(--Main-Primary, #6e38d9);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+
+  &:hover {
+    background: var(--Main-Primary-Dark, #5a2db3);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+}
+
+.carrousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--Main-Text, #272827);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: var(--Main-Text, #272827);
+    transform: scale(1.2);
+  }
+
+  &:hover:not(.active) {
+    transform: scale(1.2);
+    background: rgba(39, 40, 39, 0.3);
+  }
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .carrousel-item {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrousel {
+    padding: 20px 10px;
+  }
+
+  .carrousel-content {
+    &::before,
+    &::after {
+      width: 10%;
+    }
+  }
+
+  .carrousel-track {
+    gap: 20px;
+  }
+
+  .carrousel-item {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .card_testimony {
+    padding: 24px;
+  }
+
+  .carrousel-controls {
+    gap: 8px;
+  }
+
+  .left_chevron,
+  .right_chevron {
+    padding: 8px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
