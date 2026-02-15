@@ -1,7 +1,12 @@
 .section-contact-us {
+  box-sizing: border-box; /* includes padding in width calculations */
+  width: 100%;
+  max-width: 1440px; /* total width (content + padding) <= 1440px */
+  margin: 0 auto; /* center */
+  padding-right: 104px;
+
   display: flex;
   height: 686px;
-  padding-right: var(--base-px-24, 104px);
   align-items: center;
   gap: var(--base-px-12, 44px);
 

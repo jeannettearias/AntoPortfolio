@@ -6,9 +6,13 @@
 }
 
 .projects-section {
-  display: flex;
+  box-sizing: border-box; /* includes padding in width calculations */
+  width: 100%;
+  max-width: 1440px; /* total width (content + padding) <= 1440px */
+  margin: 0 auto; /* center */
+  padding: 88px 104px;
 
-  padding: var(--base-px-19, 88px) var(--base-px-24, 104px);
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--base-px-11, 40px);
