@@ -11,7 +11,7 @@ function Margin() {
       </div>
 
       <div className="content-tag">
-        <div className="Badge">Sobre mí</div>
+        <div className="Badge">Acerca de mí</div>
         <div className="Text_content">
 
           <div className="text_content_text">
