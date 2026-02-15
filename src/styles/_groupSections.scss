@@ -1,6 +1,7 @@
 ///////////////////// BEGIN groupSections ///////////////////////
 .group-sections {
   display: flex;
+  width: 1440px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--base-px-08, 28px);
@@ -11,14 +12,16 @@
 ///////////////////  Skills Tools Section Styles //////////////////////////////////////
 
 .Section-tools {
+  box-sizing: border-box; /* includes padding in width calculations */
+  width: 100%;
+  max-width: 1440px; /* total width (content + padding) <= 1440px */
+  margin: 0 auto; /* center */
+  padding: 64px 88px;
+
   display: flex;
-  width: 1440px;
-  padding: var(--base-px-16, 64px) var(--base-px-19, 88px);
   flex-direction: column;
   align-items: center;
   gap: var(--base-px-12, 44px);
-
-  background: #fff;
 }
 
 .text-tools {
