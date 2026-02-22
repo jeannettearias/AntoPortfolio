@@ -1,17 +1,19 @@
 import '../../../styles/_groupProjects.scss';
-import Bar from '../Bar';
-import ContactUS from './ContactUs';
-import GroupProjects from './GroupProjects';
 import PropTypes from 'prop-types';
 
-function GroupContactUs({ projectsData, services }) {
+import GroupProjects from './GroupProjects';
+import ContactUS from './ContactUs';
+import Bar from '../Bar';
+
+
+function GroupContactUs({ ProjectsData, services }) {
     // filter services
     const filteredData = services?.filter(item => item.active) || [];
 
     return (
         <section className='Section-projects-contactus'>
 
-            <GroupProjects projectsData={projectsData} />
+            <GroupProjects ProjectsData={ProjectsData} />
 
             <ContactUS />
 
@@ -23,11 +25,11 @@ function GroupContactUs({ projectsData, services }) {
 }
 
 GroupContactUs.propTypes = {
-    projectsData: PropTypes.array,
+    ProjectsData: PropTypes.array,
     services: PropTypes.array
 };
 GroupContactUs.defaultProps = {
-    projectsData: [],
+    ProjectsData: [],
     services: []
 };
 

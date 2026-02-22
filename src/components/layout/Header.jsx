@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link"
 import '../../styles/_header.scss';
 import '../../styles/core/_variables.scss'
@@ -19,7 +18,7 @@ function Header() {
             </div>
             <div className="nav">
                 <div className='tab'>
-                    <HashLink smooth to="#Services" className='menu__link'>Services</HashLink>
+                    <HashLink smooth to="#Services" className='menu__link'>Servicios</HashLink>
                 </div>
                 <div className='tab'>
                     <HashLink smooth to="#aboutMe" className='menu__link'>Acerca de mí</HashLink>

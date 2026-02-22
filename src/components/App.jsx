@@ -1,58 +1,67 @@
 import '../styles/App.scss';
-import Header from './layout/Header';
-import Landing from './landing/Landing';
 import { useState } from 'react';
+import Header from './layout/Header';
+import Hero from './landing/Hero';
+import Bar from './landing/Bar';
+import Services from './landing/Services';
+import AboutMe from './landing/Group-sections/AboutMe';
+import GroupSections from './landing/Group-sections/GroupSections';
+import Footer from './layout/Footer';
 
-import heroData from '../data/heroData.json';
+import heroJSON from '../data/heroData.json';
 import servicesData from '../data/servicesData.json';
 import ExpData from '../data/GroupExp.json';
 import StudyData from '../data/GroupStudy.json';
-import ProjecsData from '../data/Projects.json';
+import Projects from '../data/Projects.json';
 import testimonyData from '../data/testimonyData.json';
-import contactData from '../data/contactData.json';
+import contactJSON from '../data/contactJSON.json';
 
 function App() {
 
-  // state to projects from JSON data
-  const [activeProjects, setActiveProjects] = useState(ProjecsData.filter(project => project.active === true));
+  // state to hero from JSON data
+  const [heroData, setActiveHero] = useState(heroJSON ? heroJSON : []);
 
-  // state to skills from JSON data
-  const [activeCards, setActiveCards] = useState(servicesData.filter(card => card.active === true));
+  // state to services from JSON data
+  const [services, setServices] = useState(servicesData ? servicesData : []);
 
   // State for experience from JSON data
-  const [activeExp, setActiveExp] = useState(ExpData ? ExpData : []);
+  const [expData, setExpData] = useState(ExpData ? ExpData : []);
 
   // State for study from JSON data
-  const [activeStudy, setActiveStudy] = useState(StudyData ? StudyData : []);
+  const [studyData, setStudyData] = useState(StudyData ? StudyData : []);
+
+  // state to projects from JSON data
+  const [ProjectsData, setProjectsData] = useState(Projects ? Projects : []);
 
   // State for testimony from JSON data
-  const [activeTestimony, setActiveTestimony] = useState(testimonyData ? testimonyData : []);
+  const [testimony, setTestimony] = useState(testimonyData ? testimonyData : []);
 
   // State for contact from JSON data
-  const [activeContact, setActiveContact] = useState(contactData ? contactData : []);
+  const [contactData, setContactData] = useState(contactJSON ? contactJSON : []);
 
   return (
-    <>
-      <section className="body">
-        <Header />
 
-        <Landing
-          heroData={heroData}
+    <section className="body">
+      <Header />
 
-          services={activeCards}
-          activeExp={activeExp}
-          activeStudy={activeStudy}
+      <Hero heroData={heroData} />
+      <Bar services={services} />
+      <Services services={services} />
+      <AboutMe />
 
-          activeProjects={activeProjects}
+      <GroupSections
 
-          activeTestimony={activeTestimony}
+        expData={expData}
+        studyData={studyData}
+        services={services}
 
-          activeContact={activeContact}
+        ProjectsData={ProjectsData}
+        testimony={testimony}
+      />
+      <Footer
+        contactData={contactData} />
 
-        />
-
-      </section>
-    </>
+    </section>
   )
 }
 

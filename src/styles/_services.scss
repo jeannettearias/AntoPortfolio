@@ -1,7 +1,9 @@
 .Section-services {
   display: flex;
   width: 100%;
+  max-width: 1440px;
   padding: 156px 88px;
+  justify-content: center;
   align-items: center;
   gap: 47px;
   align-self: stretch;

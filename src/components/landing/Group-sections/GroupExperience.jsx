@@ -3,17 +3,17 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
 
-function GroupExperience({ ExpData, StudyData }) {
+function GroupExperience({ expData, studyData }) {
 
     // state to experience from JSON data
     const [activeExp, setActiveExp] = useState(
-        ExpData ? ExpData.filter((experience) => experience.active === true) : []);
+        expData ? expData.filter((experience) => experience.active === true) : []);
     // ordered list by date descending
     activeExp.sort((a, b) => (a.date < b.date) ? 1 : -1);
 
     // state to study from JSON data
     const [activeStudy, setActiveStudy] = useState(
-        StudyData ? StudyData.filter(education => education.active === true) : []);
+        studyData ? studyData.filter(education => education.active === true) : []);
     // ordered list by date descending
     activeStudy.sort((a, b) => (a.date < b.date) ? 1 : -1);
 
@@ -92,6 +92,6 @@ function GroupExperience({ ExpData, StudyData }) {
 export default GroupExperience;
 
 GroupExperience.propTypes = {
-    ExpData: PropTypes.array.isRequired,
-    StudyData: PropTypes.array.isRequired,
+    expData: PropTypes.array.isRequired,
+    studyData: PropTypes.array.isRequired,
 };
