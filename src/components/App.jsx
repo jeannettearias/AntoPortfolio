@@ -47,6 +47,7 @@ function App() {
       <Hero heroData={heroData} />
       <Bar services={services} />
       <Services services={services} />
+
       <AboutMe />
 
       <GroupSections
