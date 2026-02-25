@@ -55,6 +55,7 @@
 
 .group-card {
   display: flex;
+  max-width: 1440px;
   align-items: flex-start;
   gap: var(--base-px-08, 28px);
   align-self: stretch;
