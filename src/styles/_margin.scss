@@ -1,6 +1,17 @@
+.aboutMe-section {
+  display: flex;
+  padding: var(--base-px-08, 28px) var(--base-px-16, 64px);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
 .section-hero {
   display: flex;
-  max-width: 1312px;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: var(--base-px-17, 72px) var(--base-px-12, 44px);
   align-items: center;
   gap: var(--base-px-08, 28px);
