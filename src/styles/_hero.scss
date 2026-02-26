@@ -1,6 +1,9 @@
 .hero {
   display: flex;
   // height: 840px; ** need to remove this to make it responsive, but it was needed for the design **
+  position: relative; /* ✅ referencia para absolute */
+  overflow: hidden; /* ✅ recorta lo que se salga */
+
   padding: 116px 88px;
   justify-content: center;
   align-items: center;
@@ -108,7 +111,7 @@
 
 .Detail_2 {
   width: 100%;
-  max-width: 720px;
+  max-width: 856.337px;
   height: 521px;
 
   position: absolute;
