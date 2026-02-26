@@ -5,38 +5,35 @@ import PropTypes from 'prop-types';
 
 function Services({ services }) {
 
-    const [activeCards, setActiveCards] = useState(services.filter(card => card.active === true));
+    const [activeServices, setActiveServices] = useState(services.filter(item => item.active === true));
 
     return (
-        <>
-            <section id="Services" className="Section-services">
-                <section className='area-content'>
-                    <div className="content-area">
-                        <div className="Badge">
-                            <span className="badge-text">Servicios</span>
-                        </div>
-                        <p className="content-text"
-                        >¿Por qué <span className="purple-text">elegirme </span> para tu próximo proyecto?</p>
+        <section id="Services" className="Section-services">
+            <div className='area-content'>
+                <div className="content-area">
+                    <div className="Badge">
+                        <span className="badge-text">Servicios</span>
                     </div>
-                    <div className="button-area">
-                        <div className='btn-me'>Háblame</div>
-                    </div>
-                </section>
+                    <p className="content-text"
+                    >¿Por qué <span className="purple-text">elegirme </span> para tu próximo proyecto?</p>
+                </div>
+                <div className="button-area">
+                    <div className='btn-me'>Háblame</div>
+                </div>
+            </div>
 
-                <section className="area_box">
-                    {activeCards.map(card => (
-                        <div key={card.id} className="cards_services">
-                            <div className="card_frame">
-                                <img className="card_icon" alt="" src={`${import.meta.env.BASE_URL}${card.icon}`} />
-                            </div>
-                            <label className="card_label" htmlFor="">{card.title}</label>
-                            <p className="card_description">{card.description}</p>
+            <div className="area_box">
+                {activeServices.map(card => (
+                    <div key={card.id} className="cards_services">
+                        <div className="card_frame">
+                            <img className="card_icon" alt="" src={`${import.meta.env.BASE_URL}${card.icon}`} />
                         </div>
-                    ))}
-                </section>
-            </section>
-
-        </>
+                        <label className="card_label" htmlFor="">{card.title}</label>
+                        <p className="card_description">{card.description}</p>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 }
 
@@ -44,5 +41,4 @@ export default Services;
 
 Services.propTypes = {
     services: PropTypes.array.isRequired,
-    activeCards: PropTypes.array,
 };  

@@ -1,8 +1,12 @@
 .section-head {
-  display: inline-flex;
+  display: flex; /* use flex, not inline-flex */
   position: fixed;
-  justify-content: center;
-  text-align: center;
+  top: 16px; /* distance from top */
+  left: 50%; /* move to horizontal center */
+  transform: translateX(-50%); /* shift back by half its width */
+
+  width: max-content; /* shrink to fit content */
+  max-width: calc(100% - 32px); /* prevent overflow on small screens */
 
   padding: var(--base-px-04, 16px);
   align-items: center;
@@ -12,7 +16,7 @@
   border: 1px solid var(--Neutral-02, #dfe7e4);
   background: var(--Main-White, #fff);
 
-  z-index: 9999;
+  z-index: 100;
 }
 
 .logo {

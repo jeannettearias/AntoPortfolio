@@ -1,5 +1,6 @@
 .experience-section {
   display: flex;
+  margin: 0 auto;
   padding: var(--base-px-13, 48px) 88px;
   flex-direction: column;
   align-items: center;
@@ -54,6 +55,7 @@
 
 .group-card {
   display: flex;
+  max-width: 1440px;
   align-items: flex-start;
   gap: var(--base-px-08, 28px);
   align-self: stretch;

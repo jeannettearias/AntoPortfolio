@@ -1,8 +1,12 @@
 import '../../styles/_footer.scss';
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 
-function Footer({ activeContact }) {
+function Footer({ contactData }) {
+    const [activeContact, setActiveContact] = useState(contactData ? contactData.filter(item => item.active === true) : []);
+
+
     return (
         <section className="section-footer">
             <div className="footer">
@@ -94,7 +98,7 @@ function Footer({ activeContact }) {
 }
 
 Footer.propTypes = {
-    activeContact: PropTypes.array.isRequired,
+    activeContact: PropTypes.array
 };
 
 export default Footer;

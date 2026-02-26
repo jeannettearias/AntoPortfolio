@@ -7,6 +7,7 @@ function Bar({ services, speed = 0.9 }) {
     const containerRef = useRef(null);
     const trackRef = useRef(null);
 
+
     // Duplicate labels once for seamless reset
     const repeatedLabels = [...labels, ...labels];
 

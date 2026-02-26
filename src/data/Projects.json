@@ -26,5 +26,19 @@
         "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
         "image": "/images/projects/gps_project.png",
         "active": true
+    },
+    {
+        "Cardid": 5,
+        "title": "Rediseño Web & Apps GPS Chile",
+        "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
+        "image": "/images/projects/gps_project.png",
+        "active": false
+    },
+    {
+        "Cardid": 6,
+        "title": "Rediseño Web & Apps GPS Chile",
+        "description": "Este proyecto se baso en diseñar el sitio web responsive de Vaib ",
+        "image": "/images/projects/gps_project.png",
+        "active": false
     }
 ]

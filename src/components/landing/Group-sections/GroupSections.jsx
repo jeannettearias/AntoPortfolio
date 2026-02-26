@@ -1,6 +1,5 @@
-import React from 'react';
+
 import GroupTools from './GroupTools';
-import Bar from '../Bar';
 import GroupExperience from './GroupExperience';
 import GroupProjectsContactUs from './GroupProjectsContactUs';
 import GroupTestimony from './GroupTestimony';
@@ -9,32 +8,32 @@ import '../../../styles/_groupSections.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupSections({ activeExp, activeStudy, activeProjects, activeTestimony, servicesData }) {
+function GroupSections({ expData, studyData, ProjectsData, testimony, services }) {
 
     return (
         <section id='GroupHero' className='group-sections'>
             <GroupTools />
 
             <GroupExperience
-                StudyData={activeStudy}
-                ExpData={activeExp} />
+                expData={expData}
+                studyData={studyData} />
 
             <GroupProjectsContactUs
-                projectsData={activeProjects}
-                services={servicesData}
+                ProjectsData={ProjectsData}
+                services={services}
             />
 
             <GroupTestimony
-                activeTestimony={activeTestimony} />
+                testimony={testimony} />
 
         </section>
     );
 }
 GroupSections.propTypes = {
-    activeExp: PropTypes.array.isRequired, // Change to match new prop names
-    activeStudy: PropTypes.array.isRequired,
-    activeProjects: PropTypes.array.isRequired,
-    activeTestimony: PropTypes.array.isRequired,
+    expData: PropTypes.array.isRequired,
+    studyData: PropTypes.array.isRequired,
+    ProjectsData: PropTypes.array.isRequired,
+    testimony: PropTypes.array.isRequired,
     services: PropTypes.array.isRequired
 };
 

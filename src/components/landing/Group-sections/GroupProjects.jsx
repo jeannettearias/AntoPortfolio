@@ -2,7 +2,9 @@ import '../../../styles/_groupProjects.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupProjects({ projectsData }) {
+function GroupProjects({ ProjectsData }) {
+
+    const activeProjects = ProjectsData.filter(project => project.active === true);
 
     return (
         <>
@@ -25,7 +27,7 @@ function GroupProjects({ projectsData }) {
                 </section>
 
                 <section className='Group-cards'>
-                    {projectsData.map(project => (
+                    {activeProjects.map(project => (
                         <div key={project.Cardid} className='Card-project'>
                             <div className='Image-cards'>
                                 <img src={`${import.meta.env.BASE_URL}${project.image}`}
@@ -46,7 +48,7 @@ function GroupProjects({ projectsData }) {
 }
 
 GroupProjects.propTypes = {
-    projectsData: PropTypes.array.isRequired,
+    ProjectsData: PropTypes.array.isRequired,
 
 };
 

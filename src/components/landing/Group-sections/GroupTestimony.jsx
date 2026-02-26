@@ -4,7 +4,10 @@ import Carrousel from '../Carrousel';
 
 
 
-function GroupTestimony({ activeTestimony }) {
+function GroupTestimony({ testimony }) {
+    const recientTestimony = testimony ? testimony : [];
+
+
     return (
 
         <section id="References" className="references-section">
@@ -23,7 +26,7 @@ function GroupTestimony({ activeTestimony }) {
             </div>
             {/* Cards are defined here and passed to Carrousel as children */}
             <Carrousel>
-                {activeTestimony.map((testimony, index) => (
+                {recientTestimony.map((testimony, index) => (
                     <div key={testimony.id || index} className='margin_card'>
                         <div className='card_testimony'>
                             <div className='item_card'>
@@ -51,7 +54,7 @@ function GroupTestimony({ activeTestimony }) {
 }
 
 GroupTestimony.propTypes = {
-    activeTestimony: PropTypes.array.isRequired,
+    testimony: PropTypes.array.isRequired,
 };
 
 export default GroupTestimony;
