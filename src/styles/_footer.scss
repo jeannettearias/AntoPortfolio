@@ -2,16 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 auto; /* center */
-  gap: 24px;
+  gap: var(--base-px-06, 24px);
   align-self: stretch;
 }
 
 .footer {
   display: flex;
-  max-width: 1440px;
   flex-direction: column;
   align-items: flex-start;
+  align-self: stretch;
 }
 
 .card-testimony {
