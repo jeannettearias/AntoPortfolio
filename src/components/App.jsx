@@ -15,6 +15,7 @@ import StudyData from '../data/GroupStudy.json';
 import Projects from '../data/Projects.json';
 import testimonyData from '../data/testimonyData.json';
 import contactJSON from '../data/contactJSON.json';
+import projectChips from '../data/projectTypeChips.json';
 
 function App() {
 
@@ -39,6 +40,10 @@ function App() {
   // State for contact from JSON data
   const [contactData, setContactData] = useState(contactJSON ? contactJSON : []);
 
+  // State for project chips from JSON data
+  const [projectChipsData, setProjectChipsData] = useState(projectChips ? projectChips : []);
+
+
   return (
 
     <section className="body">
@@ -58,6 +63,8 @@ function App() {
 
         ProjectsData={ProjectsData}
         testimony={testimony}
+        projectChipsData={projectChipsData}
+
       />
       <Footer
         contactData={contactData} />

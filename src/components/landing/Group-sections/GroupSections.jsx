@@ -8,7 +8,7 @@ import '../../../styles/_groupSections.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupSections({ expData, studyData, ProjectsData, testimony, services }) {
+function GroupSections({ expData, studyData, ProjectsData, testimony, services, projectChipsData }) {
 
     return (
         <section id='GroupHero' className='group-sections'>
@@ -21,7 +21,7 @@ function GroupSections({ expData, studyData, ProjectsData, testimony, services }
             <GroupProjectsContactUs
                 ProjectsData={ProjectsData}
                 services={services}
-            />
+                projectChipsData={projectChipsData} />
 
             <GroupTestimony
                 testimony={testimony} />
@@ -34,7 +34,8 @@ GroupSections.propTypes = {
     studyData: PropTypes.array.isRequired,
     ProjectsData: PropTypes.array.isRequired,
     testimony: PropTypes.array.isRequired,
-    services: PropTypes.array.isRequired
+    services: PropTypes.array.isRequired,
+    projectChipsData: PropTypes.array.isRequired
 };
 
 export default GroupSections;

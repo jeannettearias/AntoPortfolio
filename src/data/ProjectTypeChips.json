@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "label": "Responsivo",
+        "active": true
+    },
+    {
+        "id": 2,
+        "label": "Innovador",
+        "active": false
+    },
+    {
+        "id": 3,
+        "label": "Escalable",
+        "active": true
+    },
+    {
+        "id": 4,
+        "label": "Sostenible",
+        "active": false
+    },
+    {
+        "id": 5,
+        "label": "Colaborativo",
+        "active": false
+    },
+    {
+        "id": 6,
+        "label": "Personalizado",
+        "active": false
+    },
+    {
+        "id": 7,
+        "label": "Eficiente",
+        "active": false
+    },
+    {
+        "id": 8,
+        "label": "Modular",
+        "active": true
+    },
+    {
+        "id": 9,
+        "label": "Integrado",
+        "active": false
+    },
+    {
+        "id": 10,
+        "label": "Flexible",
+        "active": false
+    }
+]
