@@ -147,12 +147,15 @@
 }
 
 .Image-cards {
+  position: relative; /* ✅ anchor for absolute chips */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  overflow: hidden;
-  border-radius: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden; /* ✅ keeps chips inside rounded corners if you add them */
+  border-radius: 12px; /* optional */
 
   img {
     width: 100%;
@@ -180,8 +183,10 @@
 }
 
 .image-card {
-  flex: 1 0 0;
-  align-self: stretch;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 
   border-radius: var(--base-px-04, 16px);
   background:
@@ -219,4 +224,34 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+/* Chips overlay */
+.chip_container {
+  position: absolute; /* ✅ overlays on top of image */
+  top: 85%;
+  left: 12px;
+  right: 12px; /* optional: allows wrapping within the image width */
+  z-index: 2;
+
+  display: flex;
+  flex-wrap: wrap; /* ✅ if many chips, wrap instead of overflow */
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.chip {
+  display: flex;
+  padding: var(--base-px-02, 8px);
+  align-items: center;
+  gap: var(--base-px-01, 4px);
+  border-radius: 10000px;
+  background: var(--Light-03, #d5feff);
+
+  color: var(--Light-07, #026e72);
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }

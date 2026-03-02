@@ -6,14 +6,15 @@ import ContactUS from './ContactUs';
 import Bar from '../Bar';
 
 
-function GroupContactUs({ ProjectsData, services }) {
+function GroupContactUs({ ProjectsData, services, projectChipsData }) {
     // filter services
     const filteredData = services?.filter(item => item.active) || [];
 
     return (
         <section className='Section-projects-contactus'>
 
-            <GroupProjects ProjectsData={ProjectsData} />
+            <GroupProjects ProjectsData={ProjectsData}
+                projectChipsData={projectChipsData} />
 
             <ContactUS />
 
@@ -26,11 +27,13 @@ function GroupContactUs({ ProjectsData, services }) {
 
 GroupContactUs.propTypes = {
     ProjectsData: PropTypes.array,
-    services: PropTypes.array
+    services: PropTypes.array,
+    projectChipsData: PropTypes.array
 };
 GroupContactUs.defaultProps = {
     ProjectsData: [],
-    services: []
+    services: [],
+    projectChipsData: []
 };
 
 export default GroupContactUs;

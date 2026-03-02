@@ -2,8 +2,6 @@ import '../../../styles/_testimony.scss';
 import PropTypes from 'prop-types';
 import Carrousel from '../Carrousel';
 
-
-
 function GroupTestimony({ testimony }) {
     const recientTestimony = testimony ? testimony : [];
 
@@ -47,6 +45,7 @@ function GroupTestimony({ testimony }) {
                         </div>
                     </div>
                 ))}
+
             </Carrousel>
 
         </section>

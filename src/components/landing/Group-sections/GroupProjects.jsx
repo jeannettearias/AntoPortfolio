@@ -2,9 +2,12 @@ import '../../../styles/_groupProjects.scss';
 import PropTypes from 'prop-types';
 
 
-function GroupProjects({ ProjectsData }) {
+function GroupProjects({ ProjectsData, projectChipsData }) {
 
     const activeProjects = ProjectsData.filter(project => project.active === true);
+
+    const activeProjTypeChips = projectChipsData.filter(chip => chip.active === true);
+
 
     return (
         <>
@@ -31,7 +34,15 @@ function GroupProjects({ ProjectsData }) {
                         <div key={project.Cardid} className='Card-project'>
                             <div className='Image-cards'>
                                 <img src={`${import.meta.env.BASE_URL}${project.image}`}
-                                    className="image-card" alt="" />
+                                    className="image-card" alt=""
+                                />
+                                <div className='chip_container'>
+                                    {activeProjTypeChips.map((chip, id) => (
+                                        <div className={`chip ${chip.label}`} key={chip.id}>
+                                            {chip.label}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
                             <div className='Content-card'>
@@ -49,6 +60,7 @@ function GroupProjects({ ProjectsData }) {
 
 GroupProjects.propTypes = {
     ProjectsData: PropTypes.array.isRequired,
+    projectChipsData: PropTypes.array.isRequired
 
 };
 
