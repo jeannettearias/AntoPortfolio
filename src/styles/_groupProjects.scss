@@ -228,6 +228,10 @@
 
 /* Chips overlay */
 .chip_container {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--base-px-03, 12px);
+
   position: absolute; /* ✅ overlays on top of image */
   top: 85%;
   left: 12px;
@@ -238,20 +242,24 @@
   flex-wrap: wrap; /* ✅ if many chips, wrap instead of overflow */
   gap: 8px;
   align-items: flex-start;
+  bottom: 11.491px;
 }
 
 .chip {
   display: flex;
-  padding: var(--base-px-02, 8px);
+  padding: var(--base-px-01, 4px) var(--base-px-03, 12px);
+  justify-content: center;
   align-items: center;
-  gap: var(--base-px-01, 4px);
-  border-radius: 10000px;
-  background: var(--Light-03, #d5feff);
+  gap: 10px;
 
   color: var(--Light-07, #026e72);
-  font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Medium, 16px);
+  border-radius: 10000px;
+  background: var(--Light-04, #a9fcff);
+
+  color: var(--Main-Black, #000);
+  font-family: Raleway;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px; /* 150% */
 }
