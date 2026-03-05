@@ -8,6 +8,7 @@ import AboutMe from './landing/Group-sections/AboutMe';
 import GroupSections from './landing/Group-sections/GroupSections';
 import Footer from './layout/Footer';
 
+
 import heroJSON from '../data/heroData.json';
 import servicesData from '../data/servicesData.json';
 import ExpData from '../data/GroupExp.json';
@@ -49,7 +50,12 @@ function App() {
     <section className="body">
       <Header />
 
-      <Hero heroData={heroData} />
+      <Hero heroData={heroData}
+
+
+      />
+
+
       <Bar services={services} />
       <Services services={services} />
 
