@@ -16,8 +16,8 @@
 .hero__container {
   display: flex;
   max-width: 1440px;
-  justify-content: space-between;
   align-items: center;
+  gap: var(--Grid-Gutter, 24px);
   flex: 1 0 0;
   align-self: stretch;
 }
@@ -40,7 +40,7 @@
   display: flex;
   width: 200px;
   height: 200px;
-  padding: 80.867px 0 0 13.453px;
+  padding: 80.867px 0 0 14.37px;
   justify-content: flex-end;
   align-items: center;
 }
@@ -65,16 +65,15 @@
   color: var(--Neutral-07, #424544);
 
   /* H1/Semibold */
-  font-family: var(--Family-Title, Montserrat);
+  font-family: var(--Family-Title, Marjorie);
   font-size: var(--Size-Heading-1, 64px);
   font-style: normal;
   font-weight: 600;
-  line-height: 80px; /* 125% */
+  line-height: normal;
 
   .hero-green-text {
     color: var(--Main-Primary, #6e38d9);
-
-    font-family: var(--Family-Title, Montserrat);
+    font-family: var(--Family-Title, Marjorie);
     font-size: var(--Size-Heading-1, 64px);
     font-style: italic;
     font-weight: 700;
@@ -174,13 +173,12 @@
 
   color: var(--Main-Primary, #6e38d9);
 
-  /* H3/Bold */
+  /* XLargeText/Semibold */
   font-family: var(--Family-Content, Raleway);
-  font-size: var(--Size-Heading-3, 32px);
+  font-size: var(--Size-XLarge, 20px);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
-  list-style-type: none;
 }
 
 .hero__info__description {
@@ -195,4 +193,59 @@
   font-weight: 400;
   line-height: 20px; /* 125% */
   list-style-type: none;
+}
+
+@media (max-width: 744px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--base-px-07, 24px);
+    align-self: stretch;
+  }
+
+  .hero__container {
+    padding: var(--base-px-08, 28px) 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--base-px-03, 12px);
+    align-self: stretch;
+
+    background: var(--Main-White, #fff);
+  }
+
+  .hero__info {
+    align-items: center;
+    gap: var(--base-px-07, 24px);
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--base-px-06, 20px);
+    align-self: stretch;
+  }
+
+  .hero__content__content {
+    gap: 12px;
+  }
+
+  .data__sections {
+    width: 240px;
+    gap: 32px;
+  }
+
+  .data__content {
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .Detail_2 {
+    max-width: 856px;
+    height: 464px;
+
+    position: absolute;
+    right: -420px;
+    top: -4px;
+  }
 }
