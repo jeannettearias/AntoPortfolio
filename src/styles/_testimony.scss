@@ -58,11 +58,24 @@
 
   color: var(--Main-Text, #272827);
   text-align: center;
-  font-family: Montserrat;
-  font-size: 48px;
+
+  /* H2/Semibold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
+
+  .title_testimony_span {
+    color: var(--Main-Text, #272827);
+
+    /* H2/Bold */
+    font-family: var(--Family-Title, Marjorie);
+    font-size: var(--Size-Heading-2, 44px);
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
 
 .group_testimony_cards {

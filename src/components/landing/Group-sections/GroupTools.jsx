@@ -29,7 +29,7 @@ function GroupTools({ }) {
                         <label className="label_badge">Competencias</label>
                     </div>
                     <div className="Content_text">
-                        <label className="title-text">Las herramientas <br /> detrás de mis  <span className="span_title_text">diseños</span></label>
+                        <label className="title-text">Las herramientas detrás de mis  <span className="span_title_text">diseños</span></label>
                     </div>
                 </div>
                 <div className="Group-info-tools">

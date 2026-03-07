@@ -44,11 +44,13 @@
 
 .label {
   color: var(--Main-White, #fff);
-  font-family: var(--Family-Content, Raleway);
+
+  /* H4/Regular */
+  font-family: var(--Family-Title, Marjorie);
   font-size: var(--Size-Heading-4, 24px);
+  font-style: italic;
   font-weight: 400;
-  line-height: 30px;
-  white-space: nowrap;
+  line-height: normal;
 }
 
 .icon {

@@ -14,8 +14,8 @@ function Services({ services }) {
                     <div className="Badge">
                         <span className="badge-text">Servicios</span>
                     </div>
-                    <p className="content-text"
-                    >¿Por qué <span className="purple-text">elegirme </span> para tu próximo proyecto?</p>
+                    <p className="content_text"
+                    >¿Por qué <span className="purple_text">elegirme </span> para tu próximo proyecto?</p>
                 </div>
                 <div className="button-area">
                     <div className='btn-me'>Háblame</div>

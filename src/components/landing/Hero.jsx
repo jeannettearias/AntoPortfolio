@@ -16,6 +16,7 @@ function Hero({ heroData, Buttons }) {
                     <div className="logo__content">
                         <div className="ISO__logo">
                             <LottieHero animationData={animationData} />
+
                         </div>
 
                     </div>
