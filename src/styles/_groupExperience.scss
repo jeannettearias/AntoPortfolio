@@ -38,19 +38,23 @@
 
 .content-text {
   color: var(--Neutral-07, #424544);
-  font-family: Montserrat;
-  font-size: 44px;
+
+  /* H2/Semibold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
   font-style: normal;
-  font-weight: 500;
-  line-height: 68px; /* 154.545% */
+  font-weight: 600;
+  line-height: normal;
 }
 .color-text {
   color: var(--Main-Primary, #6e38d9);
-  font-family: Montserrat;
-  font-size: 44px;
-  font-style: normal;
+
+  /* H2/Bold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
+  font-style: italic;
   font-weight: 700;
-  line-height: 68px;
+  line-height: normal;
 }
 
 .group-card {

@@ -67,16 +67,20 @@
   align-self: stretch;
 
   color: var(--Main-Text, #272827);
-  font-family: Montserrat;
-  font-size: 48px;
+
+  /* H2/Semibold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 
   .title__span {
     color: var(--Main-Primary, #6e38d9);
-    font-family: Montserrat;
-    font-size: 48px;
+
+    /* H2/Bold */
+    font-family: var(--Family-Title, Marjorie);
+    font-size: var(--Size-Heading-2, 44px);
     font-style: italic;
     font-weight: 700;
     line-height: normal;

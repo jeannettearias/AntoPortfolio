@@ -65,17 +65,21 @@
 
   color: var(--Main-Text, #272827);
   text-align: center;
-  font-family: Montserrat;
-  font-size: 48px;
+
+  /* H2/Semibold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
 .span_title_text {
   color: var(--Main-Secondary, #2fc9ce);
-  font-family: Montserrat;
-  font-size: 48px;
+
+  /* H2/Bold */
+  font-family: var(--Family-Title, Marjorie);
+  font-size: var(--Size-Heading-2, 44px);
   font-style: italic;
   font-weight: 700;
   line-height: normal;

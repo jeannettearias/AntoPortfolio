@@ -18,7 +18,7 @@ function GroupTestimony({ testimony }) {
                     <label className='label_badge'>Referencias</label>
                 </div>
                 <div className='content_testimony'>
-                    <label className='title_testimony_content'>El impacto de mi trabajo</label>
+                    <label className='title_testimony_content'>El impacto de mi <span className='title_testimony_span'>trabajo</span></label>
                 </div>
 
             </div>
