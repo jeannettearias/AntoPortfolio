@@ -1,13 +1,17 @@
 import "../../styles/_margin.scss";
+import LottieHero from "./LottieHero";
+import Artboard_1 from "../../data/Artboard_1.json"
 
 
 function Margin() {
 
+
   return (
     <section className="section-hero">
       <div className="image_margin">
-        <img className="sally_4"
-          src={`${import.meta.env.BASE_URL}images/skills/AboutMeImage.svg`} alt="" />
+        <LottieHero className="sally_4"
+          animationData={Artboard_1} />
+
       </div>
 
       <div className="content-tag">
