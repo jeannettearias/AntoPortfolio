@@ -1,13 +1,16 @@
 import "../../../styles/_ContactUS.scss";
+import LottieHero from "../LottieHero";
+import Artboard_2 from "../../../data/Artboard _2.json";
 
 function ContactUS() {
     return (
 
         <section id="contactUs" className="section-contact-us">
             <div className="image_contact_us">
-                <img
+                <LottieHero
                     className="Saly-16"
-                    src="images/contactUs/Image.svg" alt="" />
+                    animationData={Artboard_2}
+                />
             </div>
             <div className="group-interactions">
                 <div className="Text_interaction">
@@ -16,7 +19,8 @@ function ContactUS() {
                             <label className="text_badge">Contacto</label>
                         </div>
                         <div className="content_info">
-                            <label className="text_content">Hablemos para el siguiente <span className="content_info_color">proyecto</span></label>
+                            <label className="text_content">Hablemos para el siguiente
+                                <span className="content_info_color">proyecto</span></label>
                         </div>
                     </div>
                 </div>
