@@ -1,6 +1,7 @@
 import "../../styles/_hero.scss";
 import LottieHero from '../landing/LottieHero';
 import animationData from "../../data/anim.json";
+import Anto_image from "../../data/Anto_image_2.json";
 
 import ProjectBtn from '../landing/buttons/ProjectBtn';
 import ContactBtn from "../landing/buttons/ContactBtn";
@@ -37,8 +38,9 @@ function Hero({ heroData, Buttons }) {
 
                 <div className="hero__info">
                     <div className="figma__picture">
-                        <img className="hero__img"
-                            src="images/hero/HeroImage.svg" alt="" />
+                        <LottieHero className="hero__img"
+                            animationData={Anto_image}
+                        />
                     </div>
                     <div className="Detail_2"></div>
                     <div className="data__sections">
