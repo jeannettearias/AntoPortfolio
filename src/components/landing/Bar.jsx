@@ -1,51 +1,44 @@
 import '../../styles/_bar.scss';
-import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Bar({ services, speed = 0.9 }) {
-    const [labels] = useState(services.filter(label => label.active === true));
+import { useRef, useLayoutEffect, useMemo } from 'react';
+import { createContinuousMarquee } from '../landing/Scrollers'; // adjust path
+
+function Bar({ services, speed = 60 }) {
+    const labels = useMemo(
+        () => services.filter((label) => label.active === true),
+        [services]
+    );
+
     const containerRef = useRef(null);
     const trackRef = useRef(null);
 
+    const repeatedLabels = useMemo(() => [...labels, ...labels], [labels]);
 
-    // Duplicate labels once for seamless reset
-    const repeatedLabels = [...labels, ...labels];
+    useLayoutEffect(() => {
+        if (!containerRef.current || !trackRef.current) return;
+        if (labels.length === 0) return;
 
-    useEffect(() => {
-        const container = containerRef.current;
-        const track = trackRef.current;
-        if (!container || !track) return;
+        const marquee = createContinuousMarquee({
+            containerEl: containerRef.current,
+            trackEl: trackRef.current,
+            speedPxPerSec: speed,
+        });
 
-        let rafId;
-        let x = 0;
+        // wait 1 frame so widths are measurable
+        let startRaf = requestAnimationFrame(() => marquee.start());
 
-        const step = () => {
-            x += speed; // pixels per frame
-            container.scrollLeft = x;
-
-            // Reset when we scrolled past half of the track (duplicated content)
-            const max = track.scrollWidth / 2;
-            if (x >= max) x = 0;
-
-            rafId = requestAnimationFrame(step);
+        return () => {
+            cancelAnimationFrame(startRaf);
+            marquee.stop();
         };
-
-        rafId = requestAnimationFrame(step);
-        return () => cancelAnimationFrame(rafId);
-    }, [speed]);
-
-    if (labels.length === 0) return null;
+    }, [speed, labels]); // labels (memoized) is safer than labels.length
 
     return (
         <section className="bar">
             <div className="detail_bar" aria-hidden="true"></div>
 
-            <div
-                className="bar-info"
-                role="group"
-                aria-label="Skills"
-                ref={containerRef}
-            >
+            <div className="bar-info" role="group" aria-label="Skills" ref={containerRef}>
                 <ul className="Group-card" ref={trackRef}>
                     {repeatedLabels.map((label, idx) => (
                         <li key={`${label.id}-${idx}`}>
@@ -63,5 +56,5 @@ export default Bar;
 
 Bar.propTypes = {
     services: PropTypes.array.isRequired,
-    speed: PropTypes.number
+    speed: PropTypes.number, // now interpreted as px/sec for this approach
 };
