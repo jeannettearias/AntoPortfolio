@@ -32,6 +32,27 @@
         "title": "UX Research",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "icon": "/images/skills/Bullet.svg",
-        "active": false
+        "active": true
+    },
+    {
+        "id": 6,
+        "title": "Prototyping",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/skills/Bullet.svg",
+        "active": true
+    },
+    {
+        "id": 7,
+        "title": "User Testing",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/skills/Bullet.svg",
+        "active": true
+    },
+    {
+        "id": 8,
+        "title": "Design Ops",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "icon": "/images/skills/Bullet.svg",
+        "active": true
     }
 ]
