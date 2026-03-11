@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useRef, useLayoutEffect, useMemo } from 'react';
 import { createContinuousMarquee } from '../landing/Scrollers'; // adjust path
 
-function Bar({ services, speed = 60 }) {
+function Bar({ services, speed = 100 }) {
     const labels = useMemo(
         () => services.filter((label) => label.active === true),
         [services]
@@ -32,7 +32,7 @@ function Bar({ services, speed = 60 }) {
             cancelAnimationFrame(startRaf);
             marquee.stop();
         };
-    }, [speed, labels]); // labels (memoized) is safer than labels.length
+    }, [speed, labels]); // labels (memorized) is safer than labels.length
 
     return (
         <section className="bar">

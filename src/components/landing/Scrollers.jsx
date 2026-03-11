@@ -1,28 +1,48 @@
-export function createContinuousMarquee({ containerEl, trackEl, speed = 1 }) {
+export function createContinuousMarquee({
+    containerEl,
+    trackEl,
+    speedPxPerSec = 100,
+}) {
     let rafId = null;
-    let x = containerEl.scrollLeft;
+    let lastTs = 0;
+    let offset = 0;
 
-    const step = () => {
-        const max = trackEl.scrollWidth / 2; // because the list is duplicated
-        if (max > 0) {
-            x += speed;
-            if (x >= max) x -= max;
-            containerEl.scrollLeft = x;
+    function measureLoopWidth() {
+        // trackEl contains: [labels, labels]
+        // So half of its scrollWidth equals the width of one full set.
+        return trackEl.scrollWidth / 2;
+    }
+
+    function tick(ts) {
+        if (!lastTs) lastTs = ts;
+        const dt = (ts - lastTs) / 1000;
+        lastTs = ts;
+
+        const loopWidth = measureLoopWidth();
+        if (loopWidth <= 0) {
+            rafId = requestAnimationFrame(tick);
+            return;
         }
-        rafId = requestAnimationFrame(step);
-    };
 
-    const start = () => {
-        if (rafId != null) return;
-        x = containerEl.scrollLeft; // resync
-        rafId = requestAnimationFrame(step);
-    };
+        offset += speedPxPerSec * dt;
 
-    const stop = () => {
-        if (rafId == null) return;
-        cancelAnimationFrame(rafId);
-        rafId = null;
-    };
+        // Wrap seamlessly (no jump visible because the content is duplicated)
+        if (offset >= loopWidth) offset -= loopWidth;
 
-    return { start, stop };
+        trackEl.style.transform = `translate3d(${-offset}px, 0, 0)`;
+        rafId = requestAnimationFrame(tick);
+    }
+
+    return {
+        start() {
+            if (rafId) return;
+            lastTs = 0;
+            rafId = requestAnimationFrame(tick);
+        },
+        stop() {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = null;
+            lastTs = 0;
+        },
+    };
 }
