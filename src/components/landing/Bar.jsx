@@ -6,7 +6,7 @@ import { createContinuousMarquee } from '../landing/Scrollers'; // adjust path
 
 function Bar({ services, speed = 100 }) {
     const labels = useMemo(
-        () => services.filter((label) => label.active === true),
+        () => services.filter((label) => label.active === true || label.active === false),
         [services]
     );
 
