@@ -1,55 +1,65 @@
 [
     {
         "id": 1,
-        "date": "Jun 2021 - Nov 2021",
-        "jobtitle": "UX/UI Designer",
-        "company": "GeoVictoria",
-        "modality": "Onsite",
-        "description": "En mi rol como UX/UI Designer, Rediseñe una plataforma web privada dedicada al soporte de Recursos Humanos con un enfoque en el control de asistencia. Me enfrenté a diversos desafíos relacionados con la experiencia del usuario y, a pesar de ello, logramos implementar principios accesibles para satisfacer las necesidades de una amplia base de usuarios. Además, identificamos y aprovechamos diversas oportunidades de mejora en la plataforma para optimizar su funcionalidad y usabilidad.",
-        "active": false
-    },
-    {
-        "id": 2,
-        "date": "Mar 2021 — Sep 2021",
-        "jobtitle": "Frontend Developer",
-        "company": "Tech Solutions Inc.",
-        "description": "Developed and maintained web applications using React, ensuring responsive design and optimal user experience",
-        "active": false
-    },
-    {
-        "id": 3,
-        "date": "Nov 2021 - Sep 2022",
-        "jobtitle": "UI Designer at Banco BCI",
-        "company": "Leytonmedia",
-        "modality": "Hybrid",
-        "description": "Como UI Designer, rediseñe el sitio WEB privado del Banco Bci en Chile, centrándome especialmente en el flujo de Pago de Tarjeta de Crédito. Utilicé el sistema de diseño interno del banco para desarrollar una propuesta que fue sometida a pruebas, iteraciones y posteriormente se realizó el handoff al equipo de desarrollo para la maquetación e implementación. Colaboré estrechamente con un equipo multidisciplinario, aplicando metodologías ágiles para garantizar una ejecución eficiente del proyecto.",
-        "active": false
-    },
-    {
-        "id": 4,
-        "date": "Jul 2023 - Mar 2024",
-        "jobtitle": "UX/UI Designer",
-        "company": "2Brains",
-        "modality": "Remote",
-        "description": "Como consultora UX/UI, mi labor se centra en perfeccionar la experiencia del usuario y el diseño de interfaz en productos digitales. Investigo a fondo las necesidades y expectativas de los usuarios, diseñando interfaces visualmente atractivas y coherentes. Estructuro la información de manera lógica, desarrollando prototipos interactivos para pruebas y evaluaciones. Mi enfoque incluye garantizar la accesibilidad para todos los usuarios y llevar a cabo una optimización continua basada en retroalimentación y pruebas de usabilidad. Mi objetivo principal fue crear productos digitales que sean no solo visualmente atractivos, sino también altamente funcionales y centrados en las necesidades del usuario combinadas con negocio.",
-        "active": false
-    },
-    {
-        "id": 5,
-        "date": "Mar 2024 — Oct 2024",
-        "jobtitle": "Visual Designer Trainee en Nacar Design, Barcelona",
-        "company": "Nacar Design",
-        "modality": "Hybrid",
-        "description": "Sector Tecnología de la Información. Responsabilidades claves con el Cliente HP: Rediseño del panel de control de impresoras IPS. Aseguramos el presupuesto para actualizar los paneles de impresoras con el nuevo sistema de diseño. Reorganización, categorización, limpieza y mantenimiento de la biblioteca de elementos gráficos. Colaboración con equipos multidisciplinarios para garantizar la coherencia del diseño en todos los proyectos.",
-        "active": true
-    },
-    {
-        "id": 6,
-        "date": "Oct 2024 — Presente",
+        "date": "Octubre 2024 — Presente",
         "jobtitle": "Product Designer en Susta Pro, Barcelona",
         "company": "SUSTA IN",
         "modality": "Remote",
         "description": "Consultoría. Encargada del diseño, gestión y organización de múltiples proyectos en distintas fases, con un enfoque centrado en la definición, desarrollo y optimización del producto.",
         "active": true
+    },
+    {
+        "id": 2,
+        "date": "Marzo 2024 — Octubre 2024",
+        "jobtitle": "Visual Designer Trainee en Nacar Design, Barcelona",
+        "company": "Nacar Design",
+        "modality": "Hybrid",
+        "description": "Sector Tecnología de la Información\nResponsabilidades claves con el Cliente HP\nRediseño del panel de control de impresoras IPS. Aseguramos el presupuesto para actualizar los paneles de impresoras con el nuevo sistema de diseño.\nReorganización, categorización, limpieza y mantenimiento de la biblioteca de elementos gráficos",
+        "active": true
+    },
+    {
+        "id": 3,
+        "date": "Julio 2023 — Febrero 2024",
+        "jobtitle": "Product Designer en 2Brains, Chile",
+        "company": "2Brains",
+        "modality": "Remote",
+        "description": "Sector Bancario\nResponsabilidades claves y logros en consultoría:\nBanco de Chile:\nRediseño de interfaz de un cajero automático de autoservicio inteligente.\nCreación Sistema de Diseño Accesible y layouts\nSector Sector salud, Sistema de seguridad social\nACHS:\nQuickWins: Mejoras rápidas basadas en métricas de Google Analytics para aumentar la tasa de visitas de usuarios y reducir la tasa de rebote. (www.mundoachs.cl, www.esachs.cl, www.achs.cl)\nRediseño Sitio público.\nArquitectura de información, User journey map, Sistema de diseño,\nTest con usuarios, Métricas, Design Thinking, Scrum",
+        "active": true
+    },
+    {
+        "id": 4,
+        "date": "Septiembre 2022 — Febrero 2023",
+        "jobtitle": "UI Designer en 2Brains, Chile",
+        "company": "2Brains",
+        "modality": "Hybrid",
+        "description": "Sector Seguridad Social\nResponsabilidades claves con cliente Caja los Andes\nCreación de un Sistema de Diseño Accesible\nTrabajé con la metodología Atomic Design\nColaboré estrechamente con el equipo de desarrollo (HTML, CSS).\nRecibíamos constantes solicitudes de nuevos componentes, las cuales debíamos analizar y decidir si crearlos o no.\nTrabajé con el framework Kanban.\nLogramos acelerar las fechas de implementación del sitio web al rediseñar el sitio privado y poner a disposición todos sus componentes. (www.cajalosandes.cl/)",
+        "active": true
+    },
+    {
+        "id": 5,
+        "date": "Noviembre 2021 — Septiembre 2022",
+        "jobtitle": "UI Designer en Leytonmedia, Chile",
+        "company": "Leytonmedia",
+        "modality": "Onsite",
+        "description": "Sector Bancario\nResponsabilidades claves con el Cliente Banco BCI\nRediseñé el flujo de pago de la tarjeta de crédito y cobro de Vales Vista\nCreé nuevos componentes y layouts.\nProporcioné y obtuve feedback de equipo UX/UI.\nImplementé y trabajé con el framework Scrum.\nTrabajé con equipo multidisciplinario\nRealicé tests con usuarios.\nRevisé y analicé métricas del producto en producción.\nConseguimos incrementar la tasa de SNEX de -80% a 45% en un período de cuatro meses post-lanzamiento del producto, mediante la implementación de estrategias de diseño centrado en el usuario y optimizaciones basadas en pruebas de usabilidad y feedback iterativo.",
+        "active": true
+    },
+    {
+        "id": 6,
+        "date": "Junio 2021 — Noviembre 2021",
+        "jobtitle": "UX/UI Designer en GeoVictoria, Chile",
+        "company": "GeoVictoria",
+        "modality": "Onsite",
+        "description": "Sector Recursos Humanos (RRHH)\nResponsabilidades claves y logros:\nRealicé análisis heurísticos para identificar áreas de mejora.\nConduje entrevistas con usuarios para obtener insights valiosos.\nCreé user personas para guiar el diseño centrado en el usuario.\nReorganicé la arquitectura de información para mejorar la usabilidad.\nDesarrollé un sistema de diseño consistente.\nDiseñé pantallas adaptables a distintos breakpoints.\nRealizamos test con usuarios para comprobar la usabilidad de las pantallas.\nProporcionamos lineamientos al equipo de desarrollo para asegurar consistencia y un diseño centrado en el usuario, basados en entrevistas y test con usuarios.",
+        "active": true
+    },
+    {
+        "id": 7,
+        "date": "Marzo 2021 — Junio 2021",
+        "jobtitle": "Práctica Profesional en VLDOC, Chile",
+        "company": "VLDOC",
+        "modality": "Onsite",
+        "description": "Como practicante profesional de UI Design, desarrollé y mantuve aplicaciones web utilizando React, asegurando un diseño responsivo y una experiencia de usuario óptima.",
+        "active": false
     }
 ]

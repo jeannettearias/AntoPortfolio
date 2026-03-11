@@ -2,14 +2,13 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../../../styles/_groupExperience.scss';
+import Description from "./Description";
 
 function GroupExperience({ expData, studyData }) {
 
     // state to experience from JSON data
     const [activeExp, setActiveExp] = useState(
         expData ? expData.filter((experience) => experience.active === true) : []);
-    // ordered list by date descending
-    activeExp.sort((a, b) => (a.date < b.date) ? 1 : -1);
 
     // state to study from JSON data
     const [activeStudy, setActiveStudy] = useState(
@@ -78,9 +77,8 @@ function GroupExperience({ expData, studyData }) {
                                 {experience.jobtitle}</div>
                             <div
                                 className="description__label">
-                                {experience.description}
+                                <Description text={experience.description} />
                             </div>
-
                         </div>
                     ))}
                 </div>
