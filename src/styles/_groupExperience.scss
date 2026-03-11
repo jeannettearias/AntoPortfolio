@@ -243,6 +243,10 @@
 .description__label {
   align-self: stretch;
 
+  margin: 0;
+  padding-left: 1.2rem; /* space for bullets */
+  margin: 0.25rem 0;
+
   color: var(--Neutral-07, #424544);
   font-family: Raleway;
   font-size: 16px;
