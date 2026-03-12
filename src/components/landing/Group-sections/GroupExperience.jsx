@@ -10,11 +10,14 @@ function GroupExperience({ expData, studyData }) {
     const [activeExp, setActiveExp] = useState(
         expData ? expData.filter((experience) => experience.active === true) : []);
 
+
     // state to study from JSON data
     const [activeStudy, setActiveStudy] = useState(
         studyData ? studyData.filter(education => education.active === true) : []);
     // ordered list by date descending
     activeStudy.sort((a, b) => (a.date < b.date) ? 1 : -1);
+
+    // include a scroll animation for the experience and study cards, using Intersection Observer API
 
 
     return (
@@ -60,27 +63,26 @@ function GroupExperience({ expData, studyData }) {
                         <img
                             className="icon__exp"
                             src="images/experiences/moon2_icon.svg"
-                            alt="" />
+                            alt=""
+                        />
                         <label className="label__exp">Experiencia laboral</label>
                     </div>
+
                     <div className="divider_exp">
-                        <img
-                            src='images/experiences/Divider.svg' />
+                        <img src="images/experiences/Divider.svg" alt="" />
                     </div>
-                    {activeExp.map((experience, idx) => (
-                        <div key={experience.id} className="experience__item">
-                            <div
-                                className="date__label">
-                                {experience.date}</div>
-                            <div
-                                className="position__label">
-                                {experience.jobtitle}</div>
-                            <div
-                                className="description__label">
-                                <Description text={experience.description} />
+
+                    <div className="exp__list">
+                        {activeExp.map((experience) => (
+                            <div key={experience.id} className="experience__item">
+                                <div className="date__label">{experience.date}</div>
+                                <div className="position__label">{experience.jobtitle}</div>
+                                <div className="description__label">
+                                    <Description text={experience.description} />
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

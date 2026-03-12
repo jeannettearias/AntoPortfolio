@@ -76,6 +76,9 @@
   max-width: 618px;
   min-height: 528px;
 
+  overflow-y: auto; /* vertical scroll when content exceeds max-height */
+  overflow-x: hidden; /* optional */
+
   border-radius: var(--base-px-06, 20px);
   background: var(--Main-Background_Alt, #f5f5f5);
 }
@@ -155,18 +158,30 @@
 
 .exp__card {
   display: flex;
-  padding: var(--base-px-07, 24px);
+  padding: 24px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: var(--base-px-07, 24px);
-  flex: 1 0 0;
+  gap: 24px;
 
   max-width: 618px;
-  min-height: 528px;
 
-  border-radius: var(--base-px-06, 20px);
-  background: var(--Main-Background_Alt, #f5f5f5);
+  /* IMPORTANT: constrain height so overflow can happen */
+  height: 528px; /* or use max-height: 528px */
+  overflow: hidden; /* prevent the whole card from scrolling */
+  border-radius: 20px;
+  background: #f5f5f5;
 }
+
+/* this is the scroll area */
+.exp__list {
+  min-height: 0; /* IMPORTANT in flex layouts */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* optional spacing between items */
+}
+
 .head-exp {
   display: flex;
   align-items: center;
