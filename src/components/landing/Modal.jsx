@@ -22,7 +22,16 @@ function Modal({ activeExp = [], Open, onClose }) {
     // ✅ important: don’t render when closed
     if (!Open) return null;
 
+    // group by company_logo (or use content.company if you prefer)
+    const groupedByCompany = activeExp.reduce((acc, item) => {
+        const key = item.company_logo; // or item.company
+        (acc[key] ||= { logo: item.company_logo, company: item.company, roles: [] }).roles.push(item);
+        return acc;
+    }, {});
+    const companies = Object.values(groupedByCompany);
+
     return (
+
         <div
             className="modal-overlay"
             role="presentation"
@@ -37,8 +46,7 @@ function Modal({ activeExp = [], Open, onClose }) {
             >
                 <div className='modal-head'>
                     <img className="icon__exp"
-                        src="images/experiences/moon2_icon.svg" alt="" />
-
+                        src={`${import.meta.env.BASE_URL}images/experiences/moon2_icon.svg`} alt="" />
 
                     <label className="label__exp">Experiencia laboral</label>
                     <div className="close-button">
@@ -47,8 +55,8 @@ function Modal({ activeExp = [], Open, onClose }) {
                             aria-label="Close Modal"
                             type="button"
                         >
-                            <img
-                                src={`${import.meta.env.BASE_URL}images/experiences/close_icon.png`}
+                            <img className="close_icon"
+                                src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
                                 alt="Close"
                             />
                         </button>
@@ -58,20 +66,33 @@ function Modal({ activeExp = [], Open, onClose }) {
                 <div className="Chips_modal">
                     {activeExp.map((year) => (
                         <div className="chip_modal" key={year.id}>
+                            <label className="label_chip">{year.years.end}</label>
                         </div>
                     ))}
                     <div className="Content_modal">
-                        {activeExp.map((content) => (
-                            <div key={content.id} className='group_content'>
-                                <div className="company_logo">{content.company_logo}</div>
-                                <ul
-                                    className="experience__item">
-                                    <li className="date__label">{content.date}</li>
-                                    <li className="position__label">{content.jobtitle}</li>
-                                    <li className="description__label">{content.description}</li>
-                                </ul>
-                            </div>
-                        ))}
+                        {companies.map((companyGroup) => {
+                            const twoCols = companyGroup.roles.length > 1;
+
+                            return (
+                                <div key={companyGroup.logo} className="group_content">
+                                    <img
+                                        className="company_logo"
+                                        src={companyGroup.logo}
+                                        alt={`${companyGroup.company} logo`}
+                                    />
+
+                                    <div className={twoCols ? "roles roles--2cols" : "roles"}>
+                                        {companyGroup.roles.map((role) => (
+                                            <ul key={role.id} className="item_content">
+                                                <li className="date__label">{role.date}</li>
+                                                <li className="position__label">{role.jobtitle}</li>
+                                                <li className="description__label">{role.description}</li>
+                                            </ul>
+                                        ))}
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
@@ -83,7 +104,6 @@ Modal.propTypes = {
     activeExp: PropTypes.array.isRequired,
     Open: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
-    children: PropTypes.node
 }
 
 export default Modal;
