@@ -69,32 +69,35 @@ function Modal({ activeExp = [], Open, onClose }) {
                             <label className="label_chip">{year.years.end}</label>
                         </div>
                     ))}
-                    <div className="Content_modal">
-                        {companies.map((companyGroup) => {
-                            const twoCols = companyGroup.roles.length > 1;
 
-                            return (
-                                <div key={companyGroup.logo} className="group_content">
+                </div>
+                <section className="Content_modal">
+                    {companies.map((companyGroup) => {
+                        const twoCols = companyGroup.roles.length > 1;
+
+                        return (
+
+                            <div key={companyGroup.logo} className="group_content">
+                                <div className='item_content'>
                                     <img
                                         className="company_logo"
                                         src={companyGroup.logo}
                                         alt={`${companyGroup.company} logo`}
                                     />
-
                                     <div className={twoCols ? "roles roles--2cols" : "roles"}>
                                         {companyGroup.roles.map((role) => (
-                                            <ul key={role.id} className="item_content">
+                                            <ul key={role.id} className="content_item">
                                                 <li className="date__label">{role.date}</li>
                                                 <li className="position__label">{role.jobtitle}</li>
-                                                <li className="description__label">{role.description}</li>
+                                                <li  className="description__label">{role.description}</li>
                                             </ul>
                                         ))}
                                     </div>
                                 </div>
-                            );
-                        })}
-                    </div>
-                </div>
+                            </div>
+                        );
+                    })}
+                </section>
             </section>
         </div>
     );
