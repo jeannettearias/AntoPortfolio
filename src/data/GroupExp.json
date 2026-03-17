@@ -2,8 +2,13 @@
     {
         "id": 1,
         "date": "Octubre 2024 — Presente",
+        "years": {
+            "start": 2024,
+            "end": 2026
+        },
         "jobtitle": "Product Designer en Susta Pro, Barcelona",
         "company": "SUSTA IN",
+        "company_logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHF4pnbQUe0PQ/company-logo_200_200/company-logo_200_200/0/1630564880119?e=1775088000&v=beta&t=uVwpUQpbxC1cZ4P1HA65qeDucxP2OuFO2gFzpd50jmU",
         "modality": "Remote",
         "description": "Consultoría. Encargada del diseño, gestión y organización de múltiples proyectos en distintas fases, con un enfoque centrado en la definición, desarrollo y optimización del producto.",
         "active": true
@@ -11,8 +16,13 @@
     {
         "id": 2,
         "date": "Marzo 2024 — Octubre 2024",
+        "years": {
+            "start": 2024,
+            "end": 2024
+        },
         "jobtitle": "Visual Designer Trainee en Nacar Design, Barcelona",
         "company": "Nacar Design",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFQ3OdHn2DZ0w/company-logo_200_200/company-logo_200_200/0/1688994651342/nacar_design_logo?e=1775088000&v=beta&t=BeoHqt1Xoan5FzHZUzUtkh7D5plV4UnqHmJ6obPeYaU",
         "modality": "Hybrid",
         "description": "Sector Tecnología de la Información\n Responsabilidades claves con el Cliente HP\n - Rediseño del panel de control de impresoras IPS. Aseguramos el presupuesto para actualizar los paneles de impresoras con el nuevo sistema de diseño.\n - Reorganización, categorización, limpieza y mantenimiento de la biblioteca de elementos gráficos",
         "active": true
@@ -20,8 +30,13 @@
     {
         "id": 3,
         "date": "Julio 2023 — Febrero 2024",
+        "years": {
+            "start": 2023,
+            "end": 2024
+        },
         "jobtitle": "Product Designer en 2Brains, Chile",
         "company": "2Brains",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4D0BAQG5ZEGb_fMAOw/company-logo_100_100/B4DZt0cotrJUAQ-/0/1767185223274/2brainslat_logo?e=1775088000&v=beta&t=hNbw5ArqIr3Ar6BLAcsgxOPXnTuwQI51eIxmZCuMFx4",
         "modality": "Remote",
         "description": "Sector Bancario\n - Responsabilidades claves y logros en consultoría: \n 1. Banco de Chile: - \nRediseño de interfaz de un cajero automático de autoservicio inteligente.\n - Creación Sistema de Diseño Accesible y layouts\n - Sector Sector salud, Sistema de seguridad social\n 2. ACHS:\n - QuickWins: Mejoras rápidas basadas en métricas de Google Analytics para aumentar la tasa de visitas de usuarios y reducir la tasa de rebote. (www.mundoachs.cl, www.esachs.cl, www.achs.cl)\n - Rediseño Sitio público.\n - Arquitectura de información, User journey map, Sistema de diseño,\n - Test con usuarios, Métricas, Design Thinking, Scrum",
         "active": true
@@ -29,8 +44,13 @@
     {
         "id": 4,
         "date": "Septiembre 2022 — Febrero 2023",
+        "years": {
+            "start": 2022,
+            "end": 2023
+        },
         "jobtitle": "UI Designer en 2Brains, Chile",
         "company": "2Brains",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4D0BAQG5ZEGb_fMAOw/company-logo_100_100/B4DZt0cotrJUAQ-/0/1767185223274/2brainslat_logo?e=1775088000&v=beta&t=hNbw5ArqIr3Ar6BLAcsgxOPXnTuwQI51eIxmZCuMFx4",
         "modality": "Hybrid",
         "description": "Sector Seguridad Social\n - Responsabilidades claves con cliente Caja los Andes\n - Creación de un Sistema de Diseño Accesible\n - Trabajé con la metodología Atomic Design\n - Colaboré estrechamente con el equipo de desarrollo (HTML, CSS).\n - Recibíamos constantes solicitudes de nuevos componentes, las cuales debíamos analizar y decidir si crearlos o no.\n - Trabajé con el framework Kanban.\n - Logramos acelerar las fechas de implementación del sitio web al rediseñar el sitio privado y poner a disposición todos sus componentes. (www.cajalosandes.cl/)",
         "active": true
@@ -38,8 +58,13 @@
     {
         "id": 5,
         "date": "Noviembre 2021 — Septiembre 2022",
+        "years": {
+            "start": 2021,
+            "end": 2022
+        },
         "jobtitle": "UI Designer en Leytonmedia, Chile",
         "company": "Leytonmedia",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4E0BAQGbLBo0dfNGZA/company-logo_100_100/company-logo_100_100/0/1734434543362/leytonmedia_logo?e=1775088000&v=beta&t=rAzg2wcIt9bGklcRVvUqkYAC5jENyp7k4k81TnTR5XY",
         "modality": "Onsite",
         "description": "Sector Bancario\n - Responsabilidades claves con el Cliente Banco BCI\n - Rediseñé el flujo de pago de la tarjeta de crédito y cobro de Vales Vista\n - Creé nuevos componentes y layouts.\n - Proporcioné y obtuve feedback de equipo UX/UI.\n - Implementé y trabajé con el framework Scrum.\n - Trabajé con equipo multidisciplinario\n - Realicé tests con usuarios.\n - Revisé y analicé métricas del producto en producción.\n - Conseguimos incrementar la tasa de SNEX de -80% a 45% en un período de cuatro meses post-lanzamiento del producto, mediante la implementación de estrategias de diseño centrado en el usuario y optimizaciones basadas en pruebas de usabilidad y feedback iterativo.",
         "active": true
@@ -47,8 +72,13 @@
     {
         "id": 6,
         "date": "Junio 2021 — Noviembre 2021",
+        "years": {
+            "start": 2021,
+            "end": 2021
+        },
         "jobtitle": "UX/UI Designer en GeoVictoria, Chile",
         "company": "GeoVictoria",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4D0BAQFx9CIJZCqAJQ/company-logo_100_100/B4DZyfy98sIoAU-/0/1772207464708/victorias_a__logo?e=1775088000&v=beta&t=NqPN6MJzBtS9bVSayDA6bfbur7rI39giQGhbIEzaK0E",
         "modality": "Onsite",
         "description": "Sector Recursos Humanos (RRHH)\n - Responsabilidades claves y logros:\n - Realicé análisis heurísticos para identificar áreas de mejora.\n - Conduje entrevistas con usuarios para obtener insights valiosos.\n - Creé user personas para guiar el diseño centrado en el usuario.\n - Reorganicé la arquitectura de información para mejorar la usabilidad.\n - Desarrollé un sistema de diseño consistente.\n - Diseñé pantallas adaptables a distintos breakpoints.\n - Realizamos test con usuarios para comprobar la usabilidad de las pantallas.\nProporcionamos lineamientos al equipo de desarrollo para asegurar consistencia y un diseño centrado en el usuario, basados en entrevistas y test con usuarios.",
         "active": true
@@ -56,9 +86,14 @@
     {
         "id": 7,
         "date": "Marzo 2021 — Junio 2021",
+        "years": {
+            "start": 2021,
+            "end": 2021
+        },
         "jobtitle": "Práctica Profesional en VLDOC, Chile",
         "company": "VLDOC",
-        "modality": "Onsite",
+        "company_logo": "https://media.licdn.com/dms/image/v2/D4E0BAQGySBn-RL0wVg/company-logo_100_100/B4EZsI92VQKoAU-/0/1765381990151/vldoc_clm_logo?e=1775088000&v=beta&t=8LbmN49XlYT7_HephLNDKBtGlGuYqgiUTcbjdWpAJDY",
+        "modality": "Remote",
         "description": "Como practicante profesional de UI Design, desarrollé y mantuve aplicaciones web utilizando React, asegurando un diseño responsivo y una experiencia de usuario óptima.",
         "active": false
     }

@@ -182,11 +182,39 @@
   gap: 24px; /* optional spacing between items */
 }
 
+.head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
 .head-exp {
   display: flex;
   align-items: center;
   gap: 12px;
-  align-self: stretch;
+  flex: 1 0 0;
+}
+
+.button-head {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  border: 1px solid var(--Light-05, #2fc9ce);
+  background: var(--Main-Background_Alt, #f5f5f5);
+
+  color: var(--Light-07, #026e72);
+
+  /* MediumText/Regular */
+  font-family: var(--Family-Content, Raleway);
+  font-size: var(--Size-Medium, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .experience__item {
