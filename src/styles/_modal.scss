@@ -108,7 +108,7 @@
 }
 
 .Content_modal {
-  display: grid;
+  display: flex;
   height: 1896px;
   align-items: flex-start;
   gap: var(--base-px-04, 16px);
@@ -121,6 +121,7 @@
     gap: var(--base-px-04, 16px);
     align-self: stretch;
   }
+
   .close_icon {
     display: flex;
     padding: var(--base-px-02, 8px);
@@ -144,7 +145,7 @@
   border: 1px solid var(--Neutral-03, #c3cfca);
 }
 
-.content_item {
+.item__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -183,6 +184,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 133.333% */
+
+  white-space: pre-line;
 }
 
 .roles {
@@ -199,17 +202,4 @@
   .roles--2cols {
     grid-template-columns: 1fr;
   }
-}
-
-.item_content,
-.item_group {
-  list-style: none; /* ✅ removes bullets */
-  padding: 0; /* ✅ removes left indent */
-  margin: 0; /* ✅ removes default spacing */
-}
-
-/* If you ever have <li> with markers showing for some reason */
-.item_content li,
-.item_group li {
-  list-style: none;
 }

@@ -50,16 +50,17 @@ function Modal({ activeExp = [], Open, onClose }) {
 
                     <label className="label__exp">Experiencia laboral</label>
                     <div className="close-button">
-                        <button className="close-button"
+                        <div
+                            className="close-button"
                             onClick={onClose}
                             aria-label="Close Modal"
-                            type="button"
-                        >
+                            type="button">
+
                             <img className="close_icon"
                                 src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
                                 alt="Close"
                             />
-                        </button>
+                        </div>
                     </div>
                 </div>
 
@@ -72,13 +73,12 @@ function Modal({ activeExp = [], Open, onClose }) {
 
                 </div>
                 <section className="Content_modal">
-                    {companies.map((companyGroup) => {
-                        const twoCols = companyGroup.roles.length > 1;
+                    <div className="group_content">
+                        {companies.map((companyGroup) => {
+                            const twoCols = companyGroup.roles.length > 1;
+                            return (
 
-                        return (
-
-                            <div key={companyGroup.logo} className="group_content">
-                                <div className='item_content'>
+                                <div key={companyGroup.company} className='item_content'>
                                     <img
                                         className="company_logo"
                                         src={companyGroup.logo}
@@ -86,17 +86,27 @@ function Modal({ activeExp = [], Open, onClose }) {
                                     />
                                     <div className={twoCols ? "roles roles--2cols" : "roles"}>
                                         {companyGroup.roles.map((role) => (
-                                            <ul key={role.id} className="content_item">
-                                                <li className="date__label">{role.date}</li>
-                                                <li className="position__label">{role.jobtitle}</li>
-                                                <li  className="description__label">{role.description}</li>
-                                            </ul>
+                                            <div key={role.id} className="item__item">
+                                                <div className="date__label">{role.date}</div>
+                                                <div className="position__label">{role.jobtitle}</div>
+                                                <div className="description__label">{role.description
+                                                    .split("\n")
+                                                    .map((line) => line.replace(/^\s*-\s+/, "• "))
+                                                    .map((line, i) => (
+                                                        <span key={i}>
+                                                            {line}
+                                                            <br />
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+
+                            );
+                        })}
+                    </div>
                 </section>
             </section>
         </div>
