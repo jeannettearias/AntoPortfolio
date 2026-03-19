@@ -9,13 +9,14 @@ function GroupExperience({ expData = [], studyData = [] }) {
     // state to experience from JSON data
     const activeExp = useMemo(() => expData.filter((experience) => experience.active === true),
         [expData]);
+
     // state to study from JSON data
     const activeStudy = useMemo(() => studyData.filter(education => education.active === true),
         [studyData]);
+
     // ordered list by date descending
     const sortedStudy = [...activeStudy].sort((a, b) => (a.date < b.date ? 1 : -1));
     const sortedExp = [...activeExp].sort((a, b) => (a.date < b.date ? 1 : -1));
-
 
     // Open experience button
     const [openExp, setOpenExp] = useState(false);
