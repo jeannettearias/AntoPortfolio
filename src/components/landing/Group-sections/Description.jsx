@@ -1,3 +1,5 @@
+import "../../../styles/_groupExperience.scss";
+
 export default function Description({ text }) {
     const lines = (text ?? "")
         .split("\n")
@@ -5,10 +7,10 @@ export default function Description({ text }) {
         .filter(Boolean);
 
     return (
-        <ul className="description__list">
+        <div className="description__list">
             {lines.map((line, i) => (
                 <div key={i}>{line}</div>
             ))}
-        </ul>
+        </div>
     );
 }
