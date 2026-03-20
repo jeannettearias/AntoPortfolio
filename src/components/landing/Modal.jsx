@@ -86,10 +86,10 @@ function Modal({ activeExp = [], Open, onClose }) {
                                     />
                                     <div className={twoCols ? "roles roles--2cols" : "roles"}>
                                         {companyGroup.roles.map((role) => (
-                                            <div key={role.id} className="item__item">
-                                                <div className="date__label">{role.date}</div>
-                                                <div className="position__label">{role.jobtitle}</div>
-                                                <div className="description__label">{role.description
+                                            <ul key={role.id} className="item__item">
+                                                <li className="date__label">{role.date}</li>
+                                                <li className="position__label">{role.jobtitle}</li>
+                                                <li className="description__label">{role.description
                                                     .split("\n")
                                                     .map((line) => line.replace(/^\s*-\s+/, "• "))
                                                     .map((line, i) => (
@@ -98,8 +98,8 @@ function Modal({ activeExp = [], Open, onClose }) {
                                                             <br />
                                                         </span>
                                                     ))}
-                                                </div>
-                                            </div>
+                                                </li>
+                                            </ul>
                                         ))}
                                     </div>
                                 </div>
