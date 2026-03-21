@@ -1,16 +1,23 @@
 import "../../../styles/_groupExperience.scss";
 
-export default function Description({ text }) {
-    const lines = (text ?? "")
-        .split("\n")
-        .map((s) => s.trim())
-        .filter(Boolean);
-
+export default function Description({ text = "" }) {
     return (
-        <div className="description__list">
-            {lines.map((line, i) => (
-                <div key={i}>{line}</div>
-            ))}
-        </div>
+        <li className="description__label">
+            {text.split("\n").map((rawLine, i) => {
+                const line = rawLine.trimEnd();
+                const isBullet = /^\s*-\s+/.test(line); // markdown-like "- "
+                const cleanText = line.replace(/^\s*-\s+/, "");
+
+                return (
+                    <span
+                        key={i}
+                        className={isBullet ? "desc-line desc-line--bullet" : "desc-line"}
+                    >
+                        {cleanText}
+                        <br />
+                    </span>
+                );
+            })}
+        </li>
     );
 }
