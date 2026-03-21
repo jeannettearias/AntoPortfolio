@@ -86,20 +86,27 @@ function Modal({ activeExp = [], Open, onClose }) {
                                     />
                                     <div className={twoCols ? "roles roles--2cols" : "roles"}>
                                         {companyGroup.roles.map((role) => (
-                                            <ul key={role.id} className="item__item">
-                                                <li className="date__label">{role.date}</li>
-                                                <li className="position__label">{role.jobtitle}</li>
-                                                <li className="description__label">{role.description
-                                                    .split("\n")
-                                                    .map((line) => line.replace(/^\s*-\s+/, "• "))
-                                                    .map((line, i) => (
-                                                        <span key={i}>
-                                                            {line}
-                                                            <br />
-                                                        </span>
-                                                    ))}
+                                            <div key={role.id} className="item__item">
+                                                <div className="date__label">{role.date}</div>
+                                                <div className="position__label">{role.jobtitle}</div>
+                                                <li className="description__label">
+                                                    {role.description.split("\n").map((rawLine, i) => {
+                                                        const line = rawLine.trimEnd();
+                                                        const isBullet = /^\s*-\s+/.test(line); // markdown-like "- "
+                                                        const text = line.replace(/^\s*-\s+/, "");
+
+                                                        return (
+                                                            <span
+                                                                key={i}
+                                                                className={isBullet ? "desc-line desc-line--bullet" : "desc-line"}
+                                                            >
+                                                                {text}
+                                                                <br />
+                                                            </span>
+                                                        );
+                                                    })}
                                                 </li>
-                                            </ul>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
