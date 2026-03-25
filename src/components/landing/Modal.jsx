@@ -30,6 +30,12 @@ function Modal({ activeExp = [], Open, onClose }) {
     }, {});
     const companies = Object.values(groupedByCompany);
 
+    // sort roles by date descending according years.end clicked in the modal chips
+    companies.forEach(company => {
+        company.roles.sort((a, b) => (a.years.end < b.years.end ? 1 : -1));
+    });
+
+
     return (
 
         <div
