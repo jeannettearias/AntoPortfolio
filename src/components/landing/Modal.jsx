@@ -1,7 +1,7 @@
 import "../../styles/_modal.scss";
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-
+import ChipsContainer from "./ChipsContainer";
 
 function Modal({ activeExp = [], Open, onClose }) {
 
@@ -50,34 +50,30 @@ function Modal({ activeExp = [], Open, onClose }) {
                 aria-label="Experiencia laboral"
                 onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
             >
-                <div className='modal-head'>
-                    <img className="icon__exp"
-                        src={`${import.meta.env.BASE_URL}images/experiences/moon2_icon.svg`} alt="" />
+                <div className="chips_container_header">
+                    <div className='modal-head'>
+                        <img className="icon__exp"
+                            src={`${import.meta.env.BASE_URL}images/experiences/moon2_icon.svg`} alt="" />
 
-                    <label className="label__exp">Experiencia laboral</label>
-                    <div className="close-button">
-                        <div
-                            className="close-button"
-                            onClick={onClose}
-                            aria-label="Close Modal"
-                            type="button">
+                        <label className="label__exp">Experiencia laboral</label>
+                        <div className="close-button">
+                            <div
+                                className="close-button"
+                                onClick={onClose}
+                                aria-label="Close Modal"
+                                type="button">
 
-                            <img className="close_icon"
-                                src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
-                                alt="Close"
-                            />
+                                <img className="close_icon"
+                                    src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
+                                    alt="Close"
+                                />
+                            </div>
                         </div>
                     </div>
+
+                    <ChipsContainer activeExp={activeExp} />
                 </div>
 
-                <div className="Chips_modal">
-                    {activeExp.map((year) => (
-                        <div className="chip_modal" key={year.id}>
-                            <label className="label_chip">{year.years.end}</label>
-                        </div>
-                    ))}
-
-                </div>
                 <section className="Content_modal">
                     <div className="group_content">
                         {companies.map((companyGroup) => {
