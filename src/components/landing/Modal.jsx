@@ -50,29 +50,27 @@ function Modal({ activeExp = [], Open, onClose }) {
                 aria-label="Experiencia laboral"
                 onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
             >
-                <div className="chips_container_header">
+                <section className="chips_container_header">
                     <div className='modal-head'>
                         <img className="icon__exp"
                             src={`${import.meta.env.BASE_URL}images/experiences/moon2_icon.svg`} alt="" />
 
                         <label className="label__exp">Experiencia laboral</label>
-                        <div className="close-button">
-                            <div
-                                className="close-button"
-                                onClick={onClose}
-                                aria-label="Close Modal"
-                                type="button">
 
-                                <img className="close_icon"
-                                    src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
-                                    alt="Close"
-                                />
-                            </div>
+                        <div className="close-button"
+                            onClick={onClose}
+                            aria-label="Close Modal"
+                            type="button">
+
+                            <img className="close_icon"
+                                src={`${import.meta.env.BASE_URL}/images/experiences/close_icon.png`}
+                                alt="Close"
+                            />
                         </div>
-                    </div>
 
+                    </div>
                     <ChipsContainer activeExp={activeExp} />
-                </div>
+                </section>
 
                 <section className="Content_modal">
                     <div className="group_content">
