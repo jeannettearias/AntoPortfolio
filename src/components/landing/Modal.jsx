@@ -81,7 +81,7 @@ function Modal({ activeExp = [], Open, onClose }) {
                                 <div key={companyGroup.company} className='item_content'>
                                     <img
                                         className="company_logo"
-                                        src={companyGroup.logo}
+                                        src={`${import.meta.env.BASE_URL}${companyGroup.logo}`}
                                         alt={`${companyGroup.company} logo`}
                                     />
                                     <div className={twoCols ? "roles roles--2cols" : "roles"}>
