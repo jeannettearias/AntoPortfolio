@@ -38,7 +38,7 @@ function ChipsContainer({ activeExp = [] }) {
         </section>
     );
 }
-©
+
 ChipsContainer.propTypes = {
     activeExp: PropTypes.array.isRequired,
 
